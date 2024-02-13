@@ -18,14 +18,14 @@
   height: 4.875rem;
   top: 2.75rem;
   left: 6.125rem;
-  font-family: var(--logo-font-family);
-  font-weight: var(--logo-font-weight);
   color: #f1f1f1;
-  font-size: var(--logo-font-size);
   text-align: center;
   letter-spacing: var(--logo-letter-spacing);
   line-height: var(--logo-line-height);
   font-style: var(--logo-font-style);
+  font-size: 36px;
+  font-family: Bruno Ace;
+  font-weight: 400;
 }
 
 .boto-home {
