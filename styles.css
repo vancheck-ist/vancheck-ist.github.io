@@ -14,10 +14,10 @@
 }
 .text-wrapper-3 {
   position: absolute;
-  width: 354px;
-  height: 78px;
-  top: 44px;
-  left: 98px;
+  width: 22.125rem;
+  height: 4.875rem;
+  top: 2.75rem;
+  left: 6.125rem;
   font-family: var(--logo-font-family);
   font-weight: var(--logo-font-weight);
   color: #f1f1f1;
@@ -30,20 +30,20 @@
 
 .boto-home {
   position: absolute;
-  width: 52px;
-  height: 24px;
-  top: 71px;
-  left: 858px;
+  width: 3.25rem;
+  height: 1.5rem;
+  top: 4.4375rem;
+  left: 53.625rem;
 }
 
 .text-wrapper-4 {
-  height: 32px;
-  top: -5px;
-  left: -8px;
-  font-size: 24px;
+  height: 2rem;
+  top: -0.3125rem;
+  left: -0.5rem;
+  font-size: 1.5rem;
   position: absolute;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
-  font-weight: 400;
+  font-weight: 25rem;
   color: #ffffff;
   text-align: center;
   letter-spacing: 0;
@@ -52,21 +52,21 @@
 
 .boto-about-us {
   position: absolute;
-  width: 212px;
-  height: 78px;
-  top: 44px;
-  left: 1145px;
+  width: 8.83rem;
+  height: 4.875rem;
+  top: 2.75rem;
+  left: 71.5625rem;
 }
 
 .text-wrapper-5 {
   position: absolute;
-  height: 32px;
-  top: 22px;
-  left: 55px;
+  height: 2rem;
+  top: 1.3755rem;
+  left: 3.4375rem;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
-  font-size: 24px;
+  font-size: 1.5rem;
   text-align: center;
   letter-spacing: 0;
   line-height: normal;
@@ -74,17 +74,17 @@
 
 .boto-blog {
   position: absolute;
-  width: 52px;
-  height: 24px;
-  top: 71px;
-  left: 1042px;
+  width: 3.25rem;
+  height: 1.5rem;
+  top: 4.4375rem;
+  left: 65.125rem;
 }
 
 .text-wrapper-6 {
-  height: 32px;
-  top: -5px;
+  height: 2rem;
+  top: -0.3125rem;
   left: 0;
-  font-size: 24px;
+  font-size: 1.5rem;
   position: absolute;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 400;
