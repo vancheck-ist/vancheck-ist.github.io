@@ -11,8 +11,7 @@
   background-color: #081c2e;
   z-index: var(--z-fixed);
 }
-
-.home .text-wrapper-3 {
+.text-wrapper-3 {
   position: absolute;
   width: 354px;
   height: 78px;
@@ -28,7 +27,7 @@
   font-style: var(--logo-font-style);
 }
 
-.home .boto-home {
+.boto-home {
   position: absolute;
   width: 52px;
   height: 24px;
@@ -36,7 +35,7 @@
   left: 858px;
 }
 
-.home .text-wrapper-4 {
+.text-wrapper-4 {
   height: 32px;
   top: -5px;
   left: -8px;
@@ -50,7 +49,7 @@
   line-height: normal;
 }
 
-.home .boto-about-us {
+.boto-about-us {
   position: absolute;
   width: 212px;
   height: 78px;
@@ -58,7 +57,7 @@
   left: 1145px;
 }
 
-.home .text-wrapper-5 {
+.text-wrapper-5 {
   position: absolute;
   height: 32px;
   top: 22px;
@@ -72,7 +71,7 @@
   line-height: normal;
 }
 
-.home .boto-blog {
+.boto-blog {
   position: absolute;
   width: 52px;
   height: 24px;
@@ -80,7 +79,7 @@
   left: 1042px;
 }
 
-.home .text-wrapper-6 {
+.text-wrapper-6 {
   height: 32px;
   top: -5px;
   left: 0;
