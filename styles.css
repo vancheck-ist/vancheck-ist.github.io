@@ -1,18 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
 
-/* Responsive typography */
-@media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
+
 
 /*=============== HEADER & NAV===============*/
 .header{
@@ -30,7 +19,7 @@
   top: 2.75rem;
   left: 6.125rem;
   font-size: 2.25rem;
-  position: absolute;
+  position: fixed;
   font-family: "Bruno Ace";
   color: #f1f1f1;
   text-align: center;
@@ -41,7 +30,7 @@
 }
 
 .boto-home {
-  position: absolute;
+  position: fixed;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -53,7 +42,7 @@
   top: -0.3125rem;
   left: -0.5rem;
   font-size: 1.5rem;
-  position: absolute;
+  position: fixed;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 25rem;
   color: #ffffff;
@@ -63,7 +52,7 @@
 }
 
 .boto-about-us {
-  position: absolute;
+  position: fixed;
   width: 13.25rem;
   height: 4.875rem;
   top: 2.75rem;
@@ -71,7 +60,7 @@
 }
 
 .text-wrapper-5 {
-  position: absolute;
+  position: fixed;
   height: 2rem;
   top: 1.3755rem;
   left: 3.4375rem;
@@ -85,7 +74,7 @@
 }
 
 .boto-blog {
-  position: absolute;
+  position: fixed;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -97,7 +86,7 @@
   top: -0.3125rem;
   left: 0;
   font-size: 1.5rem;
-  position: absolute;
+  position: fixed;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
