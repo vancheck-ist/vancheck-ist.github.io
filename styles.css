@@ -19,7 +19,7 @@
   top: 2.75rem;
   left: 6.125rem;
   font-size: 2.25rem;
-  display: flex;
+  position: absolute;
   font-family: "Bruno Ace";
   color: #f1f1f1;
   text-align: center;
@@ -30,7 +30,7 @@
 }
 
 .boto-home {
-  display: flex;
+  position: absolute;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -42,7 +42,7 @@
   top: -0.3125rem;
   left: -0.5rem;
   font-size: 1.5rem;
-  display: flex;
+  position: absolute;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 25rem;
   color: #ffffff;
@@ -52,7 +52,7 @@
 }
 
 .boto-about-us {
-  display: flex;
+  position: absolute;
   width: 13.25rem;
   height: 4.875rem;
   top: 2.75rem;
@@ -60,7 +60,7 @@
 }
 
 .text-wrapper-5 {
-  display: flex;
+  position: absolute;
   height: 2rem;
   top: 1.3755rem;
   left: 3.4375rem;
@@ -74,7 +74,7 @@
 }
 
 .boto-blog {
-  display: flex;
+  position: absolute;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -86,7 +86,7 @@
   top: -0.3125rem;
   left: 0;
   font-size: 1.5rem;
-  display: flex;
+  position: absolute;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
