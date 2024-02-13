@@ -13,18 +13,18 @@
   z-index: var(--z-fixed);
 }
 .text-wrapper-3 {
-  position: absolute;
   width: 22.125rem;
   height: 4.875rem;
   top: 2.75rem;
   left: 6.125rem;
+  font-size: 2.25rem;
+  position: absolute;
+  font-family: "Bruno Ace";
   color: #f1f1f1;
   text-align: center;
   letter-spacing: var(--logo-letter-spacing);
   line-height: var(--logo-line-height);
   font-style: var(--logo-font-style);
-  font-size: 36px;
-  font-family: Bruno Ace;
   font-weight: 400;
 }
 

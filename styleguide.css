@@ -2,20 +2,20 @@
   --d9d9d9-2-paints: rgba(217, 217, 217, 1);
   --texto-font-family: "MyanmarSans Pro-Regular", Helvetica;
   --texto-font-weight: 400;
-  --texto-font-size: 24px;
-  --texto-letter-spacing: 0px;
+  --texto-font-size: 1.5rem;
+  --texto-letter-spacing: 0rem
   --texto-line-height: normal;
   --texto-font-style: normal;
   --t-tulos-font-family: "MyanmarKhyay-Regular", Helvetica;
   --t-tulos-font-weight: 400;
-  --t-tulos-font-size: 52px;
-  --t-tulos-letter-spacing: 0px;
+  --t-tulos-font-size: 3.25rem;
+  --t-tulos-letter-spacing: 0rem;
   --t-tulos-line-height: 135.0000023841858%;
   --t-tulos-font-style: normal;
   --logo-font-family: "BrunoAce", Helvetica;
   --logo-font-weight: 400;
-  --logo-font-size: 36px;
-  --logo-letter-spacing: 0px;
+  --logo-font-size: 2.25rem;
+  --logo-letter-spacing: 0rem;
   --logo-line-height: normal;
   --logo-font-style: normal;
 }
