@@ -5,10 +5,10 @@
 
 /*=============== HEADER & NAV===============*/
 .header{
+  position: fixed;
   height: 10rem;
   top: 0;
   left: 0;
-  position: fixed;
   width: 100%;
   background-color: #081c2e;
   z-index: var(--z-fixed);
@@ -19,7 +19,6 @@
   top: 2.75rem;
   left: 6.125rem;
   font-size: 2.25rem;
-  position: fixed;
   font-family: "Bruno Ace";
   color: #f1f1f1;
   text-align: center;
@@ -30,7 +29,6 @@
 }
 
 .boto-home {
-  position: fixed;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -42,7 +40,6 @@
   top: -0.3125rem;
   left: -0.5rem;
   font-size: 1.5rem;
-  position: fixed;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 25rem;
   color: #ffffff;
@@ -52,7 +49,6 @@
 }
 
 .boto-about-us {
-  position: fixed;
   width: 13.25rem;
   height: 4.875rem;
   top: 2.75rem;
@@ -60,7 +56,6 @@
 }
 
 .text-wrapper-5 {
-  position: fixed;
   height: 2rem;
   top: 1.3755rem;
   left: 3.4375rem;
@@ -74,7 +69,6 @@
 }
 
 .boto-blog {
-  position: fixed;
   width: 3.25rem;
   height: 1.5rem;
   top: 4.4375rem;
@@ -86,7 +80,6 @@
   top: -0.3125rem;
   left: 0;
   font-size: 1.5rem;
-  position: fixed;
   font-family: "Myanmar Sans Pro-Regular", Helvetica;
   font-weight: 400;
   color: #ffffff;
