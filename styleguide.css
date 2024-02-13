@@ -6,13 +6,13 @@
   --texto-letter-spacing: 0rem
   --texto-line-height: normal;
   --texto-font-style: normal;
-  --t-tulos-font-family: "MyanmarKhyay-Regular", Helvetica;
-  --t-tulos-font-weight: 400;
-  --t-tulos-font-size: 3.25rem;
-  --t-tulos-letter-spacing: 0rem;
-  --t-tulos-line-height: 135.0000023841858%;
-  --t-tulos-font-style: normal;
-  --logo-font-family: "BrunoAce", Helvetica;
+  --titulos-font-family: "MyanmarKhyay-Regular", Helvetica;
+  --titulos-font-weight: 400;
+  --titulos-font-size: 3.25rem;
+  --titulos-letter-spacing: 0rem;
+  --titulos-line-height: 135.0000023841858%;
+  --titulos-font-style: normal;
+  --logo-font-family: "Bruno Ace", Helvetica;
   --logo-font-weight: 400;
   --logo-font-size: 2.25rem;
   --logo-letter-spacing: 0rem;
