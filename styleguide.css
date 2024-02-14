@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
+
 :root {
+  --header-height: 6.5rem;
   --d9d9d9-2-paints: rgba(217, 217, 217, 1);
   --texto-font-family: "MyanmarSans Pro-Regular", Helvetica;
   --texto-font-weight: 400;
@@ -12,10 +15,13 @@
   --titulos-letter-spacing: 0rem;
   --titulos-line-height: 135.0000023841858%;
   --titulos-font-style: normal;
-  --logo-font-family: "Bruno Ace", Helvetica;
+  --logo-font-family: "Bruno Ace";
   --logo-font-weight: 400;
   --logo-font-size: 2.25rem;
+  --logo-color:#f1f1f1;
   --logo-letter-spacing: 0rem;
   --logo-line-height: normal;
   --logo-font-style: normal;
+  --nav-text-color:#ffffff;
+    --z-fixed: 100;
 }

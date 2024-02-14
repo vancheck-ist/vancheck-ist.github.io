@@ -1,97 +1,152 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
 
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--texto-font-family);
+  font-size: var(--texto-font-size);
+}
+/*
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: .4s; 
+}*/
+
+/*
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+}*/
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 100vw;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+}
+
+.section__title, 
+.section__subtitle {
+  text-align: center;
+}
+
+.section__title {
+  font-size: var(--h2-font-size);
+  color: var(--first-color);
+  margin-bottom: 2rem;
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+}
+
+.hidden {
+  display: none!important;
+  visibility: hidden;
+  opacity: 0;
+}
 
 
 /*=============== HEADER & NAV===============*/
 .header{
-  height: 10rem;
   top: 0;
   left: 0;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   background-color: #081c2e;
   z-index: var(--z-fixed);
 }
-.text-wrapper-3 {
-  width: 22.125rem;
-  height: 4.875rem;
-  top: 2.75rem;
-  left: 6.125rem;
-  font-size: 2.25rem;
-  position: absolute;
-  font-family: "Bruno Ace";
-  color: #f1f1f1;
+
+.nav{
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo{
+  color: var(--logo-color);
+  font-weight: var(--logo-font-weight);
+  font-family: var(--logo-font-family);
+  font-size: var(--logo-font-size);
   text-align: center;
-  letter-spacing: var(--logo-letter-spacing);
-  line-height: var(--logo-line-height);
-  font-style: var(--logo-font-style);
-  font-weight: 400;
+  transition: .4s;
+  width: 30%;
 }
 
-.boto-home {
-  position: absolute;
-  width: 3.25rem;
-  height: 1.5rem;
-  top: 4.4375rem;
-  left: 53.625rem;
+.nav__botton{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 45%;
+  margin-inline-end:3% ;
 }
 
-.text-wrapper-4 {
-  height: 2rem;
-  top: -0.3125rem;
-  left: -0.5rem;
-  font-size: 1.5rem;
-  position: absolute;
-  font-family: "Myanmar Sans Pro-Regular", Helvetica;
-  font-weight: 25rem;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+.nav__botton__home{
+  color: var(--nav-text-color);
+  font-weight: var(--texto-font-weight);
+  font-family: var(--texto-font-family);
+  font-size: var(--texto-font-size);
+  transition: .4s;
 }
 
-.boto-about-us {
-  padding-right: 25px;
-  position: absolute;
-  width: 13.25rem;
-  height: 4.875rem;
-  top: 2.75rem;
-  left: 71.5625rem;
+.nav__botton__blog{
+  color: var(--nav-text-color);
+  font-weight: var(--texto-font-weight);
+  font-family: var(--texto-font-family);
+  font-size: var(--texto-font-size);
+  transition: .4s;
 }
 
-.text-wrapper-5 {
-  position: absolute;
-  height: 2rem;
-  top: 1.3755rem;
-  left: 3.4375rem;
-  font-family: "Myanmar Sans Pro-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  font-size: 1.5rem;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.boto-blog {
-  position: absolute;
-  width: 3.25rem;
-  height: 1.5rem;
-  top: 4.4375rem;
-  left: 65.125rem;
-}
-
-.text-wrapper-6 {
-  height: 2rem;
-  top: -0.3125rem;
-  left: 0;
-  font-size: 1.5rem;
-  position: absolute;
-  font-family: "Myanmar Sans Pro-Regular", Helvetica;
-  font-weight: 400;
-  color: #ffffff;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
+.nav__botton__about_us{
+  color: var(--nav-text-color);
+  font-weight: var(--texto-font-weight);
+  font-family: var(--texto-font-family);
+  font-size: var(--texto-font-size);
+  transition: .4s;
 }
