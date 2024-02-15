@@ -151,11 +151,21 @@ img {
 }
 
 .intro {
-  @apply h-screen flex;
+  
   background-image: url(img/Home/Fundo\ home.png);
   background-position: top center;
-  background-size: 100% auto;
-    
+  background-size: 100%;
+}
+
+.intro__text {
+  text-align: center;
+  margin-left: auto;
+  color: black;
+  letter-spacing: 0;
+  line-height: normal;
+  font-weight: var(--texto-font-weight);
+  font-family: var(--texto-font-family);
+  font-size: var(--texto-font-size);
 }
 
 .elipse{
