@@ -154,9 +154,8 @@ img {
   @apply h-screen flex;
   background-image: url(img/Home/Fundo\ home.png);
   background-position: top center;
-  background-repeat: no-repeat;
   background-size: 100% auto;
-  margin-top: 5%  
+    
 }
 
 .elipse{
