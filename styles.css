@@ -159,13 +159,13 @@ img {
 
 .intro__text {
   text-align: center;
-  margin-left: auto;
+  padding-top: 10%;
+  width: 50%;
   color: black;
   letter-spacing: 0;
-  line-height: normal;
-  font-weight: var(--texto-font-weight);
-  font-family: var(--texto-font-family);
-  font-size: var(--texto-font-size);
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+  font-size: var(--titulos-font-size);
 }
 
 .elipse{
