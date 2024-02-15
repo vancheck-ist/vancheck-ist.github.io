@@ -159,32 +159,9 @@ img {
   margin-top: 5%  
 }
 
-.elipse
-    {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-        margin-inline-end:11%;
-    }
-
-    .homem-construtor {
-      width: 426px;
-      height: 372px;
-      top: 0;
-      left: 22px;
-    }
-    
-    .canalizador-com-os {
-      width: 447px;
-      height: 628px;
-      top: 60px;
-      left: 140px;
-      object-fit: cover;
-    }
-    
-    .eletricista {
-      width: 430px;
-      height: 534px;
-      top: 155px;
-      left: 0;
-    }
+.elipse{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-inline-end:11%;
+}
