@@ -151,7 +151,8 @@ img {
 }
 
 .intro {
-  
+  width:100vw;
+  height:100vh;
   background-image: url(img/Home/Fundo\ home.png);
   background-position: top center;
   background-size: 100%;
