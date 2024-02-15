@@ -148,5 +148,43 @@ img {
   font-weight: var(--texto-font-weight);
   font-family: var(--texto-font-family);
   font-size: var(--texto-font-size);
-  transition: .4s;
 }
+
+.intro {
+  @apply h-screen flex;
+  background-image: url(img/Home/Fundo\ home.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  margin-top: 5%  
+}
+
+.elipse
+    {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        margin-inline-end:11%;
+    }
+
+    .homem-construtor {
+      width: 426px;
+      height: 372px;
+      top: 0;
+      left: 22px;
+    }
+    
+    .canalizador-com-os {
+      width: 447px;
+      height: 628px;
+      top: 60px;
+      left: 140px;
+      object-fit: cover;
+    }
+    
+    .eletricista {
+      width: 430px;
+      height: 534px;
+      top: 155px;
+      left: 0;
+    }
