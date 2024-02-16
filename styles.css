@@ -157,13 +157,17 @@ img {
   background-position:center;
   background-size: cover;
   position: relative;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .intro__text {
+  display: flex;
   text-align: center;
-  padding-top: 10%;
-  width: 50%;
+  width: 45%;
+  transform: translate(8%,32%);
   color: black;
+  position: relative;
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
@@ -172,7 +176,69 @@ img {
 
 .elipse{
   display: flex;
-  justify-content: right;
-  align-items: center;
-  margin-inline-end:11%;
+  width:40vw;
+  height: fit-content;
+  transform: translate(13%,0%);
+  position: relative;
+  padding-right: 6%;
+
+}
+
+@media(max-width: 700px){
+  .nav__logo{
+    color: var(--logo-color);
+    font-weight: var(--logo-font-weight);
+    font-family: var(--logo-font-family);
+    font-size: var(--logo-font-size-700);
+    text-align: center;
+    transition: .4s;
+    width: 30%;
+  }
+  
+  .nav__botton__home{
+    color: var(--nav-text-color);
+    font-weight: var(--texto-font-weight);
+    font-family: var(--texto-font-family);
+    font-size: var(--texto-font-size-700);
+    transition: .4s;
+  }
+  
+  .nav__botton__blog{
+    color: var(--nav-text-color);
+    font-weight: var(--texto-font-weight);
+    font-family: var(--texto-font-family);
+    font-size: var(--texto-font-size-700);
+    transition: .4s;
+  }
+  
+  .nav__botton__about_us{
+    color: var(--nav-text-color);
+    font-weight: var(--texto-font-weight);
+    font-family: var(--texto-font-family);
+    font-size: var(--texto-font-size-700);
+  }
+
+  .intro__text {
+    display: flex;
+    text-align: center;
+    width: 45%;
+    transform: translate(0%,40%);
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+    font-size: var(--titulos-font-size-700);
+  }
+
+  .elipse{
+    display: flex;
+    width:40vw;
+    height: fit-content;
+    transform: translate(13%,20%);
+    position: relative;
+    padding-right: 6%;
+  
+  }
 }
