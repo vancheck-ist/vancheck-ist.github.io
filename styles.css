@@ -172,6 +172,7 @@ img {
 
 /*=============== Front page===============*/
 .intro {
+  padding-top: 3rem;
   width:100%;
   min-height:100vh;
   background-image: url(img/Home/Fundo\ home.png);
