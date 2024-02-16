@@ -213,14 +213,31 @@ img {
   align-items: center;
   background: linear-gradient(to bottom,#081c2e 50%,  transparent 0%); 
 }
-/*
-@media(max-width: 700px){
-  .imagem_desktop{
-    visibility: hidden;
-  }
+
+.testetele{
+  display:flex;
+  width: 100%;
+  padding-top: 29%;
+  position:relative;
   
-  .imagem_mobile{
-    visibility: visible;  
+  background-color: antiquewhite;
+}
+
+.elipsetele{
+  display:flex;
+  width: 90%;
+  position:relative;
+  al
+}
+
+@media(max-width: 700px){
+  .teste{
+    visibility:hidden;
+    display: none;
+  }
+  .testetele{
+    visibility: visible;
+    display: flex;
   }
 
   .nav__logo{
@@ -256,42 +273,28 @@ img {
     font-size: var(--texto-font-size-700);
   }
 
-  .intro__text {
-    display: flex;
-    text-align: center;
-    width: 75%;
-    color: black;
-   
-    letter-spacing: 0;
-    letter-spacing: 0;
-    font-weight: var(--titulos-font-weight);
-    font-family: var(--titulos-font-family);
-    font-size: 2rem;
-  }
-
-  .elipse{
-    display: flex;
-    width:30%;
-    height: fit-content;
-    transform: translate(13%,50%);
-    position: relative;
-    padding-right: 6%;
-    opacity:0% ;
-   
-  }
-
   .intro {
     width:100%;
     min-height:100vh;
     background-image: url(img/Home/Fundo\ home.png);
-    background-position-x:43%;
-    align-items: center;
-   
+    background-position:center;
     background-size: cover;
     position: relative;
     display: flex;
-    justify-items: center;
+    align-items: start;    
   }
-
-}
-*/
+  
+  .intro__text {
+    display: none;
+    text-align: center;
+    width: 100%;
+    color: black;
+    
+    
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+    font-size: var(--titulos-font-size-700);
+    background-color: aliceblue;
+  }
+  
