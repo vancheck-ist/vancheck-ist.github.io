@@ -1,0 +1,22 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
+
+.blog__container{
+    position: relative;
+    /* row-gap: 4.5rem; */
+    padding-top: 3rem;
+}
+  
+.blog__data{
+    text-align: center;
+}
+
+.blog__title{
+    font-size: var(--titulos-font-size);
+}
+
+.blog__inicial{
+    background-color: black;
+    padding-top: -1rem;
+    border-radius: 1rem;
+  }
