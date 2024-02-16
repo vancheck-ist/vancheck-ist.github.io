@@ -188,7 +188,7 @@ img {
 }
 
 .elipse{
-  display: flex;
+  
   width: 40%;
   height: fit-content;
   transform: translate(20%,0%);
@@ -260,7 +260,7 @@ img {
     width:100%;
     min-height:100vh;
     background-image: url(img/Home/Fundo\ home.png);
-    
+    align-items: center;
     background-position: center;
     background-size: cover;
     position: relative;
