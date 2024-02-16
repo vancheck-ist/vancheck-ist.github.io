@@ -17,16 +17,18 @@
 
 .blog__inicial{
     display: flex;
-    position: relative;
+    position: absolute;
     height: 70vh;
     background-color: aqua;
     border-radius: 3.9rem;
+    transform: translate(12%, -10%);
 }
 
 .blog__ini__text {
     display: flex;
     text-align: center;
-    width:50vw;
+    justify-content: center;
+    width:45vw;
     height:20vh;
     color: black;
     position: relative;
@@ -34,5 +36,5 @@
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
     font-size: var(--texto-font-size);
-    transform: translate(50%, 30%);
+    transform: translate(0%, 100%);
   }
