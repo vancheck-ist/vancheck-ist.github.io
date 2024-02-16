@@ -16,7 +16,7 @@
 }
 
 .blog__inicial{
+    position: relative;
     background-color: black;
-    padding-top: -1rem;
-    border-radius: 1rem;
+    border-radius: 2.3rem;
   }
