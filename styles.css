@@ -92,6 +92,13 @@ img {
   opacity: 0;
 }
 
+.imagem_desktop{
+  visibility: hidden;
+}
+
+.imagem_mobile{
+  visibility: visible;
+}
 
 /*=============== HEADER & NAV===============*/
 .header{
@@ -162,6 +169,8 @@ img {
   color: var(--button-hover-color);
 }
 
+
+/*=============== Front page===============*/
 .intro {
   width:100%;
   min-height:100vh;
@@ -170,34 +179,50 @@ img {
   background-size: cover;
   position: relative;
   display: flex;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .intro__text {
   display: flex;
   text-align: center;
-  width: 45%;
-  
-  transform: translate(8%,36%);
+  width: 40%;
   color: black;
   position: relative;
+  translate: 30%;
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
   font-size: var(--titulos-font-size);
 }
 
-.elipse{
-  
-  width: 40%;
-  height: fit-content;
-  transform: translate(20%,0%);
-  position: relative;
-  padding-right: 12%;
 
+.elipse{
+  display:flex;
+  width: 100%;
+  position:absolute;
 }
 
+.teste{
+  margin-right: 11%;
+  width: 30vw;
+  height: 100vh;
+  display:flex;
+  position: relative;
+  align-items: center;
+  background: linear-gradient(to bottom,#081c2e 50%,  transparent 0%); 
+}
+/*
 @media(max-width: 700px){
+  .imagem_desktop{
+    visibility: hidden;
+  }
+  
+  .imagem_mobile{
+    visibility: visible;  
+  }
+
   .nav__logo{
     color: var(--logo-color);
     font-weight: var(--logo-font-weight);
@@ -269,3 +294,4 @@ img {
   }
 
 }
+*/
