@@ -216,18 +216,18 @@ img {
 
 .testetele{
   display:none;
-  width: 100%;
-  padding-top: 29%;
+  width: 90%;
+  margin-top:30% ;
   position:relative;
-  
-  background-color: antiquewhite;
+  align-items:start;
+  translate: 11%;
 }
 
 .elipsetele{
-  display:flex;
-  width: 90%;
-  position:relative;
-  al
+  display: flex;
+  width: 100%;
+  position:absolute;
+  
 }
 
 @media(max-width: 700px){
@@ -281,20 +281,22 @@ img {
     background-size: cover;
     position: relative;
     display: flex;
-    align-items: start;    
+    align-items: start;
+   
   }
   
   .intro__text {
-    display: none;
+    display: flex;
     text-align: center;
-    width: 100%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
     color: black;
-    
-    
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
     font-size: var(--titulos-font-size-700);
     background-color: aliceblue;
   }
-  
+}
