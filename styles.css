@@ -215,7 +215,7 @@ img {
 }
 
 .testetele{
-  display:flex;
+  display:none;
   width: 100%;
   padding-top: 29%;
   position:relative;
