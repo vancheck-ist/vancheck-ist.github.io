@@ -279,6 +279,7 @@ img {
     min-height:100vh;
     background-image: url(img/Home/Fundo\ home.png);
     background-position:center;
+    background-position-x:40%;
     background-size: cover;
     position: relative;
     display: flex;
@@ -290,10 +291,9 @@ img {
     display: flex;
     text-align: center;
     position: fixed;
-    width: 40%;
-    top: 40%;
-    
-    
+    width: 50%;
+    top: 45%;
+    left:10%;
     color: black;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
