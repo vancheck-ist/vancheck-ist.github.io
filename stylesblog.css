@@ -16,7 +16,23 @@
 }
 
 .blog__inicial{
+    display: flex;
     position: relative;
-    background-color: black;
-    border-radius: 2.3rem;
+    height: 70vh;
+    background-color: aqua;
+    border-radius: 3.9rem;
+}
+
+.blog__ini__text {
+    display: flex;
+    text-align: center;
+    width:50vw;
+    height:20vh;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: var(--texto-font-weight);
+    font-family: var(--texto-font-family);
+    font-size: var(--texto-font-size);
+    transform: translate(50%, 30%);
   }
