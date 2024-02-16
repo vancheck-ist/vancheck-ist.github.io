@@ -26,5 +26,8 @@
   --logo-line-height: normal;
   --logo-font-style: normal;
   --nav-text-color:#ffffff;
-    --z-fixed: 100;
+  --z-fixed: 100;
+  --button-hover-color:#5b5b5b;
+
+
 }
