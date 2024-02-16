@@ -234,20 +234,19 @@ img {
   .intro__text {
     display: flex;
     text-align: center;
-    width: 45%;
-    transform: translate(0%,40%);
+    width: 75%;
     color: black;
-    position: relative;
+   
     letter-spacing: 0;
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
-    font-size: var(--titulos-font-size-700);
+    font-size: 2rem;
   }
 
   .elipse{
     display: flex;
-    width:40vw;
+    width:30%;
     height: fit-content;
     transform: translate(13%,50%);
     position: relative;
@@ -260,13 +259,13 @@ img {
     width:100%;
     min-height:100vh;
     background-image: url(img/Home/Fundo\ home.png);
+    background-position-x:43%;
     align-items: center;
-    background-position: center;
+   
     background-size: cover;
     position: relative;
     display: flex;
-    justify-content: center;
-
+    justify-items: center;
   }
 
 }
