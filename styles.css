@@ -387,6 +387,15 @@ scale: 1;
 position: relative;
 margin-top: 5%;
 }
+
+.problemtele,
+.goaltele,
+.solution_exampletele,
+.partnertele{
+  display: none;
+}
+
+
 /*=============== buttonPdf ptoblem===============*/
 .Pdfbutton_background{
   background-color:#EAEAEA;
@@ -408,6 +417,7 @@ margin-top: 5%;
   font-family: var(--titulos-font-family) ;
   font-size: 1.7rem;
   transition: .4s;
+  text-align: center;
 }
 
 @media(max-width: 600px){
@@ -481,4 +491,76 @@ margin-top: 5%;
     font-size: 2.5rem;
     
   }
+
+
+  .partner__text h1,
+  .beneficiaries__text h1,
+  .solution_example__text h1,
+  .solution__text h1,
+  .goal__text h1,
+  .problem__text h1 {
+    font-size: var( --titulos-font-size-700);
+    -webkit-margin-after: 1em
+  }
+
+  .partner__text p,
+  .beneficiaries__text p,
+  .solution_example__text p,
+  .solution__text p,
+  .goal__text p,
+  .problem__text p {
+    font-size: var(--texto-font-size-700);
+  }
+
+  .problemtele,
+  .goaltele,
+  .solution_exampletele,
+  .partnertele {
+    width:100%;
+    min-height:100vh;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .problem,
+  .goal,
+  .solution_example,
+  .partner {
+ display: none;
+  }
+
+  .problem__text,
+  .goal__text,
+  .solution_example__text,
+  .partner__text {
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom:0% ;
+    width: 80%;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
+
+
+
+  .goal__img,
+  .problem__img,
+  .solution_example__img,
+  .partner__imh{
+width: 100%;
+transform: translateY(0%);
+position: relative;
+margin-top: 5%;
+max-width:none;
+}
 }
