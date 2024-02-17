@@ -48,7 +48,7 @@ body{
 }
 
 .blog__inicial__img{
-    max-width: 50%;
+    width: 50%;
    height:100% ;
    right:0%;
    position: absolute;
