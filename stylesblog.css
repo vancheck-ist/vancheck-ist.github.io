@@ -36,5 +36,6 @@
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
     font-size: var(--texto-font-size);
-    transform: translate(0%, 100%);
+    transform: translate(0%, 130%);
   }
+
