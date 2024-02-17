@@ -236,6 +236,45 @@ img {
   position:absolute;
   
 }
+/*=============== Front page ptoblem===============*/
+.problem {
+  width:100%;
+  min-height:100vh;
+  background-color: #EAEAEA;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.problem__text {
+  margin-bottom:5% ;
+  text-align: center;
+  width: 35%;
+  color: black;
+  position: relative;
+  margin-left: 15%;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
+.problem__text h1 {
+  font-size: var( --titulos-font-size);
+  line-height: 10rem;
+}
+
+.problem__text p {
+  font-size: var( --texto-font-size);
+}
+
+.problem__img{
+scale: 1;
+
+
+
+
+}
 
 @media(max-width: 600px){
   .teste{
