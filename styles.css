@@ -172,7 +172,7 @@ img {
 
 /*=============== Front page===============*/
 .intro {
-  padding-top: 3rem;
+  padding-top: 6.5em;
   width:100%;
   min-height:100vh;
   background-image: url(img/Home/Fundo\ home.png);
@@ -206,33 +206,35 @@ img {
 }
 
 .teste{
-  margin-right: 11%;
+  margin-right: 10%;
   width: 30vw;
-  height: 100vh;
+  height: 100%;
   display:flex;
-  position: relative;
+  left: 60%;
+  position: absolute;
   align-items: center;
   background: linear-gradient(to bottom,#081c2e 50%,  transparent 0%); 
 }
 
 .testetele{
   display:none;
-  width: 70%;
-  top: 15%;
-  left:30%;
-  position:fixed;
+  margin-top: 1%;
+  width: 60%;
+  height: 20%;
+  left:40%;
+  position:absolute;
   align-items:start;
  
 }
 
 .elipsetele{
-  display: flex;
+  
   width: 100%;
   position:absolute;
   
 }
 
-@media(max-width: 700px){
+@media(max-width: 600px){
   .teste{
     visibility:hidden;
     display: none;
@@ -276,6 +278,7 @@ img {
   }
 
   .intro {
+    padding-top: 6.5rem;
     width:100%;
     min-height:100vh;
     background-image: url(img/Home/Fundo\ home.png);
@@ -291,14 +294,15 @@ img {
   .intro__text {
     display: flex;
     text-align: center;
-    position: fixed;
-    width: 50%;
-    top: 45%;
+    position: absolute;
+    width: 55%;
+    height: 40%;
+    margin-top: 50%;
     left:10%;
     color: black;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
-    font-size: 2rem;
+    font-size: 2.5rem;
     
   }
 }
