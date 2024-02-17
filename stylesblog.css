@@ -23,8 +23,10 @@ html{
 .blog__inicial__data {
     display: flex;
     position: relative;
-    transform: translate(6.5%, 0%);
-    width: 100%;
+    transform: translateyY(-5%);
+    width: 100vw;
+    justify-content: center;
+   
 }
 
 .blog__inicial {
@@ -32,25 +34,38 @@ html{
     position: relative;
     height: 70vh;
     width: 70vw;
+    
+    background-color: blue;
     background-color: #c1c1c1;
     border-radius: 4.1rem;
-    transform: translate(12%, -10%);
+    align-items: center;
+    justify-content: center;
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.blog__inicial__img{
+    max-width: 50%;
+   height:100% ;
+   right:0%;
+   position: absolute;
+
 }
 
 .blog__ini__text {
     display: flex;
     text-align: center;
     justify-content: center;
-    width:40vw;
-    height:20vh;
+    width:50%;
+   left:0%;
+    margin-top: 0%;
     color: black;
-    position: relative;
+    position: absolute;
     letter-spacing: 0;
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
     font-size: var(--texto-font-size);
-    transform: translate(0%, 130%);
+
+    object-fit: contain;
 }
 
 div.gallery {
