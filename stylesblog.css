@@ -77,7 +77,7 @@ body{
 div.gallery {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
     border-radius: 3rem;
-    height: 34.1vh;
+    height: auto;
 }
   
 
@@ -116,7 +116,9 @@ div.desc {
     color: white;
     border-radius: 6rem;
     margin: auto;
+    margin-top: 3%;
 }
+
 
 
 
