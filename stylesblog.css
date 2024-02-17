@@ -132,7 +132,7 @@ div.desc {
 }
 
 .section__blog {
-    padding: 0rem 0 1rem;
+    padding: 0 0 1rem;
 }
 
 }
@@ -150,13 +150,10 @@ div.desc {
 .clearfix:after {
     content: "";
     display: table;
-    clear: both;
+    clear:both;
 }
 
-
-
- /*=============== porque  ===============*/
-
+ 
   /*=============== FOOTER ===============*/
 .footer {
     margin-top: 2rem;
