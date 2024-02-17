@@ -237,6 +237,7 @@ img {
   
 }
 /*=============== Front page ptoblem===============*/
+.goal,
 .problem {
   width:100%;
   min-height:100vh;
@@ -259,22 +260,42 @@ img {
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
 }
+
+.goal__text h1,
 .problem__text h1 {
   font-size: var( --titulos-font-size);
   line-height: 10rem;
 }
-
+.goal__text p,
 .problem__text p {
   font-size: var( --texto-font-size);
 }
 
+
 .problem__img{
 scale: 1;
+}
 
+.goal__text {
+  margin-bottom:5% ;
+  text-align: center;
+  width: 35%;
+  color: black;
+  position: relative;
+  margin-right: 10%;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
 
+.goal__img{
+scale: 1;
+transform: translateY(-20%);
+position: relative;
 
 
 }
+
 
 @media(max-width: 600px){
   .teste{
