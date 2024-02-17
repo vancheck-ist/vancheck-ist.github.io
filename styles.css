@@ -206,12 +206,13 @@ img {
 }
 
 .teste{
+  top:0%;
   margin-right: 10%;
-  margin-bottom: 20%;
-  width: 30vw;
+  margin-bottom: 10%;
+  width: 25vw;
   height: 100vh;
   display:flex;
-  left: 60%;
+  left: 62%;
   position: absolute;
   align-items: center;
   background: linear-gradient(to bottom,#081c2e 50%,  transparent 0%); 
