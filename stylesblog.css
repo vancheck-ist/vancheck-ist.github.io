@@ -27,7 +27,7 @@ body{
 .blog__inicial__data {
     display: flex;
     position: relative;
-    transform: translateY(-20%);
+    transform: translateY(-15%);
     width: 100vw;
     justify-content: center;
     
