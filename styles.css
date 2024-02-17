@@ -100,6 +100,30 @@ img {
   visibility: visible;
 }
 
+/*=============== BUTTONS ===============*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--body-color);
+  padding: .75rem 1rem;
+  border-radius: .5rem;
+  font-weight: var(--font-medium);
+  transition: .4s;
+}
+
+.button:hover{
+  background-color: var(--first-color-alt);
+  color: var(--body-color);
+}
+
+.button--ghost{
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  color: var(--first-color);
+  padding: .632rem 1rem;
+}
+
+
 /*=============== HEADER & NAV===============*/
 .header{
   top: 0;
@@ -237,6 +261,8 @@ img {
   
 }
 /*=============== Front page ptoblem===============*/
+.partner,
+.solution_example,
 .goal,
 .problem {
   width:100%;
@@ -249,6 +275,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
+
 .problem__text {
   margin-bottom:5% ;
   text-align: center;
@@ -261,11 +288,32 @@ img {
   font-family: var(--titulos-font-family);
 }
 
+.solution_example__text{
+  text-align: center;
+  width: 35%;
+  color: black;
+  position: relative;
+  margin-left: 10%;
+  
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
+
+.partner__text h1,
+.beneficiaries__text h1,
+.solution_example__text h1,
+.solution__text h1,
 .goal__text h1,
 .problem__text h1 {
   font-size: var( --titulos-font-size);
-  line-height: 10rem;
+  -webkit-margin-after: 1em
 }
+
+.partner__text p,
+.beneficiaries__text p,
+.solution_example__text p,
+.solution__text p,
 .goal__text p,
 .problem__text p {
   font-size: var( --texto-font-size);
@@ -276,6 +324,14 @@ img {
 scale: 1;
 }
 
+.solution_example__img{
+scale: 1;
+transform: translateY(25%);
+max-width: 50%;
+
+
+}
+.partner__text,
 .goal__text {
   margin-bottom:5% ;
   text-align: center;
@@ -292,9 +348,46 @@ scale: 1;
 scale: 1;
 transform: translateY(-20%);
 position: relative;
-
-
 }
+
+.partner__img{
+  scale: 1;
+  position: relative;
+  }
+
+.beneficiaries,
+.solution {
+  width:100%;
+  min-height:100vh;
+  background-color: #EAEAEA;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beneficiaries__text,
+.solution__text {
+  text-align: center;
+  width: 80%;
+  color: black;
+  position: relative;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
+
+
+
+.beneficiaries__img,
+.solution__img{
+scale: 1;
+position: relative;
+margin-top: 5%;
+}
+
 
 
 @media(max-width: 600px){
