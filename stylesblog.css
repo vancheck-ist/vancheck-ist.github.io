@@ -15,12 +15,20 @@
     font-size: var(--titulos-font-size);
 }
 
-.blog__inicial{
+.blog__inicial__data{
     display: flex;
     position: absolute;
+    transform: translate(6.5%, 0%);
+    width: 100%;
+}
+
+.blog__inicial{
+    display: flex;
+    position: relative;
     height: 70vh;
+    width: 70vw;
     background-color: #c1c1c1;
-    border-radius: 3.9rem;
+    border-radius: 4.1rem;
     transform: translate(12%, -10%);
     box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.4);
 }
@@ -45,7 +53,7 @@
 
   /*=============== FOOTER ===============*/
 .footer{
-    margin-top: 10rem;
+    margin-top: 15rem;
     background-color: #081c2e;
     transform: translate(0%, 100%);
 }
