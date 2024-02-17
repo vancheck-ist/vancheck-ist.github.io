@@ -187,6 +187,7 @@ img {
   font-weight: var(--texto-font-weight);
   font-family: var(--texto-font-family);
   font-size: var(--texto-font-size);
+  transition: .4s;
 }
 
 .nav__button__about_us:hover{
@@ -274,6 +275,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10;
 }
 
 .problem__text {
@@ -416,8 +418,13 @@ margin-top: 5%;
   font-weight: var( --titulos-font-weight);
   font-family: var(--titulos-font-family) ;
   font-size: 1.7rem;
-  transition: .4s;
+  transition: .2s;
   text-align: center;
+}
+
+.buttonPDF:hover{
+  background-color: #081c2e;
+  color: var(--logo-color);
 }
 
 @media(max-width: 600px){
