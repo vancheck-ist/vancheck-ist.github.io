@@ -422,6 +422,11 @@ margin-top: 5%;
   text-align: center;
 }
 
+.buttonPDF:hover{
+  background-color: #081c2e;
+  color: var(--logo-color);
+}
+
 @media(max-width: 600px){
   .teste{
     visibility:hidden;
