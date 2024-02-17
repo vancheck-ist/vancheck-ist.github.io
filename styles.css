@@ -191,7 +191,8 @@ img {
   width: 40%;
   color: black;
   position: relative;
-  translate: 30%;
+  translate: 35%;
+  margin-bottom: 10%;
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
