@@ -72,7 +72,9 @@ body{
     object-fit: contain;
 }
 
-
+.section__blog {
+    padding: 2.5rem 0 1rem;
+}
 
 div.gallery {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
@@ -128,11 +130,20 @@ div.desc {
     width: 49.99999%;
     margin: 6px 0;
 }
+
+.section__blog {
+    padding: 0rem 0 1rem;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
 .responsive {
     width: 100%;
+}
+
+.section__blog {
+    padding: 0rem 0 1rem;
 }
 }
 
