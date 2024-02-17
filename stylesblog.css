@@ -17,7 +17,7 @@
 
 .blog__inicial__data{
     display: flex;
-    position: absolute;
+    position: relative;
     transform: translate(6.5%, 0%);
     width: 100%;
 }
@@ -48,6 +48,48 @@
     transform: translate(0%, 130%);
 }
 
+.tabela_blog{
+    width:100%;
+    min-height:100vh;
+    position: relative;
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-inline-start: 10%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 1 rem;
+    box-sizing: border-box;
+}
+
+.imagens_relatorio{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+
+.relat_container{
+border-radius: 3rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    padding: 0 4px;
+}
+  
+  /* Create two equal columns that sits next to each other */
+.column {
+    flex: 50%;
+    padding: 2rem 2rem;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
 
 
 
