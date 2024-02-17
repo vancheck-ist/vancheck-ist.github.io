@@ -1,33 +1,33 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
 
-html, body {
+html{
     max-width: 100%;
     overflow-x: hidden;
 }
 
-.blog__container{
+.blog__container {
     position: relative;
     /* row-gap: 4.5rem; */
     padding-top: 3rem;
 }
   
-.blog__data{
+.blog__data {
     text-align: center;
 }
 
-.blog__title{
+.blog__title {
     font-size: var(--titulos-font-size);
 }
 
-.blog__inicial__data{
+.blog__inicial__data {
     display: flex;
     position: relative;
     transform: translate(6.5%, 0%);
     width: 100%;
 }
 
-.blog__inicial{
+.blog__inicial {
     display: flex;
     position: relative;
     height: 70vh;
@@ -107,17 +107,17 @@ div.desc {
 
 
   /*=============== FOOTER ===============*/
-.footer{
+.footer {
     margin-top: 15rem;
     background-color: #081c2e;
     transform: translate(0%, 100%);
 }
   
-.footer__container{
+.footer__container {
     padding: 2rem 0 6rem;
 }
 
-.footer__title{
+.footer__title {
     color: var(--logo-color);
     font-family: var(--logo-font-family);
     font-weight: var(--logo-font-weight);
@@ -126,7 +126,7 @@ div.desc {
     line-height: var(--logo-line-height);
 }
 
-.footer__link{
+.footer__link {
     color: var(--logo-color);
     font-family: var(--logo-font-family);
     font-weight: var(--logo-font-weight);
@@ -135,12 +135,12 @@ div.desc {
     line-height: var(--logo-line-height);
 }
 
-.footer__title{
+.footer__title {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-.footer__list{
+.footer__list {
     display: flex;
     justify-content: center;
     column-gap: 1.5rem;
