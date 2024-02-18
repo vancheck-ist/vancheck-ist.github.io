@@ -121,7 +121,9 @@ div.desc {
 }
 
 
-
+.blogtele{
+    display: none;
+}
 
 
 
@@ -138,6 +140,45 @@ div.desc {
 }
 
 @media only screen and (max-width: 500px) {
+    .blog__inicial__data{
+        display: none;
+    }
+
+.blogtele {
+    width:100%;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  
+}
+
+.blog__ini__texttele {
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top:0% ;
+    width: 80%;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+}
+.blog__inicial__imgtele{
+    transform:translateY(-20%);
+        margin-bottom: -5%;
+        position: relative;
+        
+
+
+}
+
+
+
 .responsive {
     width: 100%;
 }
