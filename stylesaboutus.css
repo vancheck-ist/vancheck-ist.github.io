@@ -54,9 +54,21 @@ body{
 	border-right: 200px solid transparent;
     border-bottom: 400px solid #081c2e;
 
+    
 }
 
+.box{
+    width: 697px;
+    height: 505px;
+}
 
+.box .polygon{
+    position: fixed;
+    width: 697px;
+    height: 505px;
+    top: 0;
+    left: 0;
+}
 
 
   /*=============== FOOTER ===============*/
