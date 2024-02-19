@@ -3,7 +3,7 @@
 
 html{
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: hidden;
 }
 
 body{
@@ -36,7 +36,7 @@ body{
 .teams__text h1,
 .about_us__text h1 {
   font-size: var( --titulos-font-size);
-  -webkit-margin-after: 0.5em
+  -webkit-margin-after: 0.5em;
 }
 .teams__text p,
 .about_us__text p {
@@ -92,7 +92,8 @@ body{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 15%;
+    margin-top: 15%;
 }
 
 
@@ -120,10 +121,10 @@ body{
 
     text-align: left;
     align-items: center;
-    left: 33%;
-    width: 50%;
+    left: 63%;
+    width: auto;
     color: black;
-    position: relative;
+    position: absolute;
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
