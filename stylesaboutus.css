@@ -9,7 +9,7 @@ html{
 body{
     background: #eaeaee;
 }
-
+.aprouch,
 .about_us{
   width:100%;
   background-color: #EAEAEA;
@@ -33,11 +33,19 @@ body{
     justify-content: center;
   }
 
+.aprouch__text h1,  
 .teams__text h1,
 .about_us__text h1 {
   font-size: var( --titulos-font-size);
   -webkit-margin-after: 0.5em;
 }
+
+.aprouch__text h2{
+    font-size: var( --titulos-font-size);
+    margin-top: 10%;
+}
+
+.aprouch__text p, 
 .teams__text p,
 .about_us__text p {
   font-size: var(--texto-font-size);
@@ -64,6 +72,18 @@ body{
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
 }
+
+.aprouch__text {
+  text-align: center;
+  width: 70%;
+  color: black;
+  position: relative;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
+
+
 
 .triangulo {
   width:auto;
@@ -140,7 +160,64 @@ body{
     font-size: 1.6rem;
   }
 
+  .trabalho_em_equipa,
+  .compromisso{
+    width:100%;
+    min-height:100vh;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+  }
+  
+  .compromisso__text {
+    margin-bottom:5% ;
+    text-align: center;
+    width: 35%;
+    color: black;
+    position: relative;
+    margin-left: 10%;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
 
+  .compromisso__ h1 {
+    font-size: var( --titulos-font-size);
+    -webkit-margin-after: 1em
+  }
+
+  .compromisso__text p {
+    font-size: var( --texto-font-size);
+  }
+
+
+  .compromisso__img{
+    scale: 1;
+    }
+
+
+    .trabalho_em_equipa__text {
+        margin-bottom:5% ;
+        text-align: center;
+        width: 35%;
+        color: black;
+        position: relative;
+        margin-right: 10%;
+        letter-spacing: 0;
+        font-weight: var(--titulos-font-weight);
+        font-family: var(--titulos-font-family);
+      }
+
+      .trabalho_em_equipa__img{
+        scale: 1;
+        position: relative;
+        }
+        
 
   /*=============== FOOTER ===============*/
 .footer {
