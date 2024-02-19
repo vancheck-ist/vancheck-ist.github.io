@@ -65,32 +65,19 @@ body{
   font-family: var(--titulos-font-family);
 }
 
-
-.triangle {
-   
-	width: 0;
-	height: 0;
-	border-left: 200px solid transparent;
-	border-right: 200px solid transparent;
-    border-bottom: 400px solid #081c2e;
-
-    
-}
-
 .triangulo {
-    width:auto;
-    position: relative;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  width:auto;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .text_triangulo {
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    transform: translate(-50%, 70%);
-
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 70%);
 }
 
 .text_triangulo h1 {
@@ -101,7 +88,7 @@ body{
 .teams__container {
     width: 100%;
     position: relative;
-    background-color: aqua;
+    
     justify-content: space-around;
     align-items: center;
     display: flex;
@@ -111,25 +98,29 @@ body{
 
 .teams__button{
     position: absolute;
-    left: 14%;
-    width: 29%;
-    background-color: #b52020;
+    left: 12%;
+    width: 29rem;
+    background-color: #d9d9d9;
     color: var(--body-color);
     padding: 1.2rem 2rem;
     border-radius: 1rem;
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
     font-size: 1.7rem;
-    transition: .2s;
     text-align: center;
+    align-items: center;
     justify-content: center;
   }
 
+  .teams__button h1{
+    transform: translate(0, 15%);
+  }
 
   .teams__text1 {
-    position: absolute;
+
     text-align: left;
-    left: 35%;
+    align-items: center;
+    left: 33%;
     width: 50%;
     color: black;
     position: relative;
