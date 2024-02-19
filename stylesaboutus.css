@@ -10,7 +10,6 @@ body{
     background: #eaeaee;
 }
 
-.teams,
 .about_us{
   width:100%;
   background-color: #EAEAEA;
@@ -22,6 +21,18 @@ body{
 }
 
 
+.teams{
+    width:100%;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
 .teams__text h1,
 .about_us__text h1 {
   font-size: var( --titulos-font-size);
@@ -32,11 +43,21 @@ body{
   font-size: var(--texto-font-size);
 }
 
-.teams__text,
 .about_us__text {
   text-align: center;
   margin-top:7.5rem;
   width: 70%;
+  color: black;
+  position: relative;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+}
+
+.teams__text {
+  text-align: center;
+  margin-top:7.5rem;
+  width: 100%;
   color: black;
   position: relative;
   letter-spacing: 0;
@@ -76,6 +97,49 @@ body{
     font-size: 1.8rem;
     -webkit-margin-after:2rem
 }
+
+.teams__container {
+    width: 100%;
+    position: relative;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    margin-bottom: 5%;
+}
+
+
+.teams__button{
+    position: absolute;
+    left: 14%;
+    width: 29%;
+    background-color: #b52020;
+    color: var(--body-color);
+    padding: 1.2rem 2rem;
+    border-radius: 1rem;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 1.7rem;
+    transition: .2s;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  .teams__text1 {
+    position: absolute;
+    text-align: left;
+    left: 35%;
+    width: 50%;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
+  
+
+
 
 
   /*=============== FOOTER ===============*/
