@@ -92,22 +92,24 @@ body{
     justify-content: space-around;
     align-items: center;
     display: flex;
-    margin-bottom: 15%;
-    margin-top: 15%;
+    margin-bottom: 12.5rem;
+    margin-top: 12.5rem;
 }
 
 
 .teams__button{
     position: absolute;
-    left: 12%;
+    left: 5%;
+    margin-left: 5%;
+  
     width: 29rem;
     background-color: #d9d9d9;
     color: var(--body-color);
-    padding: 1.2rem 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 1rem;
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -115,14 +117,18 @@ body{
 
   .teams__button h1{
     transform: translate(0, 15%);
+
   }
 
-  .teams__text1 {
+  .teams__text1{
 
     text-align: left;
     align-items: center;
-    left: 63%;
+    left: 60%;
+    right:5%;
+   
     width: auto;
+    height: auto;
     color: black;
     position: absolute;
     letter-spacing: 0;
@@ -130,7 +136,9 @@ body{
     font-family: var(--titulos-font-family);
   }
   
-
+  .teams__text1 h2{
+    font-size: 1.6rem;
+  }
 
 
 
