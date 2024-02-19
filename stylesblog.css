@@ -259,10 +259,11 @@ div.desc {
 .app_button:hover{
     background-color: #081c2e;
     color: var(--logo-color);
+    box-shadow: 0 0 5px #EAEAEA;
 }
 
 .app_button h1 {
-    transform: translate(0, 5%);
+    transform: translate(0, 15%);
 }
 
 .app_text {
@@ -293,7 +294,7 @@ div.desc {
 }
 
 .email_button h1 {
-    transform: translate(-8%, 5%);
+    transform: translate(-8%, 15%);
 }
 
 .enter_email{
