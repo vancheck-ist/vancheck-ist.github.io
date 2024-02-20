@@ -253,7 +253,6 @@ img {
   top: 0;
   position:absolute;
   align-items:center;
-  justify-ite: center;
   background: linear-gradient(180deg, #081C2E 30%, #1B568B 78%);
   border-radius: 2rem;
   overflow: hidden;
