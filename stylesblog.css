@@ -1,7 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
 
-html, body{
+html{
     max-width: 100%;
     overflow-x: hidden;
 }
