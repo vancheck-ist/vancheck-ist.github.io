@@ -247,20 +247,34 @@ img {
 .testetele{
   display:none;
   margin-top: 1%;
-  width: 60%;
-  height: 20%;
-  left:40%;
+  width: 100%;
+  height: 30%;
+  left:0%;
+  top: 5%;
   position:absolute;
-  align-items:start;
- 
+  align-items:center;
+  background: linear-gradient(180deg, #081C2E 19%, #1B568B 78%);
+  overflow: hidden;
 }
 
-.elipsetele{
-  
-  width: 100%;
-  position:absolute;
-  
+.construtor {
+  position: absolute;
+  scale: 75%;
+  transform: translate(42%, 39%);
 }
+
+.canalizador {
+  position: absolute;
+  scale: 75%;
+  transform: translate(98%, 30%);
+}
+
+.eletricista {
+  position: absolute;
+  scale: 65%;
+  transform: translate(-26%, 30%);
+}
+
 /*=============== Front page ptoblem===============*/
 .partner,
 .solution_example,
@@ -485,13 +499,11 @@ margin-top: 5%;
   }
   
   .intro__text {
-    display: flex;
     text-align: center;
     position: absolute;
     width: 55%;
     height: 40%;
-    margin-top: 50%;
-    left:10%;
+    transform: translate(0, 100%);
     color: black;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
