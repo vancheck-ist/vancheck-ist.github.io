@@ -204,7 +204,10 @@ div.desc {
 }
   
 .footer__container {
+    position: relative;
     padding: 2rem 0 6rem;
+    align-items: center;
+    justify-items: center;
 }
 
 .footer__title {
@@ -235,5 +238,83 @@ div.desc {
     justify-content: center;
     column-gap: 1.5rem;
     margin-bottom: 2rem;
+}
+
+.app_button {
+    position: absolute;
+    width: 22rem;
+    height: 4rem;
+    transform: translate(125%, -20%);
+    background-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.51);
+    padding: 1.2rem 2rem;
+    border-radius: 3rem;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 0.5rem;
+    text-align: center;
+    transition: .4s;
+}
+
+.app_button:hover{
+    background-color: #081c2e;
+    color: var(--logo-color);
+    box-shadow: 0 0 5px #EAEAEA;
+}
+
+.app_button h1 {
+    transform: translate(0, 15%);
+}
+
+.app_text {
+    position: absolute;
+    color: #d9d9d9;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 0.5rem;
+    text-align: center;
+    transform: translate(138%, -230%);
+}
+
+
+.email_button {
+    position: absolute;
+    width: 22rem;
+    height: 4rem;
+    transform: translate(-125%, -20%);
+    background-color: #d9d9d9;
+    color: rgba(0, 0, 0, 0.51);
+    padding: 1.2rem 2rem;
+    border-radius: 3rem;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 0.5rem;
+    text-align: center;
+    overflow: hidden;
+}
+
+.email_button h1 {
+    transform: translate(-8%, 15%);
+}
+
+.enter_email{
+    position: absolute;
+    background-color: #313131;
+    color: var(--logo-color);
+    width: 4.5rem;
+    height: 4.5rem;
+    padding-top: 1.7rem;
+    left: 80%;
+    bottom: -5%;
+}
+
+.email_text{
+    position: absolute;
+    color: #d9d9d9;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 0.5rem;
+    text-align: center;
+    transform: translate(-149%, -250%);
 }
 
