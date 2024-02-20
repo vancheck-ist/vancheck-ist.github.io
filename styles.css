@@ -442,6 +442,10 @@ margin-top: 5%;
 }
 
 @media(max-width: 600px){
+  .app_text,
+  .app_button,
+  .email_text,
+  .email_button,
   .teste{
     visibility:hidden;
     display: none;
@@ -450,6 +454,8 @@ margin-top: 5%;
     visibility: visible;
     display: flex;
   }
+
+
 
   .nav__logo{
     color: var(--logo-color);
