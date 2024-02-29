@@ -39,5 +39,5 @@
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
-  font-size: 32px;
+  font-size: var(--texto-font-size);
 }
