@@ -1,0 +1,174 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css?family=Bruno+Ace:400");
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: #eaeaee;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Contactos*/
+.Contacto{
+    width: 80%; 
+    height: 550px;
+    position: relative;
+    background: #D9D9D9;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top:7.5rem ;
+}
+.LineContacto{
+    width: 597px;
+    height: 0px;
+    left: 35%;
+    top: 602px;
+    position: absolute;
+    transform: rotate(-89.90deg);
+    transform-origin: 0 0;
+    border: 1px black solid;
+}
+.Name{
+width: 45%;
+height:85px;
+left: 45%;
+top: 5%;
+position: absolute;
+}
+
+.Email{
+    width: 45%;
+    height:85px;
+    left: 45%;
+    top: 22%;
+    position: absolute;
+    }
+
+.Message{
+    width: 45%;
+    height:230px;
+    left: 45%;
+    top: 39%;
+    position: absolute;
+    }
+
+
+.Message__text,
+.Email__text,
+.Name__text{
+    left: 3%; 
+    top: 0%;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Myanmar Khyay;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Message__example,
+.Mail__example,
+.Joao_Batista{
+    width:100%;
+    top:30%;
+    left:5%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.51);
+    font-size: 20px;
+    font-family: Myanmar Sans Pro;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.Message__example{
+    width:100%;
+    top:5%;
+    left:5%;
+    position: absolute;
+    color: rgba(0, 0, 0, 0.51);
+    font-size: 20px;
+    font-family: Myanmar Sans Pro;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+
+.caixa{
+    width: 100%; 
+    height: 55px; 
+    left: 0%;
+    bottom:0%;
+    position: absolute;
+    background: #EAEAEA;
+    border-radius: 40px;
+}
+
+
+.caixa_message{
+    width: 100%; 
+    height: 195px; 
+    left: 0%;
+    bottom:0%;
+    position: absolute;
+    background: #EAEAEA;
+    border-radius: 40px;
+}
+
+
+.Submit{
+    width: 18%;
+    height: 10%;
+    padding-left: 59px;
+    padding-right: 59px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    left: 58%;
+    top: 85%;
+    position: absolute;
+    background: #EAEAEA;
+    border-radius: 50px;
+    overflow: hidden;
+    justify-content:center;
+    align-items: center;
+    display: inline-flex;
+}
+
+.Submit__text{
+    text-align: center; 
+    color: black;
+    font-size: 30px; 
+    font-family: Myanmar Khyay;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Contactos__titulo{
+    width: 35%;
+    left: 0%;
+    top: 20%;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-family: Myanmar Khyay;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Contactos__texto{
+    width: 35%;
+    height: auto;
+    left: 0%;
+    top: 40%;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 28px;
+    font-family: Myanmar Sans Pro;
+    font-weight: 400;
+    word-wrap: break-word;
+    }
