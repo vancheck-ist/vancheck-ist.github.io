@@ -22,12 +22,13 @@ body{
 
 .blog__title {
     font-size: var(--titulos-font-size);
+    margin-top: 0.25rem;
 }
 
 .blog__inicial__data {
     display: flex;
     position: relative;
-    transform: translateY(-15%);
+    margin-top: 0.1rem;
     width: 100vw;
     justify-content: center;
     
