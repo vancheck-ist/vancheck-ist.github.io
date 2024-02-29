@@ -412,7 +412,7 @@ img {
   -webkit-margin-after: 1em
 }
 
-.partner__text p,
+
 .beneficiaries__text p,
 .solution_example__text p,
 .solution__text p,
@@ -433,7 +433,7 @@ max-width: 50%;
 
 
 }
-.partner__text,
+
 .goal__text {
   margin-bottom:5% ;
   text-align: center;

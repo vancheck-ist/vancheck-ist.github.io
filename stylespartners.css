@@ -1,0 +1,43 @@
+.partner {
+    width:100%;
+    min-height:100vh;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    z-index: 10;
+  }
+
+.partner__titulo {
+    text-align: center;
+    top:9rem;
+    width: 100%;
+    color: black;
+    position: absolute;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
+  .partner__img{
+    width: 20rem;
+    position: absolute;
+    top:13rem ;
+    right:10% ;
+    }
+
+.partner__text{
+  text-align: center;
+  width:49%;
+  left: 10%;
+  top:13rem ;
+  margin-top: 3%;
+  color: black;
+  position: absolute;
+  letter-spacing: 0;
+  font-weight: var(--titulos-font-weight);
+  font-family: var(--titulos-font-family);
+  font-size: 32px;
+}
