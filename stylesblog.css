@@ -210,6 +210,10 @@ div.desc {
     justify-items: center;
 }
 
+.footer__container h1 {
+    transform: translate(-90%, 20%);
+}
+
 .footer__title {
     color: var(--logo-color);
     font-family: var(--logo-font-family);
@@ -240,11 +244,36 @@ div.desc {
     margin-bottom: 2rem;
 }
 
+.app_container {
+    display: flex;
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    right: 0%;
+}
+
+.app_text {
+    position: absolute;
+    width: 20vw;
+    color: #d9d9d9;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: 0.5rem;
+    top: 50%;
+    right: 50%;
+    transform: translate(285%, -150%);
+
+
+}
+
+
 .app_button {
     position: absolute;
-    width: 22rem;
+    width: 20rem;
     height: 4rem;
-    transform: translate(125%, -20%);
     background-color: #d9d9d9;
     color: rgba(0, 0, 0, 0.51);
     padding: 1.2rem 2rem;
@@ -254,6 +283,8 @@ div.desc {
     font-size: 0.5rem;
     text-align: center;
     transition: .4s;
+    bottom: 10%;
+    transform: translate(130%, -40%);
 }
 
 .app_button:hover{
@@ -266,55 +297,4 @@ div.desc {
     transform: translate(0, 15%);
 }
 
-.app_text {
-    position: absolute;
-    color: #d9d9d9;
-    font-weight: var( --titulos-font-weight);
-    font-family: var(--titulos-font-family) ;
-    font-size: 0.5rem;
-    text-align: center;
-    transform: translate(138%, -230%);
-}
-
-
-.email_button {
-    position: absolute;
-    width: 22rem;
-    height: 4rem;
-    transform: translate(-125%, -20%);
-    background-color: #d9d9d9;
-    color: rgba(0, 0, 0, 0.51);
-    padding: 1.2rem 2rem;
-    border-radius: 3rem;
-    font-weight: var( --titulos-font-weight);
-    font-family: var(--titulos-font-family) ;
-    font-size: 0.5rem;
-    text-align: center;
-    overflow: hidden;
-}
-
-.email_button h1 {
-    transform: translate(-8%, 15%);
-}
-
-.enter_email{
-    position: absolute;
-    background-color: #313131;
-    color: var(--logo-color);
-    width: 4.5rem;
-    height: 4.5rem;
-    padding-top: 1.7rem;
-    left: 80%;
-    bottom: -5%;
-}
-
-.email_text{
-    position: absolute;
-    color: #d9d9d9;
-    font-weight: var( --titulos-font-weight);
-    font-family: var(--titulos-font-family) ;
-    font-size: 0.5rem;
-    text-align: center;
-    transform: translate(-149%, -250%);
-}
 

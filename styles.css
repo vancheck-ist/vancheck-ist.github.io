@@ -550,28 +550,7 @@ margin-top: 5%;
     width: 30%;
   }
   
-  .nav__button__home{
-    color: var(--nav-text-color);
-    font-weight: var(--texto-font-weight);
-    font-family: var(--texto-font-family);
-    font-size: var(--texto-font-size-700);
-    transition: .4s;
-  }
 
-  .nav__button__blog{
-    color: var(--nav-text-color);
-    font-weight: var(--texto-font-weight);
-    font-family: var(--texto-font-family);
-    font-size: var(--texto-font-size-700);
-    transition: .4s;
-  }
-  
-  .nav__button__about_us{
-    color: var(--nav-text-color);
-    font-weight: var(--texto-font-weight);
-    font-family: var(--texto-font-family);
-    font-size: var(--texto-font-size-700);
-  }
 
   .intro {
     padding-top: 6.5rem;
