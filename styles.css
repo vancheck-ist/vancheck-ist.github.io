@@ -301,14 +301,15 @@ img {
 }
 
 .partners_home {
-  height: 70vh;
+  
   position: relative;
   text-align: center;
   padding-top: 10rem;
 }
 
-.partners_home img{
+.partners_home__img{
   padding-top: 2rem;
+
 }
 
 .introduction h1,
