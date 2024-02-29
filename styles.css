@@ -489,7 +489,8 @@ margin-top: 5%;
 /*=============== buttonPdf ptoblem===============*/
 .Pdfbutton_background{
   width: 100%;
-  justify-content: center;
+  height: 7rem; 
+ justify-content: center;
   display: flex;
   position: relative;
 }
