@@ -1,0 +1,46 @@
+.blogweek {
+    width:100%;
+    min-height:100vh;
+    background-color: #EAEAEA;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .blog_f1{
+    scale :1;
+    border-radius: 40px;
+    position: relative;
+    top:3 rem;
+   
+    width: 30rem;
+   
+   
+  }
+
+  .blogweek_text {
+    top: 7rem;
+    text-align: center;
+    width: 60%;
+    color: black;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+    background-color: aqua;
+  }
+
+  .blogweek_text h1{
+    text-align: center;
+  }
+  .blogweek_text p,
+  .blogweek_text li{
+    text-align: left;
+  }

@@ -461,8 +461,8 @@ position: relative;
 
 .beneficiaries__text,
 .solution__text {
-  text-align: center;
-  width: 80%;
+  text-align: left;
+  width:60%;
   color: black;
   position: relative;
   letter-spacing: 0;
