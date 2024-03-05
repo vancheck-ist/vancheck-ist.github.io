@@ -104,8 +104,11 @@ div.gallery {
     background-size: cover;
     background-position-x: center;
     background-position-y: center;
-    background-image:url(img/Blog/Imagem.png) ;
-   
+}
+
+.website_creation{
+    background-image:url(img/Image\ First\ Week.png) ; 
+
 }
   
 
@@ -121,7 +124,8 @@ div.gallery img {
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
     font-size: 1.5rem;
-    background-color: aqua;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 20px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
     align-items: center;
     border-radius: 2rem;

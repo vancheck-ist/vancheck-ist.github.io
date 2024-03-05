@@ -34,7 +34,7 @@
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
-    background-color: aqua;
+    
   }
 
   .blogweek_text h1{
@@ -43,8 +43,29 @@
   .blogweek_text p,
   .blogweek_text li{
     text-align: left;
-    
-    background-color: blueviolet;
-    
-
   }
+
+  .botao_report{
+  height: auto;
+  width: 6rem;
+  font-weight: var(--texto-font-weight);
+  font-family: var(--texto-font-family);
+  font-size: 1.5rem;
+  background-color: #d6d6d8;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  color: black;
+  text-align: center;
+  align-items: center;
+  border-radius: 2rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%);
+  transition: 0.4s;
+}
+
+.botao_report:hover{
+  background-color: #081c2e;
+  color: var(--logo-color);
+  box-shadow: 0 0 5px #EAEAEA;
+}
