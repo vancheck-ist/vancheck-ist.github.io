@@ -8,28 +8,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    align-content:center ;
+    z-index: 10;
   }
 
   .blog_f1{
     scale :1;
     border-radius: 40px;
     position: relative;
-    top:3 rem;
-   
     width: 30rem;
    
    
   }
 
   .blogweek_text {
-    top: 7rem;
     text-align: center;
     width: 60%;
+    
     color: black;
     position: relative;
     align-items: center;
     justify-items: center;
-    min-height: 100vh;
+    
 
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
@@ -43,4 +43,8 @@
   .blogweek_text p,
   .blogweek_text li{
     text-align: left;
+    
+    background-color: blueviolet;
+    
+
   }
