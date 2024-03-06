@@ -147,7 +147,7 @@ img {
   font-family: var(--logo-font-family);
   font-size: clamp(0.3em, 0.5em + 1vw, 1.5em);
   text-align: center;
-  transition: .4s;
+  transition: .4s; 
   width: 30%;
 }
 
