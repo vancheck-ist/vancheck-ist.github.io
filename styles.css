@@ -177,11 +177,26 @@ img {
 
 /*=============== Front page ptoblem===============*/
 
-.solution_example,
-.goal,
+
 .problem {
   width:100%;
-  min-height:100vh;
+  top:6rem;
+  background-color: #EAEAEA;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 10;
+  
+}
+
+
+.solution_example,
+.goal {
+  width:100%;
+
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -189,12 +204,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 10;
 }
 
 .partner{
   width:100%;
-  height: 90vh;
+  
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -246,16 +260,16 @@ img {
 .solution__text p,
 .goal__text p,
 .problem__text p {
-  font-size: var( --texto-font-size);
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
 }
 
 
 .problem__img{
-scale: 1;
+scale: 0.7;
 }
 
 .solution_example__img{
-scale: 1;
+scale: 0.7;
 transform: translateY(25%);
 max-width: 50%;
 
@@ -275,20 +289,20 @@ max-width: 50%;
 }
 
 .goal__img{
-scale: 1;
-transform: translateY(-20%);
+scale: 0.7;
+transform: translate(30%,-20%);
 position: relative;
 }
 
 .partner__img{
-  scale: 1;
+  scale: 0.7;
   position: relative;
   }
 
 .beneficiaries,
 .solution {
   width:100%;
-  min-height:100vh;
+  
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -300,7 +314,7 @@ position: relative;
 
 .beneficiaries__text,
 .solution__text {
-  text-align: left;
+  text-align: center;
   width:60%;
   color: black;
   position: relative;
@@ -313,7 +327,7 @@ position: relative;
 
 .beneficiaries__img,
 .solution__img{
-scale: 1;
+scale: 0.7;
 position: relative;
 margin-top: 5%;
 }
@@ -352,7 +366,7 @@ margin-top: 5%;
 
 
 
-@media(max-width: 600px){
+@media(max-width: 1050px){
   .app_text,
   .app_button,
   .email_text,
@@ -378,25 +392,6 @@ margin-top: 5%;
     width: 30%;
   }
   
-
-
-  .intro {
-    padding-top: 6.5rem;
-    width:100%;
-    min-height:100vh;
-    background-image: url(img/Home/Fundo\ home.png);
-    background-position:center;
-    background-position-x:40%;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: start;
-   
-  }
-  
-
-
-
   .partner__text h1,
   .beneficiaries__text h1,
   .solution_example__text h1,
@@ -413,15 +408,15 @@ margin-top: 5%;
   .solution__text p,
   .goal__text p,
   .problem__text p {
-    font-size: var(--texto-font-size-700);
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
   }
 
-  .problemtele,
+  .problemtele,.solution,.beneficiaries,
   .goaltele,
   .solution_exampletele,
   .partnertele {
-    width:100%;
-    min-height:100vh;
+    width:100%; 
+    top:8rem;
     background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
@@ -459,12 +454,26 @@ margin-top: 5%;
 
   .goal__img,
   .problem__img,
+  .solution_img,
   .solution_example__img,
-  .partner__imh{
-    width: 100%;
-    transform: translateY(0%);
+  .beneficiaries__img
+  .partner__img{
+    
+    transform: translate(0%,0%);
     position: relative;
-    margin-top: 5%;
-    max-width:none;
+
+    }
+    .solution_example__img,
+    .beneficiaries__img{
+      transform: translate(0%,0%);
+      position: relative;
+     
+    }
+
+    .beneficiaries__img,
+    .solution__img{
+    scale: 0.7;
+    position: relative;
+    margin-top: 0%;
     }
 }

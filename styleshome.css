@@ -91,7 +91,7 @@
         text-align: center;
       }
     .introduction h1, 
-    .goals h1,
+    .goals_home h1,
     .team_home h1,
     .partners_home{
     font-size: clamp(0.3em, 1em + 1vw, 1.5em);
@@ -141,13 +141,13 @@
         background-color: #081c2e;
         color: var(--logo-color);
       }
-      .goals {
+      .goals_home {
         margin-top: 4vh;
         position: relative;
         text-align: center; 
       }
       
-      .goals h2 {
+      .goals_home h2 {
         font-size: var(--texto-font-size);
         font-family: var(--texto-font-family);
         font-weight: var(--texto-font-weight);
@@ -290,7 +290,7 @@
    
   }
   
-  .goals h1,
+  .goals_home h1,
   .team_home h1,
   .partners_home {
    position: relative;
