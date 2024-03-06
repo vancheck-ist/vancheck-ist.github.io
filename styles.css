@@ -175,169 +175,6 @@ img {
 
 
 
-
-/*=============== Front page===============*/
-.intro {
-  width:100%;
-  min-height:878px;
-  height: 100vh;
-  max-height: 950px;
-  background-image: url(img/Home/home_background.png);
-  background-position:center;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-
-
-.intro__center {
-  position: relative;
-  width: 32rem;
-  text-align: center;
-  background-color: #EAEAEA;
-  justify-content: center;
-  opacity: 0.95;
-}
-
-.intro__text {
-  width: 100%;
-  height: 50%;
-  position: absolute;
-  
-  top: 8rem;
-
-  color: black;
-  font-weight: var(--logo-font-weight);
-  font-family: var(--logo-font-family);
-  font-size:4rem;
-  
-}
-
-.intro__image {
-  position: absolute;
-  object-fit:cover;
-  left:0%;
-  bottom: 0vh;
-
-  
-}
-
-.introduction {
-  position: relative;
-  text-align: center;
-}
-
-
-.goals {
-  margin-top: 4rem;
-  position: relative;
-  text-align: center;
-}
-
-.goals h2 {
-  font-size: var(--texto-font-size);
-  font-family: var(--texto-font-family);
-  font-weight: var(--texto-font-weight);
-}
-
-.practical{
-  margin-top: 6rem;
-  width: 5rem;
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  transform: translate(-270%, 0%);
-  text-align: center;
-}
-
-.practical__text {
-  width: auto;
-  position: absolute;
-  bottom: -51%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cheap{
-  margin-top: 6rem;
-  width: 4.5rem;
-  position: absolute;;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  scale: 1.1;
-}
-
-.cheap__text {
-  width: auto;
-  position: absolute;
-  bottom: -55%;
-  left: 50%;
-  transform: translate(-40%, -50%);
-}
-
-.efficient{
-  margin-top: 6rem;
-  width: 4.8rem;
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  transform: translate(170%, 0%);
-}
-
-.efficient__text {
-  width: auto;
-  position: absolute;
-  bottom: -51%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
- 
-.team_home {
-  position: relative;
-  text-align: center;
-  padding-top: 15rem;
-}
-
-.partners_home {
-  
-  position: relative;
-  text-align: center;
-  padding-top: 10rem;
-}
-
-.partners_home__img{
-  padding-top: 2rem;
-  scale: 0.75;
-
-}
-
-.introduction h1,
-.goals h1,
-.team_home h1,
-.partners_home {
-  font-size: 40;
-  font-family: var(--titulos-font-family);
-  font-weight: var(--titulos-font-weight);
-  font-weight: bold;
-}
-
-.introduction h2,
-.team_home h2 {
-  position: absolute;
-  width: 60%;
-  font-size: var(--texto-font-size);
-  font-family: var(--texto-font-family);
-  font-weight: var(--texto-font-weight);
-  top: 100%;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-
 /*=============== Front page ptoblem===============*/
 
 .solution_example,
@@ -495,9 +332,9 @@ margin-top: 5%;
   height: 7rem; 
  justify-content: center;
   display: flex;
+  text-align: center;
   position: relative;
 }
-
 .buttonPDF{
   background-color: #D9D9D9;
   position: absolute;
@@ -509,12 +346,11 @@ margin-top: 5%;
   font-size: 1.7rem;
   transform: translate(0,50%);
   transition: .2s;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
-.buttonPDF:hover{
-  background-color: #081c2e;
-  color: var(--logo-color);
-}
+
 
 @media(max-width: 600px){
   .app_text,
@@ -558,18 +394,7 @@ margin-top: 5%;
    
   }
   
-  .intro__text {
-    text-align: center;
-    position: absolute;
-    width: 55%;
-    height: 40%;
-    transform: translate(0, 100%);
-    color: black;
-    font-weight: var(--titulos-font-weight);
-    font-family: var(--titulos-font-family);
-    font-size: 2.5rem;
-    
-  }
+
 
 
   .partner__text h1,
