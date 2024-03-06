@@ -346,7 +346,8 @@ div.desc {
     box-shadow: 0 0 5px #EAEAEA;
 }
 .app_tele,
-.app_button_tele{
+.app_button_tele
+.app_container_tele{
     display: none;
 }
 
