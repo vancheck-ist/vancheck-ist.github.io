@@ -137,6 +137,7 @@ img {
 .nav{
   height: var(--header-height);
   display: flex;
+  position: static;
   justify-content: space-between;
   align-items: center;
 }
@@ -144,7 +145,7 @@ img {
   color: var(--logo-color);
   font-weight: var(--logo-font-weight);
   font-family: var(--logo-font-family);
-  font-size: var(--logo-font-size);
+  font-size: clamp(0.3em, 0.5em + 1vw, 1.5em);
   text-align: center;
   transition: .4s;
   width: 30%;
@@ -152,17 +153,18 @@ img {
 
 .nav__button{
   display: flex;
-  justify-content: space-evenly;
+  position: static;
+  justify-content: space-around;
   align-items: center;
   width: 45%;
-  margin-inline-end:3% ;
+  margin-inline-end:5% ;
 }
 
 .nav__button__tab{
   color: var(--nav-text-color);
   font-weight: var(--texto-font-weight);
   font-family: var(--texto-font-family);
-  font-size: var(--texto-font-size);
+  font-size: clamp(0.3rem, 0.5rem + 1vw, 1.5rem);
   transition: .4s;
 }
 
