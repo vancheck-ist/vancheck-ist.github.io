@@ -314,7 +314,7 @@ div.desc {
 .disclaimer{
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
-    font-size: 0.9rem;
+    font-size: clamp(0.3em, 0.5em + 1vw, 0.8em);
     text-align: center;
     width: 100%;
     color: #d9d9d9;

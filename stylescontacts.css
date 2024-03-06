@@ -60,8 +60,8 @@ position: absolute;
     text-align: center;
     color: black;
     font-size: 30px;
-    font-family: Myanmar Khyay;
-    font-weight: 400;
+    font-weight: bold;
+    font-family: var(--titulos-font-family);
     word-wrap: break-word;
 }
 
@@ -74,7 +74,7 @@ position: absolute;
     text-align: center;
     color: black;
     font-size: var(--texto-font-size);
-    font-family: Myanmar Sans Pro;
+    font-family: var(--texto-font-size);
     font-weight: 400;
     word-wrap: break-word;
 }
@@ -122,8 +122,8 @@ position: absolute;
     text-align: center; 
     color: black;
     font-size: 30px; 
-    font-family: Myanmar Khyay;
-    font-weight: 400;
+    font-weight: var(--titulos-font-family);
+    font-family: var(--titulos-font-family);
     word-wrap: break-word;
 }
 
@@ -134,8 +134,8 @@ position: absolute;
     text-align: center;
     color: black;
     font-size: 30px;
-    font-family: Myanmar Khyay;
-    font-weight: 400;
+    font-weight: bold;
+    font-family: var(--titulos-font-family);
     word-wrap: break-word;
 }
 
@@ -148,7 +148,7 @@ position: absolute;
     text-align: center;
     color: black;
     font-size: var(--texto-font-size);
-    font-family: Myanmar Sans Pro;
+    font-family: var(--texto-font-size);
     font-weight: 400;
     word-wrap: break-word;
     }
