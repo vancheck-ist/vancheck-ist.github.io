@@ -49,7 +49,7 @@ body{
 .aprouch__text p, 
 .teams__text p,
 .about_us__text p {
-  font-size: var(--texto-font-size);
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
 }
 
 .about_us__text {
@@ -65,7 +65,7 @@ body{
 
 .teams__text {
   text-align: center;
-  margin-top:7.5rem;
+  margin-top:4rem;
   width: 100%;
   color: black;
   position: relative;
@@ -102,18 +102,17 @@ body{
 }
 
 .text_triangulo h1 {
-    font-size: 1.8rem;
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.3em);
     -webkit-margin-after:2rem
 }
 
 .teams__container {
     width: 100%;
     position: relative;
-    
     justify-content: space-around;
     align-items: center;
     display: flex;
-    margin-bottom: 12.5rem;
+   margin-bottom: 12.5rem;
     margin-top: 12.5rem;
 }
 
@@ -122,7 +121,7 @@ body{
     position: absolute;
     left: 5%;
     margin-left: 5%;
-  
+    margin-right: 5%;
     width: 29rem;
     background-color: #d9d9d9;
     color: var(--body-color);
@@ -130,7 +129,7 @@ body{
     border-radius: 1rem;
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
-    font-size: 1.5rem;
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.4em);
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -138,21 +137,21 @@ body{
 
   .teams__button h1{
     transform: translate(0, 15%);
-
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.4em);
   }
-
   .teams__text1{
 
     text-align: left;
     align-items: center;
     left: 60%;
     right:5%;
-   
     width: auto;
     height: auto;
     color: black;
     position: absolute;
     letter-spacing: 0;
+  
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
   }
@@ -160,6 +159,96 @@ body{
   .teams__text1 h2{
     font-size: 1.6rem;
   }
+  @media(max-width:600px){
+
+    .text_triangulo h1 {
+      font-size: clamp(0.3em, 0.7em + 1vw, 1.3em);
+        -webkit-margin-after:1rem
+    }
+    .teams__text1{
+
+      text-align: left;
+      align-items: center;
+      left:0%;
+      right:0%;
+      top:0%;
+      width: 100vw;
+      height: auto;
+      color: black;
+      position: relative;
+      letter-spacing: 0;
+      font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+      font-weight: var(--titulos-font-weight);
+      font-family: var(--titulos-font-family);
+    }
+  }
+
+  @media(max-width:1000px){
+  
+  .teams__text {
+    text-align: center;
+    margin-top:4rem;
+    width: 100%;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
+
+  .teams__text1{
+
+    text-align: left;
+    align-items: center;
+    left:0%;
+    right:0%;
+    top:6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: auto;
+    height: auto;
+    color: black;
+    position: relative;
+    letter-spacing: 0;
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+    font-weight: var(--titulos-font-weight);
+    font-family: var(--titulos-font-family);
+  }
+  .teams__container {
+    width: 100%;
+    height: 15rem;
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top:2rem;
+}
+
+
+.teams__button{
+  position: absolute;
+  left: 45%;
+  right:50%;
+  margin-left: 5%;
+  margin-right: 5%;
+  transform: translate(-50%,0%);
+
+  width: 90vw;
+  background-color: #d9d9d9;
+  color: var(--body-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  font-weight: var( --titulos-font-weight);
+  font-family: var(--titulos-font-family) ;
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.4em);
+  text-align: center;
+  justify-content: center;
+}
+
+  }
+
+
 
   
   .fotos{
@@ -179,8 +268,10 @@ body{
 
 
   .fotos__container{
-    width: 75%;
+    width: 70rem;
     height: 18rem;
+    margin-left: 5%;
+    margin-right: 5%;
     background-color: #d9d9d9;
     background-position:center;
     position: relative;
@@ -211,4 +302,50 @@ body{
 
  }
 
+  @media(max-width:600px){
+
+    .fotos{
+      width:100%;
+      background-color: #EAEAEA;
+      background-position:center;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+  
+  
+  
+  
+    .fotos__container{
+      width: 50vw;
+      min-width: 14rem;
+      margin-left: 5%;
+      margin-right: 5%;
+      height: 50rem;
+      background-color: #d9d9d9;
+      background-position:center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      align-content: center;
+      border-radius: 3.5rem;
+      
+    }
+    .fotos__container__individual{
+      width: 12rem;
     
+      margin-top: 1rem;
+      height: 13rem;
+    }
+
+    .fotos__texto{
+      width: 100%;
+      position: absolute;
+      top: 2%;
+     }
+  }

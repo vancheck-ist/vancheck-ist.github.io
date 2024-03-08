@@ -152,3 +152,151 @@ position: absolute;
     font-weight: 400;
     word-wrap: break-word;
     }
+    .Contactotele{
+        display: none;
+    }
+
+    @media(max-width:700px){
+        .Contacto{
+            display: none;
+        }
+
+        .Contactotele{
+            display: flex;
+            width: 90%;  
+            height: 700px;
+            position: relative;
+            background: #D9D9D9;
+            border-radius: 30px;
+            overflow: hidden;
+            margin-top:7.5rem ;
+        }
+
+
+        .LineContacto{
+            width: 597px;
+            height: 0px;
+            left: 0%;
+            top: 50%;
+            position: absolute;
+            transform: rotate(-0deg);
+            transform-origin: 0 0;
+            border: 1px black solid;
+        }
+        .Updates{
+            width: 100%;
+            height:90%;
+            left: 0%;
+            top: 5%;
+            position: absolute;
+        }
+        
+        .Update__titulo{
+            width: 100%; 
+            top: 4%;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: var(--titulos-font-family);
+            word-wrap: break-word;
+        }
+        
+        .Update__texto{
+            width: 90%;
+            height: auto;
+            left: 5%;
+            top: 15%;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+
+           
+            font-family: var(--texto-font-size);
+            font-weight: 400;
+            word-wrap: break-word;
+        }
+        
+        
+        
+        .Submit{
+            width: 36%;
+            height: 10%;
+            padding-left: 59px;
+            padding-right: 59px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            left: 32%;
+            top: 35%;
+            position: absolute;
+            background: #EAEAEA;
+            border-radius: 50px;
+            overflow: hidden;
+            justify-content:center;
+            align-items: center;
+            display: inline-flex;
+        }
+        
+        .Questions{
+            width: 36%;
+            height: 10%;
+            padding-left: 59px;
+            padding-right: 59px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            left: 32%;
+            top: 85%;
+            position: absolute;
+            background: #EAEAEA;
+            border-radius: 50px;
+            overflow: hidden;
+            justify-content:center;
+            align-items: center;
+            display: inline-flex;
+        }
+        
+        
+        .Submit__text{
+            text-align: center; 
+            color: black;
+            font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+
+            font-weight: var(--titulos-font-family);
+            font-family: var(--titulos-font-family);
+            font-size: clamp(0.3em, 0.7em + 1vw, 1.2em);
+
+        }
+        
+        .Contactos__titulo{
+            width: 100%; 
+            top: 58%;
+            position: absolute;
+            text-align: center;
+            color: black;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: var(--titulos-font-family);
+            word-wrap: break-word;
+        }
+        
+        .Contactos__texto{
+            width: 90%;
+            margin-left:5%;
+            height: auto;
+            left: 0%;
+            top: 68%;
+            position: absolute;
+            text-align: center;
+            font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+
+
+            color: black;
+            font-family: var(--texto-font-size);
+            font-weight: 400;
+            
+            }
+
+
+    }

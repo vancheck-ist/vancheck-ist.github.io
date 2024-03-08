@@ -42,7 +42,9 @@ body{
     display: flex;
     position: relative;
     height: 50vh;
-    width: 50vw;
+    width: 50rem;
+    margin-left:10% ;
+    margin-right:10%;
     background-color: blue;
     background-color: #c1c1c1;
     border-radius: 4.1rem;
@@ -71,8 +73,7 @@ body{
     letter-spacing: 0;
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
-    font-size: 1.25rem;
-
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
     object-fit: contain;
 }
 
@@ -190,6 +191,7 @@ div.desc {
 
 .blogtele {
     width:100%;
+    margin-top: 2rem;
     background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
@@ -209,12 +211,13 @@ div.desc {
     color: black;
     position: relative;
     letter-spacing: 0;
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
 }
 .blog__inicial__imgtele{
-    transform:translateY(-20%);
-        margin-bottom: -5%;
+    transform:translateY(0%);
+        margin-bottom: 0%;
         border-radius: 3.5rem;
         position: relative;
         
