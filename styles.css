@@ -193,7 +193,7 @@ img {
 }
 
 
-.solution_example,
+
 .goal {
   width:100%;
   background-color: #EAEAEA;
@@ -202,10 +202,25 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 2rem;
   z-index: 30;
 }
+
+.solution_example {
+  width:100%;
+
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  top: -4rem;
+  z-index: 30;
+}
+
+
 
 .partner{
   width:100%;
@@ -215,8 +230,9 @@ img {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   z-index: 10;
+  
 }
 
 .problem__text {
@@ -225,7 +241,7 @@ img {
   width: 35%;
   color: black;
   position: relative;
-  margin-left: 10%;
+  margin-left: 6%;
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
@@ -280,7 +296,7 @@ border-radius: 2rem;
   width: 35%;
   color: black;
   position: relative;
-  margin-right: 10%;
+  margin-right: 3%;
   letter-spacing: 0;
   font-weight: var(--titulos-font-weight);
   font-family: var(--titulos-font-family);
@@ -288,7 +304,6 @@ border-radius: 2rem;
 
 .goal__img img{
 scale: 0.7;
-transform: translate(30%,-10%);
 position: relative;
 border-radius: 2rem;
 }
@@ -298,10 +313,20 @@ border-radius: 2rem;
   position: relative;
 }
 
-.beneficiaries,
 .solution {
   width:100%;
-  
+  background-color: #EAEAEA;
+  background-position:center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beneficiaries {
+  width:100%;
+  top:-2rem;
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -328,7 +353,7 @@ border-radius: 2rem;
 .solution__img{
 scale: 0.7;
 position: relative;
-margin-top: 5%;
+margin-top: -2rem;
 }
 
 .problemtele,
@@ -344,6 +369,7 @@ margin-top: 5%;
 .Pdfbutton_background{
   width: 100%;
   height: 7rem; 
+  margin-top: -8rem;
  justify-content: center;
   display: flex;
   text-align: center;
