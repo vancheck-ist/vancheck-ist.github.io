@@ -22,13 +22,13 @@
   justify-content: center;
   opacity: 0.95;
 }
-@media(max-width:  600px){
-    
-}
+
 
 .intro__text {
   width: 100%;
   height: 100%;
+  margin-top: 0rem;
+  background-color: aqua;
   position: absolute;
   top: 8rem;
   color: black;
@@ -74,6 +74,7 @@
       .intro__text {
         width: 100%;
         height: 50%;
+        margin-top: 8rem;
         position: absolute;
         top: 2rem;
         color: black;
@@ -93,7 +94,7 @@
     .introduction h1, 
     .goals_home h1,
     .team_home h1,
-    .partners_home{
+    .partners_home h1{
     font-size: clamp(0.3em, 1em + 1vw, 1.5em);
     font-family: var(--titulos-font-family);
     font-weight: var(--titulos-font-weight);
