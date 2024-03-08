@@ -196,7 +196,6 @@ img {
 .solution_example,
 .goal {
   width:100%;
-
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -204,11 +203,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 2rem;
+  z-index: 30;
 }
 
 .partner{
   width:100%;
-  
   background-color: #EAEAEA;
   background-position:center;
   background-size: cover;
@@ -268,12 +268,10 @@ img {
 scale: 0.7;
 }
 
-.solution_example__img{
+.solution_example__img img{
 scale: 0.7;
-transform: translateY(25%);
-max-width: 50%;
+transform: translate(-20%, 0%);
 border-radius: 2rem;
-
 }
 
 .goal__text {
@@ -288,9 +286,9 @@ border-radius: 2rem;
   font-family: var(--titulos-font-family);
 }
 
-.goal__img{
+.goal__img img{
 scale: 0.7;
-transform: translate(30%,-20%);
+transform: translate(30%,-10%);
 position: relative;
 border-radius: 2rem;
 }
@@ -298,7 +296,7 @@ border-radius: 2rem;
 .partner__img{
   scale: 0.7;
   position: relative;
-  }
+}
 
 .beneficiaries,
 .solution {
