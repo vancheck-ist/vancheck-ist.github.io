@@ -506,6 +506,7 @@ margin-top: 5%;
       height: 100%;
       margin-top: 5rem;
       margin-right: -350px;
+      transition: 0.3s;
     }
 
     .barra_tele a{
