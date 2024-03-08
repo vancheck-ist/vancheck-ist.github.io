@@ -439,8 +439,9 @@ margin-top: -2rem;
   .problemtele,.solution,.beneficiaries,
   .goaltele,
   .solution_exampletele {
-    width:100%; 
-    top:8rem;
+    width:100%;
+    height: auto; 
+    top:9rem;
     background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
@@ -450,6 +451,15 @@ margin-top: -2rem;
     justify-content: center;
   }
 
+  .goaltele,
+  .solution_exampletele{
+    top:12rem;
+  }
+
+  .problemtele{
+    top:13rem
+  }
+
 
   .problem,
   .goal,
@@ -457,6 +467,15 @@ margin-top: -2rem;
     display: none;
   }
 
+  .beneficiaries{
+    padding-bottom: 8rem;
+  }
+
+  .beneficiaries img{
+    margin-top: 0.01rem;
+  }
+
+  
   .problem__text,
   .goal__text,
   .solution_example__text{
@@ -472,26 +491,27 @@ margin-top: -2rem;
     font-family: var(--titulos-font-family);
   }
 
-  .goal__img,
   .problem__img,
   .solution_img,
-  .partner__img{
-    
+  .partner__img,
+  .beneficiaries__img{
   transform: translate(0%,0%);
   position: relative;
-
   }
-  .solution_example__img,
-  .beneficiaries__img{
-    transform: translate(0%,0%);
+
+  .goal__img,
+  .solution_example__img
+  {
+    transform: translate(0%,-10%);
     position: relative;
     max-width: 100%;
     margin-top: 0%;
+    scale: 0.7;
   }
+
   .beneficiaries__img{
     scale: 1;
     top: 2rem;
-  
   }
 
   .Pdfbutton_background{
