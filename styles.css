@@ -428,7 +428,7 @@ margin-top: 5%;
   .problem,
   .goal,
   .solution_example {
- display: none;
+    display: none;
   }
 
   .problem__text,
