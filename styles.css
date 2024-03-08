@@ -335,7 +335,8 @@ margin-top: 5%;
 .problemtele,
 .goaltele,
 .solution_exampletele,
-.partnertele{
+.partnertele,
+.barra_tele{
   display: none;
 }
 
@@ -370,16 +371,16 @@ margin-top: 5%;
 
   .email_text,
   .email_button,
-  .teste{
+  .teste,
+  .nav__button{
     visibility:hidden;
     display: none;
   }
-  .testetele{
+  .testetele, 
+  .barra_tele{
     visibility: visible;
     display: flex;
   }
-
-
 
   .nav__logo{
     color: var(--logo-color);
@@ -449,8 +450,6 @@ margin-top: 5%;
     font-family: var(--titulos-font-family);
   }
 
-
-
   .goal__img,
   .problem__img,
   .solution_img,
@@ -475,4 +474,45 @@ margin-top: 5%;
     position: relative;
     margin-top: 0%;
     }
+
+    .barra_tele{
+      height: 100%;
+      z-index: 1000;
+      position: fixed;
+      right: 0%;
+      margin-top: 1.5rem;
+    }
+
+    .barra_tele label{
+      width: 40px;
+      top: 0.6rem;
+      right: 1.9rem;
+      position: absolute;
+    }
+
+    input[type="checkbox"]{
+      display: none;
+    }
+
+    .barra_tele nav{
+      background-color: rgba(3, 11, 18, 0.7);
+      width: 350px;
+      height: 100%;
+      margin-top: 5rem;
+      margin-right: -350px;
+    }
+
+    .barra_tele a{
+      display: block;
+      padding: 20px 5px;
+    }
+
+    .barra_tele a:hover{
+      background-color:#081c2e
+    }
+
+    input[type="checkbox"]:checked ~ nav{
+      transform: translateX(-350px);
+    }
+
 }

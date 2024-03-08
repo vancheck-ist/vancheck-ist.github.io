@@ -397,6 +397,7 @@ div.desc {
         text-align: center;
         align-items: center;
         justify-self: center;
+        right: 50%;
     }
 
 }
