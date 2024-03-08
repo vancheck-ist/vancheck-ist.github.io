@@ -215,15 +215,15 @@ div.desc {
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
 }
+
 .blog__inicial__imgtele{
     transform:translateY(0%);
         margin-bottom: 0%;
         border-radius: 3.5rem;
         position: relative;
-        
-
-
+        scale: 0.8;
 }
+
 
 
 

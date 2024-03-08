@@ -414,6 +414,7 @@ margin-top: -2rem;
     text-align: center;
     transition: .4s;
     width: 30%;
+    transform: translateX(1.9rem);
   }
   
   .partner__text h1,
@@ -453,7 +454,7 @@ margin-top: -2rem;
   .problem,
   .goal,
   .solution_example {
- display: none;
+    display: none;
   }
 
   .problem__text,
@@ -476,74 +477,75 @@ margin-top: -2rem;
   .solution_img,
   .partner__img{
     
+  transform: translate(0%,0%);
+  position: relative;
+
+  }
+  .solution_example__img,
+  .beneficiaries__img{
     transform: translate(0%,0%);
     position: relative;
+    max-width: 100%;
+    margin-top: 0%;
+  }
+  .beneficiaries__img{
+    scale: 1;
+    top: 2rem;
+  
+  }
 
-    }
-    .solution_example__img,
-    .beneficiaries__img{
-      transform: translate(0%,0%);
-      position: relative;
-      max-width: 100%;
-      margin-top: 0%;
-    }
-    .beneficiaries__img{
-      scale: 1;
-      top: 2rem;
-    
-    }
+  .Pdfbutton_background{
+    width: 100%;
+    height: 10rem;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    top:10rem;
+    z-index: 10;
+    background-color: #EAEAEA;
+  }
 
-    .Pdfbutton_background{
-      width: 100%;
-      height: 10rem;
-      justify-content: center;
-      display: flex;
-      text-align: center;
-      position: relative;
-      top:10rem;
-      z-index: 10;
-      background-color: #EAEAEA;
-    }
+  .barra_tele{
+    height: 100%;
+    z-index: 1000;
+    position: fixed;
+    right: 0%;
+    margin-top: 1.5rem;
+  }
 
-    .barra_tele{
-      height: 100%;
-      z-index: 1000;
-      position: fixed;
-      right: 0%;
-      margin-top: 1.5rem;
-    }
+  .barra_tele label{
+    width: 40px;
+    top: 0.6rem;
+    right: 1.9rem;
+    position: absolute;
+  }
 
-    .barra_tele label{
-      width: 40px;
-      top: 0.6rem;
-      right: 1.9rem;
-      position: absolute;
-    }
+  input[type="checkbox"]{
+    display: none;
+  }
 
-    input[type="checkbox"]{
-      display: none;
-    }
+  .barra_tele nav{
+    background-color: rgba(3, 11, 18, 0.9);
+    width: 350px;
+    height: 100%;
+    margin-top: 5rem;
+    margin-right: -350px;
+    transition: 0.3s;
+  }
 
-    .barra_tele nav{
-      background-color: rgba(3, 11, 18, 0.9);
-      width: 350px;
-      height: 100%;
-      margin-top: 5rem;
-      margin-right: -350px;
-      transition: 0.3s;
-    }
+  .barra_tele a{
+    display: block;
+    padding: 20px 5px;
+  }
 
-    .barra_tele a{
-      display: block;
-      padding: 20px 5px;
-    }
+  .barra_tele a:hover{
+    background-color:#081c2e
+  }
 
-    .barra_tele a:hover{
-      background-color:#081c2e
-    }
+  input[type="checkbox"]:checked ~ nav{
+    transform: translateX(-350px);
+  }
 
-    input[type="checkbox"]:checked ~ nav{
-      transform: translateX(-350px);
-    }
 
 }
