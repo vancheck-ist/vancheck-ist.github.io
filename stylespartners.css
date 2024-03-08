@@ -41,7 +41,9 @@
   font-family: var(--titulos-font-family);
   font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
 }
+.tele
 .partnertele{
+  display: none;
   display: none;
 }
 @media(max-width:700px){
