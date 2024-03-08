@@ -272,7 +272,7 @@ scale: 0.7;
 scale: 0.7;
 transform: translateY(25%);
 max-width: 50%;
-
+border-radius: 2rem;
 
 }
 
@@ -292,6 +292,7 @@ max-width: 50%;
 scale: 0.7;
 transform: translate(30%,-20%);
 position: relative;
+border-radius: 2rem;
 }
 
 .partner__img{
