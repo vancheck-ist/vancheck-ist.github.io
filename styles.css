@@ -436,12 +436,12 @@ margin-top: -2rem;
     font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
   }
 
-  .problemtele,.solution,.beneficiaries,
+  .problemtele,.beneficiaries,
   .goaltele,
   .solution_exampletele {
     width:100%;
     height: auto; 
-    top:9rem;
+    top:6rem;
     background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
@@ -451,13 +451,20 @@ margin-top: -2rem;
     justify-content: center;
   }
 
-  .goaltele,
+  .solution{
+    top: 5rem;
+  }
+
   .solution_exampletele{
-    top:12rem;
+    top: 8rem;
+  }
+
+  .goaltele{
+    top:7rem;
   }
 
   .problemtele{
-    top:13rem
+    top:8rem
   }
 
 
@@ -468,7 +475,7 @@ margin-top: -2rem;
   }
 
   .beneficiaries{
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
   }
 
   .beneficiaries img{
@@ -478,7 +485,9 @@ margin-top: -2rem;
   
   .problem__text,
   .goal__text,
-  .solution_example__text{
+  .solution_example__text,
+  .beneficiaries__text,
+  .solution__text{
     text-align: center;
     margin-left: 0%;
     margin-right: 0%;
@@ -497,6 +506,10 @@ margin-top: -2rem;
   .beneficiaries__img{
   transform: translate(0%,0%);
   position: relative;
+  }
+
+  .solution__img{
+    transform: translateY(20%);
   }
 
   .goal__img,
