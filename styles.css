@@ -348,7 +348,6 @@ margin-top: 5%;
  justify-content: center;
   display: flex;
   text-align: center;
-  position: relative;
 }
 .buttonPDF{
   background-color: #D9D9D9;
@@ -478,7 +477,6 @@ margin-top: 5%;
       position: relative;
       top:10rem;
       z-index: 10;
-      
       background-color: #EAEAEA;
     }
 

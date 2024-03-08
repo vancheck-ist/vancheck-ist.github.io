@@ -73,7 +73,7 @@ body{
     letter-spacing: 0;
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
-    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+    font-size: clamp(0.3em, 0.6em + 0.6vw, 1em);
     object-fit: contain;
 }
 
@@ -309,17 +309,25 @@ div.desc {
     color: #d9d9d9;
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
-    font-size: clamp(0.3em, 0.5em + 1vw, 0.4em);
+
     align-items: center;
     align-content: center;
     right: 0%;
-
 }
+
+.app_text h1{
+    transform: translateY(-8px);
+    font-size: clamp(0.3em, 0.5em + 1vw, 0.7em);
+}
+
+.app_text h2{
+    transform: translateY(3px);
+    font-size: clamp(0.3em, 0.8em + 1vw, 0.7em);}
 
 .disclaimer{
     font-weight: var( --titulos-font-weight);
     font-family: var(--titulos-font-family) ;
-    font-size: clamp(0.3em, 0.5em + 1vw, 0.8em);
+    font-size: clamp(0.3em, 0.5em + 1vw, 0.9em);
     text-align: center;
     width: 100%;
     color: #d9d9d9;
@@ -340,10 +348,10 @@ div.desc {
     justify-items: center;
     transition: .4s;
     bottom: 10%;
-    
 }
 
-.app_button:hover{
+.app_button:hover,
+.app_button_tele:hover{
     background-color: #081c2e;
     color: var(--logo-color);
     box-shadow: 0 0 5px #EAEAEA;
@@ -363,7 +371,6 @@ div.desc {
         display: flex;
         visibility: visible;
         position: absolute;
-       
         width:auto;
         color: #d9d9d9;
         font-weight: var( --titulos-font-weight);
@@ -374,6 +381,13 @@ div.desc {
         align-content: center;
     }
 
+    .app_tele h1{
+        transform: translateY(-8px);
+    }
+
+    .app_tele h2{
+        transform: translateY(3px);
+    }
 
     .app_button_tele{  
         display: flex;
