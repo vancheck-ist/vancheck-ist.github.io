@@ -388,6 +388,7 @@ margin-top: 5%;
     text-align: center;
     transition: .4s;
     width: 30%;
+    transform: translateX(1.9rem);
   }
   
   .partner__text h1,
@@ -520,14 +521,5 @@ margin-top: 5%;
     transform: translateX(-350px);
   }
 
-  .nav__logo{
-    color: var(--logo-color);
-    font-weight: var(--logo-font-weight);
-    font-family: var(--logo-font-family);
-    font-size: clamp(0.3em, 0.5em + 1vw, 1.5em);
-    text-align: center;
-    transition: .4s; 
-    width: 30%;
-    transform: translateX(1.9rem);
-  }
+
 }
