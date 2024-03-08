@@ -41,7 +41,7 @@
   font-family: var(--titulos-font-family);
   font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
 }
-.tele
+.tele,
 .partnertele{
   display: none;
   display: none;
@@ -58,6 +58,9 @@
     align-items: center;
     justify-content: center;
     
+  }
+  .tele{
+    display: flex;
   }
 
   .partner {

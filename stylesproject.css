@@ -1,0 +1,11 @@
+
+.telep{
+    display:none;
+}
+
+@media(max-width:1050px){
+    .telep{
+        display:flex;
+    }
+
+}
