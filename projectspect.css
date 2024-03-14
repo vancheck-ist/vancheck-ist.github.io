@@ -1,0 +1,45 @@
+.botao_project {
+    padding: 2rem;
+    width:100%;
+    
+    top:6rem;
+    background-color: #b8b8b8;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow: hidden;
+    z-index: 10; 
+  }
+
+.botao_geral{
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+    text-align: center;
+    padding: 2rem;
+    position:absolute;
+    width: 50%;
+    left: 0%;
+
+}
+
+.botao_detalhes{
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+    margin-right:30px;
+    text-align: center;
+    padding: 2rem;
+    position:absolute;
+    left: 50%;
+    width: 50%;
+
+}
+
+.selecionado{
+    background-color: #081c2e;
+    color:#f1f1f1 ;
+}
+
+.nao_selecionado{
+    color: #000;;
+}
