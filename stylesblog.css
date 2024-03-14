@@ -108,8 +108,11 @@ div.gallery {
 }
 
 .website_creation{
-    background-image:url(img/Image\ First\ Week.png) ; 
+    background-image:url(img/Report/Image\ First\ Week.png) ; 
+}
 
+.website_mobile{
+    background-image: url(img/Report/Website_mobile.jpeg);
 }
   
 
