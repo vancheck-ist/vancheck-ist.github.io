@@ -43,3 +43,37 @@
 .nao_selecionado{
     color: #000;;
 }
+
+.comun_diagr,
+.lista_mat{
+    position: relative;
+    width: 100%;
+    top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.comun_diagr_text,
+.lista_mat_text{
+    position: relative;
+    width: 50%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.comun_diagr h1,
+.lista_mat_text h1{
+    font-size: clamp(0.3em, 1em + 0.9vw, 1.5em);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.lista_mat_text li{
+    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);;
+}
+
+.comun_diagr img{
+    border-radius: 2rem;
+}
+
+
