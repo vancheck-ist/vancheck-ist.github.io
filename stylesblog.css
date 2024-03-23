@@ -325,7 +325,8 @@ div.desc {
 
 .app_text h2{
     transform: translateY(3px);
-    font-size: clamp(0.3em, 0.8em + 1vw, 0.7em);}
+    font-size: clamp(0.3em, 0.8em + 1vw, 0.7em);
+}
 
 .disclaimer{
     font-weight: var( --titulos-font-weight);

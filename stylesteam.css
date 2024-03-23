@@ -317,13 +317,41 @@ body{
   height: 70%;
 }
 
+.fotos__container__individual p{
+  margin-top: 10px;
+}
+
+
  .fotos__imagens{
   width: 100%;
-  background-color: #C0C0C0;
   height: 90%;
   border-radius: 2.5rem;
-  
+ }
 
+ .andre{
+  background-image: url();
+  background-size: cover;
+ }
+ .filipe{
+  background-image: url(img/Team/filipe.webp);
+  background-position:center;
+  background-size: cover;
+ }
+ .antonio{
+  background-image: url();
+  background-size: cover;
+ }
+ .duarte{
+  background-image: url(img/Team/duarte.webp);
+  background-size: cover;
+ }
+ .francisco{
+  background-image: url(img/Team/francisco.webp);
+  background-size: cover;
+ }
+ .miguel{
+  background-image: url();
+  background-size: cover;
  }
 
   @media(max-width:600px){

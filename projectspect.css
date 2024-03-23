@@ -44,45 +44,98 @@
     color: #000;;
 }
 
-.comun_diagr,
-.lista_mat{
+.electrical_specs,
+.system_description,
+.bill_of_material,
+.key_features{
     position: relative;
     width: 100%;
     top: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
 }
-.comun_diagr_text,
-.lista_mat_text{
+
+.system_description_text,
+.key_features_text
+{
     position: relative;
-    width: 70%;
+    width: 85%;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.comun_diagr h1,
-.lista_mat_text h1{
+
+.system_description_text h1,
+.key_features_text h1
+{
+    font-family: var(--titulos-font-family);
     font-size: clamp(0.3em, 0.8em + 0.9vw, 1.5em);
     margin-bottom: 2rem;
     text-align: center;
 }
 
-.lista_mat_text li{
-    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);;
+.key_features_text li{
+    font-family: var(--texto-font-family);
+    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
+    margin-top: 10px;
 }
 
-.lista_mat_pdf{
+
+.electrical_specs_text,
+.bill_of_material_text{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+    font-family: var(--titulos-font-family);
+    font-size: clamp(0.3em, 0.8em + 0.9vw, 1.5em);
+    font-weight: bold;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: var(--texto-font-family);
+    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
+    font-weight: lighter;
+}
+
+.system_description img{
+    scale: 75%;
+    margin-top: -3rem;
+    margin-bottom: -1rem;
+}
+
+.system_description p{
+    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
+    font-family: var(--texto-font-family);
+    font-weight: var(--texto-font-weight);
+    text-align: justify;
+}
+
+
+.specs_pdf{
     position: relative;
     width: 100%;
-    margin-top: 6rem;
+    margin-top: 8rem;
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;}
 
-.comun_diagr img{
-    border-radius: 10px;
+.datasheets{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: clamp(0.3em, 0.7em + 0.8vw, 0.9em);
+    font-family: var(--texto-font-family);
+    font-weight: var(--texto-font-weight);
 }
 
 
+
+
+@media(max-width: 1050px){
+    .datasheets{
+    margin-bottom: -8rem;
+    }
+
+}
