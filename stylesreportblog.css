@@ -1,7 +1,6 @@
 .blogweek {
     width:100%;
     min-height:100vh;
-    background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
     position: relative;
@@ -18,26 +17,27 @@
     position: relative;
     width: 30rem;
    
-   
   }
 
   .blogweek_text {
     text-align: center;
     width: 60%;
-    
     color: black;
     position: relative;
     align-items: center;
     justify-items: center;
-    
-
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
-    
   }
 
+  .bill_mat_text{
+    width: 80%;
+  }
+  
+
   .blogweek_text h1{
+    font-size: clamp(0.3em, 0.8em + 0.9vw, 1.5em);
     text-align: center;
   }
   .blogweek_text p,

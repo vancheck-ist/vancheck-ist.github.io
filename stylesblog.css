@@ -114,6 +114,11 @@ div.gallery {
 .website_mobile{
     background-image: url(img/Report/Website_mobile.jpeg);
 }
+
+.bill_of_material_report{
+    background-image: url(img/Report/Website_bill_of_material.png);
+    background-size: cover;
+}
   
 
 div.gallery img {

@@ -329,7 +329,8 @@ body{
  }
 
  .andre{
-  background-image: url();
+  background-image: url(img/Team/andre.webp);
+  background-position:center;
   background-size: cover;
  }
  .filipe{
@@ -343,10 +344,12 @@ body{
  }
  .duarte{
   background-image: url(img/Team/duarte.webp);
+  background-position:center;
   background-size: cover;
  }
  .francisco{
   background-image: url(img/Team/francisco.webp);
+  background-position:center;
   background-size: cover;
  }
  .miguel{
