@@ -21,7 +21,7 @@
     position:absolute;
     width: 50%;
     left: 0%;
-
+    transform: translateY(5%);
 }
 
 .botao_detalhes{
@@ -32,7 +32,7 @@
     position:absolute;
     left: 50%;
     width: 50%;
-
+    transform: translateY(5%);
 }
 
 .selecionado{
@@ -94,6 +94,7 @@
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
+    padding: 0.5rem;
     font-family: var(--texto-font-family);
     font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
     font-weight: lighter;
