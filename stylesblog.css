@@ -108,7 +108,7 @@ div.gallery {
 }
 
 .website_creation{
-    background-image:url(img/Report/Image\ First\ Week.png) ; 
+    background-image:url(img/Report/Image\ First\ Week.webp) ; 
 }
 
 .website_mobile{
@@ -117,6 +117,11 @@ div.gallery {
 
 .bill_of_material_report{
     background-image: url(img/Report/Website_bill_of_material.png);
+    background-size: cover;
+}
+
+.elect_spec_report{
+    background-image: url(img/Report/elect_specs.webp);
     background-size: cover;
 }
   
