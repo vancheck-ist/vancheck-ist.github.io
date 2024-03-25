@@ -29,9 +29,12 @@
     letter-spacing: 0;
     font-weight: var(--titulos-font-weight);
     font-family: var(--titulos-font-family);
+    font-size: clamp(0.3em, 0.7em + 0.8vw, 1.2em);
+    background-color: aqua;
   }
 
-  .bill_mat_text{
+  .bill_mat_text,
+  .elect_spec_text{
     width: 80%;
   }
 
