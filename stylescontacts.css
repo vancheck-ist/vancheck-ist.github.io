@@ -44,14 +44,15 @@ body{
     transform-origin: 0 0;
     border: 1px black solid;
 }
-.Updates{
-width: 50%;
-height:90%;
-left: 50%;
-top: 5%;
 
-position: absolute;
+.Updates{
+    width: 50%;
+    height:90%;
+    left: 50%;
+    top: 5%;
+    position: absolute;
 }
+
 
 .Update__titulo{
     width: 100%; 
@@ -80,7 +81,6 @@ position: absolute;
 }
 
 
-
 .Submit{
     width: 36%;
     height: 10%;
@@ -97,7 +97,15 @@ position: absolute;
     justify-content:center;
     align-items: center;
     display: inline-flex;
+    transition: 0.4s;
 }
+
+.Submit:hover, .Questions:hover{
+    background-color: #081c2e;
+    .Submit__text{
+    color: var(--logo-color);
+    }
+  }
 
 .Questions{
     width: 36%;
@@ -115,6 +123,7 @@ position: absolute;
     justify-content:center;
     align-items: center;
     display: inline-flex;
+    transition: 0.4s;
 }
 
 
