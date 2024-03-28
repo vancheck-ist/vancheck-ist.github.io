@@ -113,8 +113,7 @@ table, th, td{
 .specs_pdf{
     position: relative;
     width: 100%;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
+    margin-top: 4rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -124,6 +123,7 @@ table, th, td{
 .datasheets{
     margin-top: 3rem;
     text-align: center;
+    position: relative;
     font-size: clamp(0.3em, 0.7em + 0.8vw, 0.9em);
     font-family: var(--texto-font-family);
     font-weight: var(--texto-font-weight);
