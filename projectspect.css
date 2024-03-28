@@ -132,9 +132,9 @@ table, th, td{
 
 
 
-@media(max-width: 1050px){
-    .datasheets{
-    margin-bottom: -8rem;
+@media(max-width: 510px){
+   .datasheets{
+    margin-top: 4rem;
     }
 
 }
