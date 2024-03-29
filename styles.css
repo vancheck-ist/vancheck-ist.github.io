@@ -392,8 +392,8 @@ position: relative;
   .testetele, 
   .barra_tele{
     visibility: visible;
-    display: flex;
-  }
+    display:flex;
+    }
 
   .nav__logo{
     color: var(--logo-color);
@@ -480,10 +480,10 @@ position: relative;
   
   .barra_tele{
     height: 100%;
-    position: fixed;
+    position: relative;
     direction: rtl;
     top:2rem;
-    z-index: 1000;
+    z-index: 1;
     flex-direction: column;
     right:0%;
   }
@@ -500,9 +500,9 @@ position: relative;
 
   .barra_tele nav{
     background-color: rgba(3, 11, 18, 0.9);
-    margin-top:1.5rem ;
+    margin-top:4rem ;
     height: 100%;
-    position: relative;
+    position: fixed;
     width: 350px;
     margin-right: -350px;
     transition: 0.3s;
