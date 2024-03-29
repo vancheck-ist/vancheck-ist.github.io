@@ -296,7 +296,6 @@ div.desc {
     font-style: var(--logo-font-style);
     letter-spacing: var(--logo-letter-spacing);
     line-height: var(--logo-line-height);
-    z-index: 100;
 }
 
 
