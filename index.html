@@ -16,7 +16,9 @@
         <link rel="stylesheet" href="styleshome.css"/>
         <title>Auto Inventory Check</title>
     </head>
+
     <body>
+        <!--================HEADER=================-->
         <header class="header" id="header">
             <div class="nav container">
                 <div class="nav__logo container">Auto Inventory<br/>Check</div>
@@ -28,28 +30,30 @@
                     <a class="nav__button__tab" href="./partners.html">Partners</a>
                     <a class="nav__button__tab" href="./contacts.html">Contact</a>
                 </nav>
+                <div class="barra_tele">
+                    <input type="checkbox" id="check">
+                    <label for="check">
+                        <img src="img/menu.png" class="img_barra_tele">
+                    </label>
+                    <nav>
+                        <ul>
+                            <li><a class="nav__button__tab" href="./index.html">Home</a></li>
+                            <li><a class="nav__button__tab" href="./project.html">Project</a></li>
+                            <li><a class="nav__button__tab" href="./blog.html">Blog</a></li>
+                            <li><a class="nav__button__tab" href="./team.html">Team</a></li>
+                            <li><a class="nav__button__tab" href="./partners.html">Partners</a></li>
+                            <li><a class="nav__button__tab" href="./contacts.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+            
         </header>
 
-            <div class="barra_tele">
-                <input type="checkbox" id="check">
-                <label for="check">
-                    <img src="img/menu.png" class="img_barra_tele">
-                </label>
-                <nav>
-                    <ul>
-                        <li><a class="nav__button__tab" href="./index.html">Home</a></li>
-                        <li><a class="nav__button__tab" href="./project.html">Project</a></li>
-                        <li><a class="nav__button__tab" href="./blog.html">Blog</a></li>
-                        <li><a class="nav__button__tab" href="./team.html">Team</a></li>
-                        <li><a class="nav__button__tab" href="./partners.html">Partners</a></li>
-                        <li><a class="nav__button__tab" href="./contacts.html">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
 
 
 
+         <!--================Pagina Inicial=================-->
         <section class="intro">
             
             <div class="intro__center">
@@ -62,44 +66,43 @@
             <h1>Introduction</h1>
             <h2>Automatic inventory checking is a project which’s main goal is to automate the verification of presence, of a previously specified inventory of items, in a designated area, defined to be the interior of a van.</h2>
         </section>
-        <section class="Pdfbutton_background_home ">
-            <div class="buttonPDF">
+        <section class="Pdfbutton_background_home">
+            <div class="buttonPDF_home">
                 <a  download="" href="pdf\project-proposal_final.pdf" class="button button--ghost"> Download Project Proposal </a>
             </div>    
         </section>
-        <section class="goals_home section">
+        <section class="goals_home">
             <h1>Goals</h1>
-            <div >
+            <div class="carac_home">
                 <div class="practical"> 
                     <img src="img/Home/Prático.png">
                     <h2 class="practical__text">Practical</h2>
                 </div>
                 <div class="cheap"> 
                     <img src="img/Home/Barato.png">
-                    <h2 class="cheap__text">Cheap</h2>
+                    <h2 class="cheap__text">Low&NonBreakingSpace;Cost</h2>
                 </div>
                 <div class="efficient"> 
                     <img src="img/Home/Eficiente.png">
-                    <h2 class="efficient__text">Efficient</h2>
+                    <h2 class="efficient__text">Reliable</h2>
                 </div>
             </div>
         </section>
         
 
-        <section class="team_home ">
+        <section class="team_home section ">
             <h1>Team</h1>
-            <h2>Automatic inventory checking is a project which’s main goal is to automate the verification of presence, of a previously specified inventory of items, in a designated area, defined to be the interior of a van.</h2>
+            <h2>We are six students of Electrical and Computer Engineering, from Instituto Superior Técnico (IST), carrying out a project as a significant part of our academic journey, with the main objective of creating conditions to integrate as many concepts acquired throughout this journey into solving a real problem.</h2>
         </section>
-        <section class="partners_home">
+        <section class="partners_home section">
             <h1>Partners</h1>
-            <img class="partners_home__img" src="img/Home/Partner.png">
-        </section>
-        <section class="section">
-        </br></br>
+            <div class="partners_home__div">
+                <img class="partners_home__img" src="img/Home/Partner.png">
+            </div>
         </section>
 
         <!--=============== FOOTER ===============-->
-        <footer class="footer">
+           <footer class="footer">
             <div class="footer__container container grid">        
                 <ul class="footer__list">
                     <li>
@@ -115,7 +118,8 @@
                         <a class="nav__button__tab" href="./team.html">Team</a>
                     </li>
                     <li>
-                        <a class="nav__button__tab" href="./partners.html">Partners</a>                    </li>
+                        <a class="nav__button__tab" href="./partners.html">Partners</a>
+                    </li>
                     <li>
                         <a class="nav__button__tab" href="./contacts.html">Contact</a>
                     </li>
@@ -141,8 +145,10 @@
                 <div style="text-align:center"> 
                     <script type="text/javascript" src="https://freehitcounters.org/count/e0ue"></script><br>
                     
-                </div>
-                <p class="disclaimer">*All pictures present in this website, with the exception of partner logos were AI genereted by Microsoft Desginer.</p>
+                </div >
+                <center>
+                    <p class="disclaimer">*All pictures present in this website, with the exception of partner logos were AI genereted by Microsoft Desginer.</p>
+                </center>
             </div>
         </footer>
      </body>

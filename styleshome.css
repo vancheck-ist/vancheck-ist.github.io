@@ -1,7 +1,8 @@
 /*=============== Front page===============*/
 .intro {
+  top:0rem;
   width:100%;
-  min-height:878px;
+  min-height: 800px;
   height: 100vh;
   max-height: 950px;
   background-image: url(img/Home/home_background.webp);
@@ -16,301 +17,261 @@
 .intro__center {
   position: relative;
   width: 32rem;
-  height:100%;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  top: 10%;
+  height:90%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
   background-color: #EAEAEA;
-  justify-content: center;
+  justify-content: space-between;
   opacity: 0.95;
 }
 
 
 .intro__text {
-  width: 100%;
-  height: 100%;
-  margin-top: 0rem;
-  position: absolute;
-  top: 8rem;
+  width: 100%; 
+  display: flex;
+  position: relative;
+  text-align: center;
+  justify-content: center;
   color: black;
   font-weight: var(--logo-font-weight);
   font-family: var(--logo-font-family);
-  font-size:4rem;
+  font-size: 4rem;
+  margin-top: 3rem;
   
 }
 
 .intro__image {
-  position: absolute;
-  object-fit:cover;
-  left:0%;
-  bottom: 0vh;
-  
+  display: flex;
+  position: relative;
+  object-fit:cover; 
 }
 
 @media(max-width:  600px){
-    .intro {
-        width:100vw;
-        min-height:650px;
-        height: 100vh;
-        max-height: 750px;
-        background-image: url(img/Home/home_background.webp);
-        background-position:center;
-        background-size: cover;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-      }
-      
-      .intro__center {
-        position: relative;
-        width: 20rem;
-       
-        text-align: center;
-        background-color: #EAEAEA;
-        justify-content: center;
-        opacity: 0.95;
-      }
-      
-      .intro__text {
-        width: 100%;
-        height: 50%;
-        margin-top: 8rem;
-        position: absolute;
-        top: 2rem;
-        color: black;
-        font-weight: var(--logo-font-weight);
-        font-family: var(--logo-font-family);
-        font-size:3rem;
-        
-      }
-            
+  .intro {
+    top:0rem;
+    width:100%;
+    min-height: 600px;
+    height: 100vh;
+    max-height: 720px;
+    background-image: url(img/Home/home_background.webp);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .intro__text {
+    width: 100%; 
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-weight: var(--logo-font-weight);
+    font-family: var(--logo-font-family);
+    font-size:3rem;
+    margin-top: 5rem;
+    
+  }
+              
+}
+/*=============== FIM Front page===============*/
+  /*Primeira Pagina*/  
+.introduction {
+    position: relative;
+    text-align: center;
+}
+.introduction h1, 
+.goals_home h1,
+.team_home h1,
+.partners_home h1{
+font-size: clamp(0.3em, 1em + 1vw, 1.5em);
+font-family: var(--titulos-font-family);
+font-weight: var(--titulos-font-weight);
+font-weight: bold;
+line-height: 5rem;
+}
+    
+.introduction h2{
+  position: relative;
+  width: 60%;
+  margin-left:20% ;
+  margin-right:20% ;
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+  font-family: var(--texto-font-family);
+  font-weight: var(--texto-font-weight);
 }
 
-    /*Preimeira Pagina*/  
-    .introduction {
-        position: relative;
-        text-align: center;
-      }
-    .introduction h1, 
-    .goals_home h1,
-    .team_home h1,
-    .partners_home h1{
-    font-size: clamp(0.3em, 1em + 1vw, 1.5em);
-    font-family: var(--titulos-font-family);
-    font-weight: var(--titulos-font-weight);
-    font-weight: bold;
-    line-height: 5rem;
-    }
-    
-    .introduction h2{
-      position: relative;
-      width: 60%;
-      font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
-      font-family: var(--texto-font-family);
-      font-weight: var(--texto-font-weight);
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, 0);
-    }
-
-    .buttonPDF{
-        background-color: #D9D9D9;
-        position: absolute;
-        color: var(--body-color);
-        padding: 0.75rem 2rem;
-        border-radius: 2rem;
-        font-weight: var( --titulos-font-weight);
-        font-family: var(--titulos-font-family) ;
-        font-size: clamp(0.3em, 0.7em + 1vw, 1.2em);
-        transform: translate(0,50%);
-        transition: .2s;
-        margin-left: 10%;
-        margin-right: 10%;
-      }
-      
-      .Pdfbutton_background_home{
-        width: 100%;
-        height: 7rem; 
-       justify-content: center;
-        display: flex;
-        text-align: center;
-        position: relative;
-       
-      }
-      
-      .buttonPDF:hover{
-        background-color: #081c2e;
-        color: var(--logo-color);
-      }
-      .goals_home {
-        margin-top: 4vh;
-        position: relative;
-        text-align: center; 
-      }
-      
-      .goals_home h2 {
-        font-size: var(--texto-font-size);
-        font-family: var(--texto-font-family);
-        font-weight: var(--texto-font-weight);
-      }
-      
-.practical{
-    margin-top: 6rem;
-    width: 5rem;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-270%, 0%);
-    text-align: center;
-  }
-  
-  .practical__text {
-    width: auto;
-    position: absolute;
-    bottom: -51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .cheap{
-    margin-top: 6rem;
-    width: 4.5rem;
-    position: absolute;;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    scale: 1.1;
-  }
-  
-  .cheap__text {
-    width: auto;
-    position: absolute;
-    bottom: -55%;
-    left: 50%;
-    transform: translate(-40%, -50%);
-  }
-  
-  .efficient{
-    margin-top: 6rem;
-    width: 4.8rem;
-    position: absolute;
-    top: 53%;
-    left: 50%;
-    transform: translate(170%, 0%);
-  }
-  
-  .efficient__text {
-    width: auto;
-    position: absolute;
-    bottom: -51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-
-      @media(max-width:600px){
-        .introduction h2{
-            
-            width: 90%;
-          }
-.practical{
-    margin-top: 6rem;
-    width: 5rem;
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-200%, 0%);
-    text-align: center;
-  }
-  
-  .practical__text {
-    width: auto;
-    position: absolute;
-    bottom: -51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .cheap{
-    margin-top: 6rem;
-    width: 4.5rem;
-    position: absolute;;
-    top: 56%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    scale: 1.1;
-
-  }
-  
-  .cheap__text {
-    width: auto;
-    position: absolute;
-    bottom: -51%;
-    left: 50%;
-    transform: translate(-40%, -50%);
-  }
-  
-  .efficient{
-    margin-top: 6rem;
-    width: 4.8rem;
-    position: absolute;  
-    top: 55%;
-    left: 50%;
-    transform: translate(120%, 0%);
-  }
-  
-  .efficient__text {
-    width: auto;
-    position: absolute;
-    bottom: -51%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-   }
-
-
-   .team_home {
+.buttonPDF_home{
+    background-color: #D9D9D9;
     position: relative;
-    text-align: center;  
-    top: 14rem;
-    height: auto;
+    color: var(--body-color);
+    padding: 0.75rem 2rem;
+    border-radius: 2rem;
+    font-weight: var( --titulos-font-weight);
+    font-family: var(--titulos-font-family) ;
+    font-size: clamp(0.3em, 0.7em + 1vw, 1.2em);
+    transition: .2s;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+      
+.Pdfbutton_background_home{
+  width: 100%;
+  padding: 2rem;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  position: relative;
   
-  }
-  
-  .partners_home {
+}
+
+.buttonPDF:hover{
+  background-color: #081c2e;
+  color: var(--logo-color);
+}
+
+  /*Goal Pagina*/ 
+.goals_home {
+  margin-top: 4vh;
+  position: relative;
+  text-align: center; 
+}
+
+.goals_home h2 {
+  font-size: var(--texto-font-size);
+  font-family: var(--texto-font-family);
+  font-weight: var(--texto-font-weight);
+}
+      
+.carac_home{
+  margin-left: 5%;
+  margin-right: 5%;
+  background-position:center;
+  position: relative;
+  display: flex;
+  align-items:center;
+  align-content: center;
+  justify-content: space-evenly;
+
+}
+
+.practical{
+    width: 5.5rem;
     position: relative;
     text-align: center;
-    top:19rem;
- 
+    padding: 1rem 0rem 1rem;
+}
+  
+.practical__text {
+  width: auto;
+  position: relative;
+
+}
+  
+.cheap{
+  width: 4.5rem;
+  position: relative;
+  scale: 1.1;
+  padding: 1rem 0rem 1rem;
+}
+  
+.cheap__text {
+  width: auto;
+  position: relative;
+  transform: translateX(-15%);
+  
+}
+
+.efficient{
+  width: 4.8rem;
+  position: relative;
+  padding: 1rem 0rem 1rem;
+}
+
+.efficient__text {
+  width: auto;
+  position: relative;
+}
+  
+@media(max-width:400px){
+  .carac_home{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-position:center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    align-content: center;
+    justify-content: space-evenly;
   }
-  
-  .partners_home__img{
-   position: relative;
-    scale: 0.60;
-    transform: translateY(-30%);
-   
+}
+
+/*Fim Goal Pagina*/  
+.team_home {
+  position: relative;
+  text-align: center;  
+  height: auto;
+
+}
+
+.partners_home {
+  width: 100%;
+  position: relative;
+  text-align: center;
+
+}
+.partners_home__div{
+  position: relative;
+
+}
+.partners_home__img{
+  width: 20rem;
+  position: relative;
+
   }
-  
-  .goals_home h1,
-  .team_home h1,
-  .partners_home {
-   position: relative;
-  }
-  
-  
+
+.goals_home h1,
+.team_home h1,
+.partners_home  h1{
+  position: relative;
+}
+
+
+.team_home h2 {
+  position: relative;
+  width: 60%;
+  margin-left:20%;
+  font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
+  font-family: var(--texto-font-family);
+  font-weight: var(--texto-font-weight);
+
+}
+
+@media(max-width:600px){
   .team_home h2 {
-    position: relative;
-    width: 60%;
-    margin-left:20%;
-    font-size: clamp(0.3em, 0.7em + 1vw, 1.1em);
-    font-family: var(--texto-font-family);
-    font-weight: var(--texto-font-weight);
+      
+      width: 80%;
+      margin-left:10%;
+      margin-right:10%;
+  }
+  .introduction h2{
+   
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
 
   }
-  
-  @media(max-width:600px){
-    .team_home h2 {
-        
-        width: 90%;
-        margin-left:5%;
+  .partners_home__img{
+    width: 15rem;
+    position: relative;
     }
-  }
+  
+}

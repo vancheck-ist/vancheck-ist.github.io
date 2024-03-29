@@ -1,8 +1,7 @@
 .botao_project {
     padding: 2rem;
     width:100%;
-    
-    top:6rem;
+    padding-top: 8rem; 
     background-color: #b8b8b8;
     background-position:center;
     background-size: cover;
@@ -122,6 +121,9 @@ table, th, td{
 
 .datasheets{
     margin-top: 3rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10% ;
     text-align: center;
     position: relative;
     font-size: clamp(0.3em, 0.7em + 0.8vw, 0.9em);
@@ -134,14 +136,14 @@ table, th, td{
 
 @media(max-width: 510px){
    .datasheets{
+
     margin-top: 4rem;
     }
 
 }
 
 .blogweekspec {
-    top:2rem;
-    margin-bottom: 6rem;
+    margin-top:2rem;
     width:100%;
     background-position:center;
     background-size: cover;

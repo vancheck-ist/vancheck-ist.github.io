@@ -1,5 +1,6 @@
 .blogweek {
     width:100%;
+    margin-top:8rem;
     min-height:100vh;
     background-position:center;
     background-size: cover;
@@ -45,9 +46,13 @@
     font-size: clamp(0.3em, 0.8em + 0.9vw, 1.5em);
     text-align: center;
   }
-  .blogweek_text p,
+  
   .blogweek_text li{
     text-align: left;
+  }
+
+  .blogweek_text p{
+    text-align: center;
   }
 
   .botao_report{
@@ -62,11 +67,10 @@
   text-align: center;
   align-items: center;
   border-radius: 2rem;
-  position: absolute;
-  left: 50%;
+  position: relative;
   bottom: 0%;
-  transform: translate(-50%);
   transition: 0.4s;
+  padding: 0rem 1rem;
 }
 
 .botao_report:hover{

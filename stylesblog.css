@@ -19,21 +19,25 @@ body{
 
 .blog__container {
     position: absolute;
-    /* row-gap: 4.5rem; */
-    padding-top: 1.5rem;
+    
 }
   
-
+.blogtitulo{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top:8rem;
+}
 
 .blog__title {
     font-size: clamp(0.3em, 1em + 0.9vw, 1.5em);
-    margin-top: 2rem;
 }
 
 .blog__inicial__data {
     display: flex;
     position: relative;
-    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
     width: 100vw;
     justify-content: center;   
 }
@@ -202,7 +206,7 @@ div.desc {
 
 .blogtele {
     width:100%;
-    margin-top: 2rem;
+    padding-top: 1rem;
     background-color: #EAEAEA;
     background-position:center;
     background-size: cover;
@@ -228,11 +232,9 @@ div.desc {
 }
 
 .blog__inicial__imgtele{
-    transform:translateY(-9%);
-        margin-bottom: 0%;
         border-radius: 3.5rem;
         position: relative;
-        scale: 0.8;
+        width:20rem;
 }
 
 
@@ -303,6 +305,11 @@ div.desc {
     justify-content: center;
     column-gap: 1.5rem;   
 }
+@media(max-width:350px){
+.footer__list{
+    display: none;
+}
+}
 
 .app_container {
     display: flex;
@@ -327,12 +334,11 @@ div.desc {
 }
 
 .app_text h1{
-    transform: translateY(-8px);
     font-size: clamp(0.3em, 0.5em + 1vw, 0.7em);
 }
 
 .app_text h2{
-    transform: translateY(3px);
+
     font-size: clamp(0.3em, 0.8em + 1vw, 0.7em);
 }
 
@@ -341,7 +347,7 @@ div.desc {
     font-family: var(--titulos-font-family) ;
     font-size: clamp(0.2em, 0.4em + 0.8vw, 0.9em);
     text-align: center;
-    width: 100%;
+    width: 90%;
     color: #d9d9d9;
 }
 .app_button {
@@ -382,7 +388,7 @@ div.desc {
     .app_tele{
         display: flex;
         visibility: visible;
-        position: absolute;
+        position: relative;
         width:auto;
         color: #d9d9d9;
         font-weight: var( --titulos-font-weight);
@@ -392,40 +398,30 @@ div.desc {
         flex-direction: column;
         align-content: center;
     }
-
     .app_tele h1{
-        transform: translateY(-8px);
+        padding: 0.5rem 0 0.5rem;
     }
-
-    .app_tele h2{
-        transform: translateY(3px);
-    }
-
     .app_button_tele{  
         display: flex;
         visibility: visible;  
         position: relative;
         width: auto;
         margin-left: 0%;
-        height: 4rem;
         background-color: #d9d9d9;
         color: rgba(0, 0, 0, 0.51);
         padding: 1.2rem 4rem;
         border-radius: 3rem;
         font-weight: var( --titulos-font-weight);
         font-family: var(--titulos-font-family) ;
-        font-size: clamp(0.3em, 0.5em + 1vw, 1em);
+        font-size: clamp(1em, 1em + 1vw, 1em);
         text-align: center;
-        
         transition: .4s;
-        bottom: 10%;
     }
 
     .app_container_tele {
         display: flex;
         position: relative;
         width: 100vw;
-       
         height: 6rem;
         text-align: center;
         flex-direction: column;
