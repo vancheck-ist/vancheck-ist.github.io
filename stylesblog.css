@@ -126,6 +126,10 @@ div.gallery {
 .elect_spec_report{
     background-image: url(img/Report/elect_specs.webp);
 }
+
+.ble_commun{
+    background-image: url(img/Proj_details/diagrama_comu.jpg);
+}
   
 
 div.gallery img {
