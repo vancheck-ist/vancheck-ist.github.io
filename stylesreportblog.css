@@ -73,10 +73,11 @@
   padding: 0rem 1rem;
 }
 
-.botao_report:hover{
+.botao_report:hover,
+.botao_report_next:hover,
+.botao_report_previous:hover{
   background-color: #081c2e;
   color: var(--logo-color);
-  box-shadow: 0 0 5px #EAEAEA;
 }
 
 .next_previous_div{
@@ -100,13 +101,9 @@ width: 60%;
   border-radius: 2rem;
 }
 
+.botao_report_next,
 .botao_report_previous{
   width: auto;
   position: relative;
- 
-}
-
-.botao_report_next{
-  width: auto;
-    position: relative;
+  transition: 0.4s;
 }
