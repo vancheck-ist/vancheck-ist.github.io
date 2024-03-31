@@ -135,7 +135,7 @@ div.gallery {
     background-image: url(img/Report/problem.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: 30%;
 }
   
 
