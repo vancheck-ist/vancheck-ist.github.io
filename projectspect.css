@@ -71,7 +71,7 @@
     text-align: center;
 }
 
-.key_features_text li{
+.key_features_text li,.key_features_text p{
     font-family: var(--texto-font-family);
     font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
     margin-top: 10px;
@@ -81,6 +81,8 @@
 .electrical_specs_text,
 .bill_of_material_text{
     text-align: center;
+    justify-items: center;
+    align-items: center;
     font-family: var(--titulos-font-family);
     font-size: clamp(0.3em, 0.7em + 0.9vw, 1.4em);
     font-weight: bold;
