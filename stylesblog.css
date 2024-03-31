@@ -130,6 +130,13 @@ div.gallery {
 .ble_commun{
     background-image: url(img/Proj_details/diagrama_comu.jpg);
 }
+
+.problems{
+    background-image: url(img/Report/problem.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
   
 
 div.gallery img {
