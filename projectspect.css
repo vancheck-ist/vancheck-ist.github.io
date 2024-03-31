@@ -72,7 +72,9 @@
     text-align: center;
 }
 
-.key_features_text li,.key_features_text p .system_description_text p{
+.key_features_text li,
+.key_features_text p,
+.system_description_text p{
     font-family: var(--texto-font-family);
     font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
     margin-top: 10px;
