@@ -40,7 +40,8 @@
 }
 
 .nao_selecionado{
-    color: #000;;
+    background-color:  #b8b8b8;
+    color: #000;
 }
 
 .electrical_specs,
