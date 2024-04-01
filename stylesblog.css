@@ -127,8 +127,12 @@ div.gallery {
     background-image: url(img/Report/elect_specs.webp);
 }
 
-.ble_commun{
+.rfid_commun{
     background-image: url(img/Proj_details/diagrama_comu.jpg);
+}
+
+.ble_communication{
+    background-image: url(img/Report/rfid_commun.png);
 }
 
 .problems{
