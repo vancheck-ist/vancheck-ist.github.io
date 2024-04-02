@@ -154,7 +154,7 @@ div.gallery img {
     width: 6rem;
     font-weight: var(--texto-font-weight);
     font-family: var(--texto-font-family);
-    font-size: 1.5rem;
+    font-size: clamp(0.8rem, 1em + 0.9vw, 1.5rem);
     background-color: #f1f1f1;
     box-shadow: 0 5px 20px 4px rgba(0, 0, 0, 0.4);
     text-align: center;
@@ -192,7 +192,8 @@ div.desc {
     margin: auto;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
-    font-size: 1.05rem;
+    font-size: clamp(0.3em, 1em + 0.9vw, 1.05rem);
+    max-height: 3.7rem;
 }
 
 
