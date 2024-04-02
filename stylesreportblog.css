@@ -20,6 +20,13 @@
    
   }
 
+  .blog_video{
+    border-radius: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 30rem;
+  }
+
   .blogweek_text {
     text-align: center;
     width: 60%;
