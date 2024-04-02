@@ -126,13 +126,15 @@ div.gallery {
 
 .elect_spec_report{
     background-image: url(img/Report/elect_specs.webp);
-
 }
+
 .problems{
     background-image: url(img/Report/problem.jpeg);
-    background-size: contain;
+    background-color: #F9F5F4;
+    background-size:17rem;
+    background-position-y: -4.5rem;
     background-repeat: no-repeat;
-    background-position-y: 30%;
+
 }
 
 .rfid_commun{
