@@ -33,7 +33,7 @@
 
   .blogweek_text {
     text-align: center;
-    width: 60%;
+    width: 80%;
     color: black;
     position: relative;
     align-items: center;
@@ -97,7 +97,7 @@ padding: 1rem;
 display: flex;
 justify-content: space-between;
 text-align:space-around;
-width: 60%;
+width: 70%;
 }
 
 .next_previous_div a{
