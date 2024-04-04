@@ -13,11 +13,15 @@
   }
 
   .blog_f1{
-    scale :1;
+    scale: 1;
     border-radius: 40px;
     position: relative;
     width: 30rem;
    
+  }
+
+  .achived_results_report{
+    width: 20rem;
   }
 
   .blog_video{

@@ -148,6 +148,14 @@ div.gallery {
 .app_design{
     background-image: url(img/Report/app_design.png);
 }
+.mid_program_presentation{
+    background-image: url(img/Report/mid_program_presentation.jpg);
+}
+
+.achived_results{
+    background-image: url(img/Report/Achived_results.jpg);
+    background-position-y: -3.5rem;
+}
 
 
   
