@@ -9,6 +9,8 @@
 }
 html.lenis, html.lenis body {
   height: auto;
+  overflow-x: hidden;
+
 }
 
 .lenis.lenis-smooth {
@@ -28,6 +30,8 @@ html.lenis, html.lenis body {
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body,
@@ -495,7 +499,13 @@ position: relative;
   }
 
 /*=============== Barra lateral===============*/
-  
+#icon {
+  width: 40px; /* Ajuste conforme necessário */
+  height: 40px; /* Ajuste conforme necessário */
+  background-image: url('img/menu.png');
+  background-size: cover;
+  transition: transform 0.3s;
+}
   .barra_tele{
     height: 100%;
     position: relative;
@@ -534,6 +544,15 @@ position: relative;
   .barra_tele a:hover{
     background-color:#081c2e
   }
+
+  input[type="checkbox"] + label #icon {
+    transition: transform 0.3s;
+}
+
+input[type="checkbox"]:checked + label #icon {
+    background-image: url('img/close.png');
+    transform: rotate(90deg);
+}
 
   input[type="checkbox"]:checked ~ nav{
     transform: translateX(-350px);
