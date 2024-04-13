@@ -142,6 +142,7 @@ gsap.to(".partners_home__img", {
 });
 
 //BLOG
+//inicio blog
 gsap.set(".blogtitulo",{
   opacity:0,
   yPercent:-100,
@@ -196,4 +197,116 @@ gsap.to([".blog__inicial__img",".blog__inicial__imgtele"], {
   xPercent:0,
 });
 
+//blog report
 gsap.from(".responsive",{duration:1.5, opacity: 0, ease:"power1"});
+
+//TEAM
+//about us
+gsap.set(".about_us__text h1",{
+  opacity:0,
+  yPercent:-100,
+    
+});
+
+gsap.to(".about_us__text h1", {
+  scrollTrigger:{
+    trigger: ".about_us__text",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  yPercent:0
+});
+
+gsap.set(".about_us__text p",{
+  opacity:0,
+  xPercent:100,
+    
+});
+
+gsap.to(".about_us__text p", {
+  scrollTrigger:{
+    trigger: ".about_us__text",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  xPercent:0
+});
+
+//equipas 
+
+gsap.set(".teams__text h1",{
+  opacity:0,
+  yPercent:-100,
+    
+});
+
+gsap.to(".teams__text h1", {
+  scrollTrigger:{
+    trigger: ".about_us",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  yPercent:0
+});
+
+gsap.set(".teams__text h2",{
+  opacity:0,
+  yPercent:-100,
+    
+});
+
+gsap.to(".teams__text h2", {
+  scrollTrigger:{
+    trigger: ".teams__text h1",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  yPercent:0
+});
+
+gsap.set(".text_triangulo p",{
+  opacity:0,
+  yPercent:-100,
+    
+});
+
+gsap.to(".text_triangulo p", {
+  scrollTrigger:{
+    trigger: ".triangulo",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  yPercent:0
+});
+
+gsap.set("teams__container",{
+  opacity:0,   
+  yPercent:100, 
+});
+
+gsap.to("teams__container", {
+  scrollTrigger:{
+    trigger: ".triangulo",
+    start:"bottom center",
+    markers:true,
+      
+  },
+  duration:5,
+  opacity:1,
+  yPercent:0
+});
