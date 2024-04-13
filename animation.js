@@ -140,3 +140,60 @@ gsap.to(".partners_home__img", {
   opacity:1,
   yPercent:0
 });
+
+//BLOG
+gsap.set(".blogtitulo",{
+  opacity:0,
+  yPercent:-100,
+    
+});
+
+gsap.to(".blogtitulo", {
+  scrollTrigger:{
+    trigger: ".bloftitulo",
+    start:"top center",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  yPercent:0
+});
+
+gsap.from(".blog__inicial",{duration:1.5, opacity: 0,ease:"power1"});
+
+gsap.set([".blog__ini__text",".blog__ini__texttele p"],{
+  opacity:0,
+  xPercent:-100,
+});
+
+gsap.to([".blog__ini__text",".blog__ini__texttele p"], {
+  scrollTrigger:{
+    trigger: [".blog__ini__text",".blog__ini__texttele p"],
+    start:"bottom bottom",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  xPercent:0,
+});
+
+gsap.set([".blog__inicial__img",".blog__inicial__imgtele"],{
+  opacity:0,
+  xPercent:100,
+});
+
+gsap.to([".blog__inicial__img",".blog__inicial__imgtele"], {
+  scrollTrigger:{
+    trigger: [".blog__inicial__img",".blog__inicial__imgtele"],
+    start:"bottom bottom",
+    markers:true,
+      
+  },
+  duration:.5,
+  opacity:1,
+  xPercent:0,
+});
+
+gsap.from(".responsive",{duration:1.5, opacity: 0, ease:"power1"});
