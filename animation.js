@@ -671,3 +671,150 @@ gsap.to(".buttonPDF", {
   duration:1,
   opacity:1,
 });
+
+//Project details
+//key features
+gsap.from("#key_features",{duration:1, opacity: 0,yPercent:-100,ease:"power1"});
+
+//list of material
+gsap.set("#bill_of_material",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to("#bill_of_material", {
+  scrollTrigger:{
+    trigger: "#bill_of_material",
+    start:"top 70%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+gsap.set(".bill_of_material",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to(".bill_of_material", {
+  scrollTrigger:{
+    trigger: "#bill_of_material",
+    start:"top 50%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+
+//system description
+gsap.set([".system_description_text h1", ".system_description_text img"],{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to([".system_description_text h1", ".system_description_text img"], {
+  scrollTrigger:{
+    trigger: ".bill_of_material",
+    start:"center 90%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+gsap.set(".system_description_text p",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to(".system_description_text p", {
+  scrollTrigger:{
+    trigger: ".system_description_text img",
+    start:"center 70%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+//electrical specifications
+
+gsap.set("#electrical_specs",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to("#electrical_specs", {
+  scrollTrigger:{
+    trigger: "#electrical_specs",
+    start:"top 70%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+gsap.set(".electrical_specs",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to(".electrical_specs", {
+  scrollTrigger:{
+    trigger: ".electrical_specs",
+    start:"top bottom",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+//communication protocol
+
+gsap.set(".communication",{
+  opacity:0,
+  yPercent:50,
+});
+
+gsap.to(".communication", {
+  scrollTrigger:{
+    trigger: ".communication",
+    start:"top bottom",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
+
+gsap.set(".datasheets",{
+  opacity:0,
+  yPercent:60,
+});
+
+gsap.to(".datasheets", {
+  scrollTrigger:{
+    trigger: ".footer",
+    start:"top 90%",
+    markers:true,
+      
+  },
+  duration:1,
+  opacity:1,
+  yPercent:0,
+});
