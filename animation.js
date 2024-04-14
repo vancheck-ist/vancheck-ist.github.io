@@ -1,4 +1,5 @@
 
+TweenMax.set(".coverDiv", {autoAlpha:1}); 
 gsap.registerPlugin(ScrollTrigger);
 
 const lenis = new Lenis();
@@ -147,15 +148,15 @@ gsap.to(".partners_home__img", {
 gsap.set(".blogtitulo",{
   opacity:0,
   yPercent:-100,
-    
+  
 });
 
 gsap.to(".blogtitulo", {
   scrollTrigger:{
-    trigger: ".bloftitulo",
-    start:"top center",
+    trigger: ".blogtitulo",
+    start:"top bottom",
     markers:true,
-      
+
   },
   duration:1,
   opacity:1,
@@ -198,6 +199,57 @@ gsap.to([".blog__inicial__img",".blog__inicial__imgtele"], {
   xPercent:0,
 });
 
+
+gsap.set(".blog__ini__text",{
+  opacity:1,
+  xPercent:0,
+});
+
+gsap.to(".blog__ini__text", {
+  scrollTrigger:{
+    trigger: ".blog__ini__text",
+    start:"bottom 25%",
+    markers:true,
+    scrub: true,
+  },
+  duration:.8,
+  opacity:0,
+  xPercent:-100,
+});
+
+gsap.set(".blog__inicial__img",{
+  opacity:1,
+  xPercent:0,
+});
+
+gsap.to(".blog__inicial__img", {
+  scrollTrigger:{
+    trigger: ".blog__ini__text",
+    start:"bottom 25%",
+    markers:true,
+    scrub: true,
+  },
+  duration:1,
+  opacity:0,
+  xPercent:100,
+});
+
+
+gsap.set(".blog__inicial",{
+  opacity:1,
+});
+
+gsap.to(".blog__inicial", {
+  scrollTrigger:{
+    trigger: ".blog__ini__text",
+    start:"bottom 25%",
+    markers:true,
+    scrub: true,
+  },
+  duration:1,
+  opacity:0,
+});
+
 //blog report
 gsap.from(".responsive",{duration:1.5, opacity: 0, ease:"power1"});
 
@@ -216,7 +268,7 @@ gsap.to(".about_us__text h1", {
     markers:true,
       
   },
-  duration:.8,
+  duration:.6,
   opacity:1,
   yPercent:0
 });
@@ -817,4 +869,16 @@ gsap.to(".datasheets", {
   duration:1,
   opacity:1,
   yPercent:0,
+});
+
+gsap.from(".blogweek_text",{
+  scrollTrigger:{
+    trigger: ".blogweek",
+    start:"top bottom",
+    markers:true,
+      
+  },
+  duration:0.7,
+  opacity: 0,
+  ease:"power1"
 });
