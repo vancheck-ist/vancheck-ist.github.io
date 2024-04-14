@@ -536,7 +536,7 @@ gsap.set(".goaltele",{
 gsap.to(".goaltele", {
   scrollTrigger:{
     trigger: ".problemtele",
-    start:"bottom 60%",
+    start:"bottom center",
     markers:true,
       
   },
@@ -550,13 +550,13 @@ gsap.to(".goaltele", {
 //solution
   gsap.set(".solution__text",{
     opacity:0,
-    yPercent:80,
+    yPercent:50,
   });
 
   gsap.to(".solution__text", {
     scrollTrigger:{
-      trigger: ".goal__img",
-      start:"bottom center",
+      trigger: ".solution__text",
+      start:"top bottom",
       markers:true,
         
     },
@@ -622,13 +622,13 @@ gsap.to(".solution_example__img", {
 //Beneficiaries
 gsap.set(".beneficiaries__text",{
   opacity:0,
-  yPercent:80,
+  yPercent:60,
 });
 
 gsap.to(".beneficiaries__text", {
   scrollTrigger:{
-    trigger: ".solution_example__img",
-    start:"bottom center",
+    trigger: ".beneficiaries__text",
+    start:"top bottom",
     markers:true,
       
   },
