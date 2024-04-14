@@ -30,7 +30,7 @@ gsap.to(".introduction", {
     scrollTrigger:{
       trigger: ".introduction",
       start:"top center",
-      markers:true,
+      markers:false,
         
     },
     duration:1,
@@ -47,7 +47,7 @@ gsap.to(".Pdfbutton_background_home", {
   scrollTrigger:{
     trigger: ".Pdfbutton_background_home",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:2,
@@ -65,7 +65,7 @@ gsap.to(".practical", {
   scrollTrigger:{
     trigger: ".cheap",
     start:"bottom bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -82,7 +82,7 @@ gsap.to(".cheap", {
   scrollTrigger:{
     trigger: ".cheap",
     start:"bottom bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -98,7 +98,7 @@ gsap.to(".efficient", {
   scrollTrigger:{
     trigger: ".cheap",
     start:"bottom bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -117,7 +117,7 @@ gsap.to(".team_home h2", {
   scrollTrigger:{
     trigger: ".team_home",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -135,7 +135,7 @@ gsap.to(".partners_home__img", {
   scrollTrigger:{
     trigger: ".partners_home__img",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -155,7 +155,7 @@ gsap.to(".blogtitulo", {
   scrollTrigger:{
     trigger: ".blogtitulo",
     start:"top bottom",
-    markers:true,
+    markers:false,
 
   },
   duration:1,
@@ -174,7 +174,7 @@ gsap.to([".blog__ini__text",".blog__ini__texttele p"], {
   scrollTrigger:{
     trigger: [".blog__ini__text",".blog__ini__texttele p"],
     start:"bottom bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -191,7 +191,7 @@ gsap.to([".blog__inicial__img",".blog__inicial__imgtele"], {
   scrollTrigger:{
     trigger: [".blog__inicial__img",".blog__inicial__imgtele"],
     start:"bottom bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -209,7 +209,7 @@ gsap.to(".blog__ini__text", {
   scrollTrigger:{
     trigger: ".blog__ini__text",
     start:"bottom 25%",
-    markers:true,
+    markers:false,
     scrub: true,
   },
   duration:.8,
@@ -226,7 +226,7 @@ gsap.to(".blog__inicial__img", {
   scrollTrigger:{
     trigger: ".blog__ini__text",
     start:"bottom 25%",
-    markers:true,
+    markers:false,
     scrub: true,
   },
   duration:1,
@@ -243,7 +243,7 @@ gsap.to(".blog__inicial", {
   scrollTrigger:{
     trigger: ".blog__ini__text",
     start:"bottom 25%",
-    markers:true,
+    markers:false,
     scrub: true,
   },
   duration:1,
@@ -265,7 +265,7 @@ gsap.to(".about_us__text h1", {
   scrollTrigger:{
     trigger: ".about_us__text",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:.6,
@@ -283,7 +283,7 @@ gsap.to(".about_us__text p", {
   scrollTrigger:{
     trigger: ".about_us__text",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -303,7 +303,7 @@ gsap.to(".teams__text h1", {
   scrollTrigger:{
     trigger: ".about_us",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -321,7 +321,7 @@ gsap.to(".teams__text h2", {
   scrollTrigger:{
     trigger: ".teams__text h1",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -339,7 +339,7 @@ gsap.to(".text_triangulo p", {
   scrollTrigger:{
     trigger: ".triangulo",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:.8,
@@ -356,7 +356,7 @@ teams.forEach(teams =>{
     scrollTrigger:{
       trigger: teams,
       start:"top bottom",
-      markers:true,
+      markers:false,
         
     },
     duration:1,
@@ -374,7 +374,7 @@ teams.forEach(teams =>{
     scrollTrigger:{
       trigger: teams,
       start:"top bottom",
-      markers:true,
+      markers:false,
         
     },
     duration:0.7,
@@ -388,7 +388,7 @@ gsap.from(".fotos__container",{
   scrollTrigger:{
     trigger: ".filipe",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:0.7,
@@ -405,7 +405,7 @@ gsap.to([".andre", ".filipe", ".antonio"], {
   scrollTrigger:{
     trigger: ".filipe",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1.5,
@@ -417,7 +417,7 @@ gsap.from(".fotos__container1",{
   scrollTrigger:{
     trigger: ".francisco",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:0.7,
@@ -434,7 +434,7 @@ gsap.to([".duarte", ".francisco", ".miguel"], {
   scrollTrigger:{
     trigger: ".francisco",
     start:"center bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1.5,
@@ -452,7 +452,7 @@ gsap.to(".partner__titulo", {
   scrollTrigger:{
     trigger: ".partner__titulo",
     start:"bottom center",
-    markers:true,
+    markers:false,
   },
   duration:0.8,
   opacity:1,
@@ -468,7 +468,7 @@ gsap.to(".partner__text", {
   scrollTrigger:{
     trigger: ".partner__titulo",
     start:"bottom center",
-    markers:true,
+    markers:false,
   },
   duration:0.8,
   opacity:1,
@@ -484,7 +484,7 @@ gsap.to(".partner__img", {
   scrollTrigger:{
     trigger: ".partner__titulo",
     start:"bottom center",
-    markers:true,
+    markers:false,
   },
   duration:0.8,
   opacity:1,
@@ -516,7 +516,7 @@ gsap.to(".problem__text", {
   scrollTrigger:{
     trigger: ".problem__text",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -534,7 +534,7 @@ gsap.to(".problem__img", {
   scrollTrigger:{
     trigger: ".problem__img",
     start:"top center",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -555,7 +555,7 @@ gsap.to(".goal__img", {
   scrollTrigger:{
     trigger: ".problem__text",
     start:"bottom center",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -572,7 +572,7 @@ gsap.to(".goal__text", {
   scrollTrigger:{
     trigger: ".problem__img",
     start:"bottom center",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -589,7 +589,7 @@ gsap.to(".goaltele", {
   scrollTrigger:{
     trigger: ".problemtele",
     start:"bottom center",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -609,7 +609,7 @@ gsap.to(".goaltele", {
     scrollTrigger:{
       trigger: ".solution__text",
       start:"top bottom",
-      markers:true,
+      markers:false,
         
     },
     duration:1,
@@ -627,7 +627,7 @@ gsap.to(".goaltele", {
     scrollTrigger:{
       trigger: ".solution__text",
       start:"top 70%",
-      markers:true,
+      markers:false,
         
     },
     duration:1,
@@ -646,7 +646,7 @@ gsap.to(".solution_example__text", {
   scrollTrigger:{
     trigger: ".solution__img",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -663,7 +663,7 @@ gsap.to(".solution_example__img", {
   scrollTrigger:{
     trigger: ".solution__img",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -681,7 +681,7 @@ gsap.to(".beneficiaries__text", {
   scrollTrigger:{
     trigger: ".beneficiaries__text",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -699,7 +699,7 @@ gsap.to(".beneficiaries__img", {
   scrollTrigger:{
     trigger: ".beneficiaries__text",
     start:"top 85%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -717,7 +717,7 @@ gsap.to(".buttonPDF", {
   scrollTrigger:{
     trigger: ".footer",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -738,7 +738,7 @@ gsap.to("#bill_of_material", {
   scrollTrigger:{
     trigger: "#bill_of_material",
     start:"top 70%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -755,7 +755,7 @@ gsap.to(".bill_of_material", {
   scrollTrigger:{
     trigger: "#bill_of_material",
     start:"top 50%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -774,7 +774,7 @@ gsap.to([".system_description_text h1", ".system_description_text img"], {
   scrollTrigger:{
     trigger: ".bill_of_material",
     start:"center 90%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -791,7 +791,7 @@ gsap.to(".system_description_text p", {
   scrollTrigger:{
     trigger: ".system_description_text img",
     start:"center 70%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -810,7 +810,7 @@ gsap.to("#electrical_specs", {
   scrollTrigger:{
     trigger: "#electrical_specs",
     start:"top 70%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -827,7 +827,7 @@ gsap.to(".electrical_specs", {
   scrollTrigger:{
     trigger: ".electrical_specs",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -846,7 +846,7 @@ gsap.to(".communication", {
   scrollTrigger:{
     trigger: ".communication",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -863,7 +863,7 @@ gsap.to(".datasheets", {
   scrollTrigger:{
     trigger: ".footer",
     start:"top 90%",
-    markers:true,
+    markers:false,
       
   },
   duration:1,
@@ -875,7 +875,7 @@ gsap.from(".blogweek_text",{
   scrollTrigger:{
     trigger: ".blogweek",
     start:"top bottom",
-    markers:true,
+    markers:false,
       
   },
   duration:0.7,
