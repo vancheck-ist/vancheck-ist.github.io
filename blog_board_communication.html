@@ -55,28 +55,29 @@
 
         <section class="blogweek">
             <nav class="next_previous_div">
-                <a class="botao_report_previous container" href="blog_mid_program_presentation.html">Previous</a>
-                <a class="botao_report_next container" href="blog_board_communication.html">Next</a>
+                <a class="botao_report_previous container" href="blog_achieved_result.html">Previous</a>
+                <!--<a class="botao_report_next container" href="">Next</a>-->
             </nav>
             <div class="blogweek_text">
-                <h1>Achieved Results</h1>
+                <h1>Board communication</h1>
                 </br>
-                <img  class="blog_f1 achieved_results_report" src="img/Report/Achieved_results.png">  
+                
+                    <div class="board_comun_imgs">
+                        <div class="board container">
+                            <img class="board_comun_left_img" src="img/Report/comun_placa.jpeg"> 
+                            <img class="board_comun_right_img" src="img/Report/leitor.jpeg"> 
+                        </div>
+                    </div>
+                    <div style="display:flex; justify-content: center;">
+                        <div class="board_tele container">
+                            <img src="img/Report/comun_placa.jpeg"> 
+                            <img src="img/Report/leitor.jpeg"> 
+                        </div>
+                    </div>
                 <div class="blogweek_text1">
                     </br>
-                    <p>For the mid-program, the following steps of the project were
-                        concluded:</p>
-                    <li style="margin-left: 8%;"> Final project definition completed;</li>
-                    <li style="margin-left: 8%;">Full electrical and system specifications and
-                        requirements;</li>
-                    <li style="margin-left: 8%;">App Design;</li>
-                    <li style="margin-left: 8%;"> Website Design and Implementation (Project
-                        Presentation Page completed);</li>
-                    <li style="margin-left: 8%;">BLE Protocol Integration in Raspberry Pi;</li>
-                    <li style="margin-left: 8%;">Device-to-Phone Connection (both sides);</li>
-                    <li style="margin-left: 8%;"> RFID communication protocol;</li>
-                    <li style="margin-left: 8%;">Documentation of the technical steps (using flowcharts,
-                        Notion pages, and block diagrams);</li>
+                    <p> We have already managed to achieve basic communication with the board through the Rasperry Pi. For this purpose, a command was sent to confirm the hardware and software version. This command was chosen for the test as it is a command that, by definition of the communication protocol, the response is guaranteed, and the same was what was predicted.</p>
+                    <p> The next step will be to first do the integration test with all the modules of our project (app, Raspberry Pi and RFID reader). After that, we develop the code to carry out communication between the reader and the RFID tags, with testing limitations, for now, due to lack of access to the material.</p>
                     </br>
                 </div> 
 
