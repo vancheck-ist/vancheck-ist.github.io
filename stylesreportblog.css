@@ -31,6 +31,14 @@
     max-width: 30rem;
   }
 
+  .blog_video_app{
+    border-radius: 40px;
+    position: relative;
+    width: 100%;
+    max-width: 15rem;
+  }
+
+
   .blogweek_text {
     text-align: center;
     width: 80%;
