@@ -163,6 +163,18 @@ div.gallery {
 .app_update{
     background-image: url(img/Report/app_update.png);
 }
+
+.implementation{
+    background-image: url(img/Report/implementation_blog.jpg);
+}
+
+.read_tag{
+    background-image: url(img/Report/read_of_tag.png);
+}
+
+.box{
+    background-image: url(img/Report/caixa.jpeg);
+}
   
 
 div.gallery img {
