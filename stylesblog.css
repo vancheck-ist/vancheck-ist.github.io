@@ -176,6 +176,18 @@ div.gallery {
     background-image: url(img/Report/caixa.jpeg);
 }
   
+.multiple_tags{
+    background-image: url(img/Report/multiple_tags.jpg);
+}
+  
+.better_range{
+    background-image: url(img/Report/better_range.webp);
+}
+  
+.rfid_testing{
+    background-image: url(img/Report/rfid_testing.webp);
+}
+
 
 div.gallery img {
     width: 100%;
