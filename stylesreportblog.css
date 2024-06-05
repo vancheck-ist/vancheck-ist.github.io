@@ -25,6 +25,20 @@
     position: relative;
     width: 30rem;  
   }
+
+  .blog_forms{
+    scale: 1;
+    border-radius: 20px;
+    position: relative;
+    width: 24rem;  
+  }
+  .blog_forms1{
+    scale: 1;
+    border-radius: 20px;
+    position: relative;
+    width: 31rem;  
+  }
+
   .blog_code{
     scale: 1;
     border-radius: 20px;
