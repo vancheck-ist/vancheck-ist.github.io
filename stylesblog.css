@@ -188,6 +188,14 @@ div.gallery {
     background-image: url(img/Report/rfid_testing.webp);
 }
 
+.poster{
+    background-image: url(img/Report/poster_blog.webp);
+}
+
+.video{
+    background-image: url(img/Report/video_blog.webp);
+}
+
 
 div.gallery img {
     width: 100%;
