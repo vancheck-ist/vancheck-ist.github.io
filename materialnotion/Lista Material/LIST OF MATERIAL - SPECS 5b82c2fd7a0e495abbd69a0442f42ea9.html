@@ -1,0 +1,679 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>LIST OF MATERIAL - SPECS</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(255, 255, 255);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+	background-color: #000;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="5b82c2fd-7a0e-495a-bbd6-9a0442f42ea9" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/drafts_green.svg"/></div><h1 class="page-title">LIST OF MATERIAL - SPECS</h1><p class="page-description"></p></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>AS3992 UHF RFID Reader</strong> </summary><div class="indented"><ul id="47ef1252-7ff7-4a41-bddb-3d9abf75dbe4" class="bulleted-list"><li style="list-style-type:disc">Quantity: 1</li></ul><figure id="b38b65e2-56b8-49ee-b99a-2f0e149c266c"><div class="source"><a href="LIST%20OF%20MATERIAL%20-%20SPECS%205b82c2fd7a0e495abbd69a0442f42ea9/AS3992_Datasheet_v1.0.pdf">AS3992_Datasheet_v1.0.pdf</a></div></figure><ul id="32e88dd9-9cfb-4b82-8528-a05d98d2af00" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.goldsupplier.com/provide/p108596599.html">https://www.goldsupplier.com/provide/p108596599.html</a></li></ul><ul id="b9d035aa-ea47-4903-a837-60615c1d2a87" class="bulleted-list"><li style="list-style-type:disc"><a href="https://piepie.com.tw/14063/as3992-uhf-rfid-reader-testing">https://piepie.com.tw/14063/as3992-uhf-rfid-reader-testing</a></li></ul><ul id="9c67505a-3c15-464d-b617-bb647d462be3" class="bulleted-list"><li style="list-style-type:disc">Commercial site: Obsolete product, sold by SolidDigi</li></ul><ul id="5a9e2e24-9934-4bd3-a31d-a4de86ceb875" class="bulleted-list"><li style="list-style-type:disc">Description: RFID (UHF-RAIN) reader embeded in a microcontroller module;</li></ul><ul id="df5de356-1d77-4cd0-9b5d-1926fc22ce47" class="bulleted-list"><li style="list-style-type:disc">Relevant Specs:<ul id="b60dc4fa-2e8f-4463-93ec-a6e9084cdbbd" class="bulleted-list"><li style="list-style-type:circle">PinIn/PinOut → probable the one to be used or USB connection</li></ul><ul id="3e06074c-1d25-4858-9a3c-719d4f963b67" class="bulleted-list"><li style="list-style-type:circle">Host communication: Pre-defined protocol</li></ul><ul id="f1a731bd-343b-4909-83f6-5ae495e55797" class="bulleted-list"><li style="list-style-type:circle">Tag communication protocol: EPC Gen 2 v2 (UHF RFID)</li></ul><ul id="7d2f0599-2d3e-4bbc-9c37-6a1e0bd72613" class="bulleted-list"><li style="list-style-type:circle">Voltage range for communication to MCU between 1.8V and<br/>5.5V<br/></li></ul><ul id="a5e42395-f815-482f-bc4a-692e007e026a" class="bulleted-list"><li style="list-style-type:circle">Operation frequency: 840 to 960 MHz (as estipulated by EU law)</li></ul><ul id="97df8b07-7638-4700-adb4-aad44f3e4695" class="bulleted-list"><li style="list-style-type:circle">Supply voltage: 5V (recommended)</li></ul><ul id="483d9def-b125-4dc7-94df-7adc3711332c" class="bulleted-list"><li style="list-style-type:circle">Required antenna impedance: 50 ohms</li></ul><ul id="f09fb249-1f31-4bb9-ad0d-5f2b7b7b6b6a" class="bulleted-list"><li style="list-style-type:circle">Antenna connector: MMCX</li></ul><ul id="b98c0233-294d-4ae3-8aa6-754d9031460c" class="bulleted-list"><li style="list-style-type:circle">Maximum antenna power: 5dBm</li></ul><ul id="f39e2e89-7853-410c-8dc2-6c9705c3fa2e" class="bulleted-list"><li style="list-style-type:circle">Minimum power sensibility: -86dBm</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Antenna Taoglas RF SOLUTIONS ANT-PCB4242-FL</summary><div class="indented"><ul id="b897e7a8-1dcd-4364-9cb8-e6082d2269e7" class="bulleted-list"><li style="list-style-type:disc">Quantity:1</li></ul><figure id="356b9dd8-23b7-402a-bd65-a2175f366455"><div class="source"><a href="LIST%20OF%20MATERIAL%20-%20SPECS%205b82c2fd7a0e495abbd69a0442f42ea9/ISPC_91A_09_0092E-3399419.pdf">ISPC_91A_09_0092E-3399419.pdf</a></div></figure><ul id="025d4b0f-77dc-4cc9-8444-60a161eca818" class="bulleted-list"><li style="list-style-type:disc">Description: UHF Antenna</li></ul><ul id="249c19b7-c05f-4d46-82c8-98a62b723136" class="bulleted-list"><li style="list-style-type:disc">Commercial name: ISPC.91A.09.0092E</li></ul><ul id="07f75e97-d93d-44e2-ac17-ac04ff74fa41" class="bulleted-list"><li style="list-style-type:disc">Commercial site: <a href="https://pt.mouser.com/ProductDetail/Taoglas/ISPC.91A.09.0092E?qs=gQGbhTXPkfg%252B2P4oUA%2FSYg%3D%3D">https://pt.mouser.com/ProductDetail/Taoglas/ISPC.91A.09.0092E?qs=gQGbhTXPkfg%252B2P4oUA%2FSYg%3D%3D</a></li></ul><ul id="48870bb0-9f64-4970-a28a-12501d10de46" class="bulleted-list"><li style="list-style-type:disc">Relevant Specs:<ul id="6f40e56c-f812-4cfd-b16a-2e470cedd898" class="bulleted-list"><li style="list-style-type:circle">Matching Impedance: 50 ohm</li></ul><ul id="1aa09ad0-08a1-41d7-9dc5-400789c90ef4" class="bulleted-list"><li style="list-style-type:circle">MMCX connector</li></ul><ul id="384032df-d9b8-43cf-bd1d-757a6d9a1218" class="bulleted-list"><li style="list-style-type:circle">902MHz to 928MHz ISM Band (working frequency of 915MHz)</li></ul><ul id="8d09f764-a06c-439d-a590-a098bbe79bc4" class="bulleted-list"><li style="list-style-type:circle">5dBi Peak (when placed on 30*30cm ground plane)</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Kennedy Group SmartTherm RFID tags</summary><div class="indented"><ul id="39911635-62c0-4fc4-8a3c-0466e1220991" class="bulleted-list"><li style="list-style-type:disc">Commercial site:  <a href="https://www.kennedygrp.com/rfid-solutions/custom-rfid-tags/">https://www.kennedygrp.com/rfid-solutions/custom-rfid-tags/</a></li></ul><ul id="4da70414-eb85-49a9-8aad-99ad70437581" class="bulleted-list"><li style="list-style-type:disc">Relevant Specs:<ul id="880ae868-da08-4041-88b4-16d5864a5b2a" class="bulleted-list"><li style="list-style-type:circle">Antenna Dimensions: 95x1mm</li></ul><ul id="1310687d-2139-435f-befc-f4481a999b9a" class="bulleted-list"><li style="list-style-type:circle">Standard: ISO/IEC 18000-63 Type C</li></ul><ul id="a8161953-5e4b-4887-8faa-3f477d4dcaf8" class="bulleted-list"><li style="list-style-type:circle">Frequency band: UHF 860 - 960 MHz</li></ul><ul id="e2da9592-5443-40d8-beff-9bb4243b35ff" class="bulleted-list"><li style="list-style-type:circle">EPC and User memory: 128-bit and n/a</li></ul><ul id="7eb4ce36-7b88-48e8-bc6d-f3e580a07b56" class="bulleted-list"><li style="list-style-type:circle">Read sensitivity: -21dBm</li></ul></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0"><strong>Raspberry Pi 5</strong></summary><div class="indented"><figure id="0e6a3e99-0aa3-49e0-9920-fb011a6b7da8"><div class="source"><a href="LIST%20OF%20MATERIAL%20-%20SPECS%205b82c2fd7a0e495abbd69a0442f42ea9/raspberry-pi-5-product-brief.pdf">raspberry-pi-5-product-brief.pdf</a></div></figure><ul id="c84b720d-07ed-4592-96f7-678842e62bc2" class="bulleted-list"><li style="list-style-type:disc">Can be powered by USB, Ethernet or simple 5 V DC</li></ul><ul id="0d8bffa1-1ecf-46f0-8302-1662ca6632f3" class="bulleted-list"><li style="list-style-type:disc">Relevant specs:<ul id="c0519d8f-0b17-4199-8d74-038ae7205183" class="bulleted-list"><li style="list-style-type:circle">Bluetooth connectivity: BLE (also possible 4.2)</li></ul><ul id="f9ede6c2-a280-4228-8109-847d22e04065" class="bulleted-list"><li style="list-style-type:circle">Processor: 64-bit quad-core ARM Cortex-A76 CPU running at 2.4 GHz</li></ul><ul id="e2fd0678-8e3b-4905-b344-39876029175f" class="bulleted-list"><li style="list-style-type:circle">Number of USB ports: 4</li></ul><ul id="9c1450d5-2471-4c22-aac0-3ebc9b8a2ef2" class="bulleted-list"><li style="list-style-type:circle">Memory: ≥1GB</li></ul><ul id="115037b1-9e7c-4d0c-960f-7be2130fb1b7" class="bulleted-list"><li style="list-style-type:circle">Idle power consumption: 5 V x 540 mA = 2.7 W</li></ul><ul id="dab45417-01a9-4836-8c11-48a416066ba3" class="bulleted-list"><li style="list-style-type:circle">Minimum power supply requirements: 5V at 3A (15W)</li></ul></li></ul></div></details><h2 id="0ac5d11a-7f12-43d7-9786-9f7b81471a41" class=""><strong>Full list (including connectors) here:</strong></h2><figure id="e1cbc393-2a92-4d60-8bcb-6b28dcc764c2"><div class="source"><a href="LIST%20OF%20MATERIAL%20-%20SPECS%205b82c2fd7a0e495abbd69a0442f42ea9/lista_material_pic_G26.xlsx">lista_material_pic_G26.xlsx</a></div></figure><p id="4a84313b-a296-4697-9094-c77e4ebe9ae0" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

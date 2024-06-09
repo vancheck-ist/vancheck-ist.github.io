@@ -1,0 +1,683 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Protocolo Comunicação RFID - AS3992</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="ff8b082b-51de-435e-9af5-c37366218d52" class="page sans"><header><div class="page-header-icon undefined"><img class="icon" src="https://www.notion.so/icons/wifi_green.svg"/></div><h1 class="page-title">Protocolo Comunicação RFID - AS3992</h1><p class="page-description"></p></header><div class="page-body"><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>Funcionamento básico do protocolo</strong></summary><div class="indented"><ul id="c3769b55-cbed-4469-81fe-85bc8bfabe18" class="bulleted-list"><li style="list-style-type:disc">Comunicação realizada através do envio de mensagens de 64 bytes (formato byte 0x00)</li></ul><ul id="6ab66b6e-d997-40f0-b1ef-ea1b25244747" class="bulleted-list"><li style="list-style-type:disc">Formato da mensagem:<figure id="5af40a0b-f1ed-4f00-af0b-01fbe9949212" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled.png"><img style="width:727.328125px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled.png"/></a></figure></li></ul><ul id="b8403778-9e65-438e-9445-da65b1359b9a" class="bulleted-list"><li style="list-style-type:disc">As mensagens devem ser preenchidas com bytes irrelevantes (a 0x00) até a palavra ser preenchida (ou seja, obter 64B);</li></ul><ul id="44231bf1-6c5e-4617-b6c9-52ffa5d71a14" class="bulleted-list"><li style="list-style-type:disc">As mensagens recebidas (e enviadas) podem ser convertidas em de <em>bytes </em>para <em>strings </em>para facilitar a comunicação com o utilizador (pelo menos)</li></ul><ul id="6b30badc-63c3-4616-8890-e7f1dbd88d08" class="bulleted-list"><li style="list-style-type:disc">O <em>byte</em> 2 deverá ser o tamanho da mensagem enviada (tirando o número de 0x00 para encher a mensagem, ex: 10 03 01). Se for sempre realizada a inserção dos <em>bytes</em> de redundância, este <em>byte </em>será sempre 64 (0x40)</li></ul><ul id="0b7ad836-d942-48aa-b392-1f8f09c3893d" class="bulleted-list"><li style="list-style-type:disc">Os comandos começados por OUT referem-se a mensagens enviadas para o leitor e começados por IN referem-se a comandos recebidos pelo <em>host</em> como resposta a comandos OUT</li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>Mensagens de erro (do leitor para o </strong><em><strong>host</strong></em><strong>)</strong></summary><div class="indented"><ul id="994e5191-1bc2-46a0-a4a8-96960d20f23a" class="bulleted-list"><li style="list-style-type:disc">As mensagens de erro (recebidas pelo <em>host</em>) distinguem-se pelo primeiro <em>byte</em>, havendo as seguintes opções:<figure id="64291be4-d043-41e3-8945-9825305498d3" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%201.png"><img style="width:680px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%201.png"/></a></figure><ul id="b4bd4264-336b-4540-87d3-eee81e13ad97" class="bulleted-list"><li style="list-style-type:circle">Timeout define-se como falta de resposta:</li></ul><figure id="cbab7aeb-9b49-47a0-90d1-1992e9f02c3b" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%202.png"><img style="width:652px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%202.png"/></a></figure></li></ul><ul id="f2c9b248-36c1-4000-95b9-237d1b8196b0" class="bulleted-list"><li style="list-style-type:disc">Existem 6 tipos de erro, sendo que para o caso, os mais relevantes são:<figure id="4b5d7aa5-83b3-4012-97b1-6d478675e57e" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%203.png"><img style="width:652px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%203.png"/></a></figure></li></ul><p id="0730fb88-2945-447a-82d4-24a189bb55fb" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>Resumo dos comandos</strong></summary><div class="indented"><figure id="12256fda-3333-43b0-94bf-b011f1a273e5" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%204.png"><img style="width:680px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%204.png"/></a></figure><figure id="bee4341c-b598-4448-a568-82099ab4a6aa" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%205.png"><img style="width:708px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%205.png"/></a></figure><p id="7878efe6-4cbc-4c78-8088-b7f297b54837" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0"><strong>Comandos relevantes (</strong><em><strong>reader oriented</strong></em><strong>)</strong></summary><div class="indented"><p id="1e052d2b-5003-4600-b0a2-688648fd226e" class="">Existem comandos e mensagens que não serão aqui explicitadas, sendo utilizadas apenas aquelas que se consideram relevantes para o projeto em questão. Assim sendo, comando que se refiram a manipulação de registos do leitor não serão objeto de atenção.</p><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><strong>OUT_FIRM_HARDW_ID (0x10)/IN_FIRM_HARDW_ID(0x11)</strong></summary><div class="indented"><ul id="9e5fc82e-3074-4a9e-9ca6-2d0d49e9e069" class="bulleted-list"><li style="list-style-type:disc">Basicamente envia (e recebe uma mensagem) com primeiro byte 0x10 (ou 0x11 para resposta) com informação acerca da versão do firmware e do hardware da placa AS3992</li></ul><ul id="bb392bdc-5b77-4ab4-aec0-5e513cc2f242" class="bulleted-list"><li style="list-style-type:disc">Estrutura:<ul id="4f6dc080-b412-4a22-aa1f-8e68d82be159" class="bulleted-list"><li style="list-style-type:circle">OUT_FIRM_HARDW_ID (0x10)<figure id="1df0375c-7566-4d08-9cc6-7e274efd93d9" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%206.png"><img style="width:1209px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%206.png"/></a></figure><ul id="f4d11102-cff2-407f-af8a-ded5f979b423" class="bulleted-list"><li style="list-style-type:square">Byte 2 pode ser 0x00 para firmware ou 0x01 para hardware</li></ul></li></ul><ul id="c57fea8b-dc94-4b3b-bd57-eef0ee8dd212" class="bulleted-list"><li style="list-style-type:circle">IN_FIRM_HARDW_ID(0x11)<figure id="3d692641-ab8b-45a0-bec6-c1afc2ccf7de" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%207.png"><img style="width:624px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%207.png"/></a></figure></li></ul></li></ul><p id="cc212f58-2d1f-4e76-b182-ffc2b8f65ba7" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><strong>OUT_ANTENNA_POWER (0x18)/IN_ANTENNA_POWER (0x19)</strong></summary><div class="indented"><ul id="72f7518f-24a7-4376-bb47-df1bae1e38e6" class="bulleted-list"><li style="list-style-type:disc">No funcionamento mais básico, indica à placa para ligar ou desligar o envio de potência para a antena</li></ul><ul id="5a628a40-260d-4cef-beef-53a177696f20" class="bulleted-list"><li style="list-style-type:disc">Estrutura<figure id="e22b32d0-0105-4460-bf0e-6c3709911894" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%208.png"><img style="width:624px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%208.png"/></a></figure></li></ul><ul id="89fc5946-9be7-455b-8b46-4931dc47ea9e" class="bulleted-list"><li style="list-style-type:disc">0x00 para OFF, 0xFF para ON</li></ul><ul id="a515a780-e5d1-4e9e-8861-1081f4c28bfa" class="bulleted-list"><li style="list-style-type:disc">Para o nosso caso, não é necessário ajustar a potência, assume-se só o máximo</li></ul><ul id="dc0b008e-4fd5-42ab-8997-146aea521d65" class="bulleted-list"><li style="list-style-type:disc">Resposta do AS3992 no formato:<figure id="4043c5e2-5ac3-4a47-97d8-33e71a57c02d" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%209.png"><img style="width:964px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%209.png"/></a></figure></li></ul><p id="6985e2b7-3991-4116-aa8d-6205ba5d0d8b" class="">
+</p></div></details><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0"><strong>OUT_CHANGE_FREQ (0x41)/IN_CHANGE_FREQ(0x42)</strong></summary><div class="indented"><ul id="90585374-201d-4495-ba4e-1f924268cbf3" class="bulleted-list"><li style="list-style-type:disc">O leitor permite escolher a frequência de leitura, através deste comando. Existem 2 maneiras de realizar a leitura no dispositivo, ou com apenas uma frequência, ou através de <em>hooping </em>entre várias, escolhendo uma frequência específica</li></ul><ul id="cd35aa16-3bc1-43d3-8d67-97a71f6b7d53" class="bulleted-list"><li style="list-style-type:disc">Estrutura:<ul id="82e7f90a-62a5-4cf6-b29b-51b453719b36" class="bulleted-list"><li style="list-style-type:circle">OUT_CHANGE_FREQ (0x41)<figure id="2f755da8-7c64-4712-a3d0-9d79f1b812f4" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2010.png"><img style="width:624px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2010.png"/></a></figure></li></ul><ul id="68edf53c-2bad-42bb-b4c0-c08ef66f1158" class="bulleted-list"><li style="list-style-type:circle">IN_CHANGE_FREQ (0x42)<figure id="9213710a-a352-47f7-8449-67661aff082e" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2011.png"><img style="width:596px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2011.png"/></a></figure></li></ul></li></ul><ul id="45940737-3105-4462-8be3-5a81fbf76309" class="bulleted-list"><li style="list-style-type:disc">Para além disso, existe um <em>byte</em> que serve para realizar a deteção de dois tipos diferentes (<em>byte</em> 2 - MASK), sendo que a única opção relevante neste caso é a ativação do modo <em>hop</em>. Dito isto, ainda é possível definir o perfil em questão através do uso de um <em>byte</em> 7, sendo o perfil definido abaixo</li></ul><ul id="cb1f02f4-444c-463e-9a7f-617634ed153e" class="bulleted-list"><li style="list-style-type:disc">Os valores do <em>byte</em> MASK poderão ser:<figure id="ab30b566-caf5-4ba7-9c23-d9999cd70405" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2012.png"><img style="width:624px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2012.png"/></a></figure></li></ul><ul id="c57c0401-5a55-4fba-b77c-31269543e138" class="bulleted-list"><li style="list-style-type:disc">Existem perfis de frequência, cada um de acordo com o que está estabelecido na gama de cada zona geográfica:<figure id="97a58dfe-e8d4-4c50-86a8-4cc652ddf276" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2013.png"><img style="width:624px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2013.png"/></a></figure></li></ul><ul id="53d67a86-901b-43d7-9adb-6fc70a491045" class="bulleted-list"><li style="list-style-type:disc">Para o nosso caso, dada a gama de frequências (915MHz) em que nos encontramos a trabalhar, o perfil será o perfil dos EUA (perfil 03)</li></ul><ul id="42d9d58c-5d7e-4845-b11d-61bf9a036faf" class="bulleted-list"><li style="list-style-type:disc">Assim, a inicialização das frequências de do leitor poderá ser feita através do comando hexadecimal:<ul id="ec3e2ac4-064a-4935-beb0-e15139f72fa9" class="bulleted-list"><li style="list-style-type:circle">41 08 08 0D F6 38 D8 03 (00)x56<table id="7d8ce12a-ad7b-4e42-ad29-00b86a01f3af" class="simple-table"><tbody><tr id="5a60844a-4911-4cc2-87bd-66fcd91c9f81"><td id="^zu@" class=""><strong>Byte</strong></td><td id="W_qS" class="" style="width:461px"><strong>Função</strong></td></tr><tr id="40aebbbb-43ee-4098-85d0-cf09acf131f3"><td id="^zu@" class="">41</td><td id="W_qS" class="" style="width:461px">Comando de mudança de frequência</td></tr><tr id="1a0aa791-0ebf-4d49-bb63-ea812f6e4605"><td id="^zu@" class="">08</td><td id="W_qS" class="" style="width:461px">Tamanho da mensagem</td></tr><tr id="7a5185e5-88a7-4069-a0c3-9163e1225a9b"><td id="^zu@" class="">08</td><td id="W_qS" class="" style="width:461px">Desligar o modo de hop, limpa a lista de frequências, apenas uma frequência central</td></tr><tr id="69221fdd-cf09-46e0-9660-40c6d3bec68f"><td id="^zu@" class="">0D F6 38</td><td id="W_qS" class="" style="width:461px">Frequência central de utilização 915MHz</td></tr><tr id="e7c69843-4ae4-487f-8ab4-7bdda3922a1c"><td id="^zu@" class="">D8</td><td id="W_qS" class="" style="width:461px">Nível de RSSI (-40dBm)</td></tr><tr id="e845d501-47a6-4839-ab1e-dbb8c89fa4b6"><td id="^zu@" class="">03</td><td id="W_qS" class="" style="width:461px">Número do perfil (03 - EUA)</td></tr><tr id="ce7587e9-d8a7-4766-a59e-d1cf70e001f3"><td id="^zu@" class="">(00)x56</td><td id="W_qS" class="" style="width:461px">56 bytes de redundância</td></tr></tbody></table></li></ul></li></ul><ul id="9cca8b90-b813-423c-a8bf-26f3e545e3ec" class="bulleted-list"><li style="list-style-type:disc">A resposta seria da forma:<ul id="f3d59f6b-3e0d-436a-bafa-5a1201123307" class="bulleted-list"><li style="list-style-type:circle">42 40 FE FF (0x00)x60<table id="6eb72a38-86b5-458b-abfe-576bc2dd4a2b" class="simple-table"><tbody><tr id="a0a8d4cc-9039-4459-a023-39ce630280eb"><td id="XCMB" class=""><strong>Byte</strong></td><td id="Joc^" class="" style="width:466px"><strong>Função</strong></td></tr><tr id="2081cf0e-09dd-45d7-8a55-c44d3cba8772"><td id="XCMB" class="">42</td><td id="Joc^" class="" style="width:466px">Comando de confirmação de mudança de frequência</td></tr><tr id="c9dfc56b-c11e-4748-8312-ed651667b756"><td id="XCMB" class="">40</td><td id="Joc^" class="" style="width:466px">Tamanho da mensagem</td></tr><tr id="7b9546fc-8140-410c-b562-8b01959083ca"><td id="XCMB" class="">FE</td><td id="Joc^" class="" style="width:466px">Modo <em>hop</em> OFF (seria FC se fosse ON)</td></tr><tr id="20389b43-9b25-454b-b151-c292ca633b72"><td id="XCMB" class="">FF</td><td id="Joc^" class="" style="width:466px">Terminador</td></tr></tbody></table></li></ul></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Comandos relevantes (<em>transponder oriented)</em></summary><div class="indented"><ul id="6f2f4940-eb24-48a2-9a39-37bc1d1e4f3d" class="bulleted-list"><li style="list-style-type:disc">Estes comandos forçam o microcontrolador do leitor AS3992 a comunicar com as tags, exigindo que a alimentação da antena esteja ligada (comando OUT_ANTENNA_POWER), e que haja tags na vizinhança (<em>byte</em> 0 ≠ 0xFF → ver Mensagens de erro)</li></ul><ul id="0b72b3e9-49a5-4460-bd48-b8636f563d1f" class="bulleted-list"><li style="list-style-type:disc">Existem vários comandos para realizar a leitura, mas os sugeridos aqui possuem mais documentação e são mais adequados</li></ul><ul id="dd498f50-aec3-4199-96e5-cf495b3bd838" class="bulleted-list"><li style="list-style-type:disc">Para o projeto em questão, não é necessário escrever ou ler conteúdo das tags, pelo que também não encontram aqui esses comandos</li></ul><details open=""><summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">OUT_INVENTORY_RSSI (0x43)/IN_INVENTORY_RSSI(0x44)</summary><div class="indented"><ul id="a3288670-473c-4b0b-aef0-db031806c4fd" class="bulleted-list"><li style="list-style-type:disc">A leitura é efetuada apenas quando o <em>host</em> indica que esta se realize, com a flag 0x01 (iniciar inventário). Depois, a resposta inclui o número de tags que foi lida (juntamente com o ID da primeira tag a ser lida), indicando também ao <em>host</em> o número de vezes que a função necessita de ser chamada com a flag 0x02 (informação da próxima tag). </li></ul><ul id="6a8d02ec-8e5c-4882-a3e0-8fcd896a5dff" class="bulleted-list"><li style="list-style-type:disc">Estrutura:<ul id="2833288d-d6b5-4b9e-aae0-2b2ed00184b5" class="bulleted-list"><li style="list-style-type:circle">OUT_INVENTORY_RSSI (0x43)<figure id="e0cafaec-6a63-4a08-88c0-fdc726adbbef" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2014.png"><img style="width:652px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2014.png"/></a></figure><ul id="80ae558e-738c-466c-89b9-7936760d7a1d" class="bulleted-list"><li style="list-style-type:square">O<em> byte</em> 2 pode ser 0x01 para “Start inventory” (para começar a leitura), ou 0x02 para obter a informação acerca da próxima tag </li></ul></li></ul><ul id="d3b2c860-910a-4d1a-bfe3-ac41786e8d32" class="bulleted-list"><li style="list-style-type:circle">IN_INVENTORY_RSSI (0x44)<figure id="aaa9b1ac-cd84-45a2-a422-1e592b7c7b52" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2015.png"><img style="width:596px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/Untitled%2015.png"/></a></figure><ul id="a10b5913-f08a-43d4-83b6-a4c233df78ee" class="bulleted-list"><li style="list-style-type:square">O <em>byte</em> 3 devolve uma indicação (razoável) da potência emitida pela tag. Dado que esta depende da distância a que esta se encontra, é razoável admitir que, sendo a antena um radiador semi-isotrópico, para uma certa leitura de inventário, a tag que possua o valor mais elevado nesta componente será a que se encontra mais próxima do leitor. Este valor pode ser desconstruído em duas componentes, uma em fase e outra em quadratura, tal que:<ul id="1ca2a40a-4ded-4502-ab7a-d5ffe26a10c4" class="bulleted-list"><li style="list-style-type:disc">Signal strength of signal Q =(0x9E&gt;&gt;4)*2=18</li></ul><ul id="703c0cf9-623f-466d-b6aa-ad8d5890ebbd" class="bulleted-list"><li style="list-style-type:disc">Signal strength of signal I =(0x9E&amp;0x0F)*2=28</li></ul></li></ul><ul id="550c214d-e8de-4ecc-b940-e2178289f8a2" class="bulleted-list"><li style="list-style-type:square">Apesar de não estar indicado na imagem acima, existe ainda um espaço para a frequência a que ocorreu a deteção, nos <em>bytes</em> 4, 5, e 6 (recebido em ordem contrária, ou seja, a frequência será nos <em>bytes</em> 6,5,4)</li></ul><ul id="21143c50-b2cc-43eb-a936-2bda15469f59" class="bulleted-list"><li style="list-style-type:square">Os restantes bytes contêm o ID da tag em questão</li></ul></li></ul></li></ul><ul id="6baea2f1-3ca0-446a-a781-d99b4af8867b" class="bulleted-list"><li style="list-style-type:disc">Exemplo de comunicação, <em>host</em> envia:<ul id="db2fbe63-02ba-4dc9-b43e-8543fd441365" class="bulleted-list"><li style="list-style-type:circle">43 03 01<table id="4ff6b641-19d2-42b4-a9ec-084d16254077" class="simple-table"><tbody><tr id="e4025b1b-c60d-497b-bca6-cffe40c298f0"><td id="ofLz" class=""><strong>Byte </strong></td><td id="]v_y" class="" style="width:455.6640625px"><strong>Função</strong></td></tr><tr id="8fdd4496-5b0c-48d0-ae8b-f9b48fcea2c1"><td id="ofLz" class="">43</td><td id="]v_y" class="" style="width:455.6640625px">Comando de inventário com RSSI (envio)</td></tr><tr id="f1060ac5-04dd-49b6-a98e-89fd8cf686a2"><td id="ofLz" class="">03</td><td id="]v_y" class="" style="width:455.6640625px">Tamanho da mensagem em <em>bytes</em></td></tr><tr id="2db2c3af-932a-4b8e-8d58-0ce68adb418b"><td id="ofLz" class="">01</td><td id="]v_y" class="" style="width:455.6640625px">Início de inventário</td></tr></tbody></table></li></ul><ul id="68a1dd82-9c44-4c68-9a9f-9190d55b3346" class="bulleted-list"><li style="list-style-type:circle">Resposta: 44 16 01 9E AC 3C 0D 0E 30 00 01 02 03 04 05 06 07 08 09 10 6A<br/>0F<br/><table id="f7394935-16e1-4ef5-b57e-0729a4ab23e5" class="simple-table"><tbody><tr id="357ae058-54e1-4885-a38a-00e475b8b2a6"><td id="DlXx" class=""><strong>Byte</strong></td><td id="IOx&lt;" class="" style="width:456px"><strong>Função</strong></td></tr><tr id="b2306d55-5f25-43fc-bb31-8d06e304ef48"><td id="DlXx" class="">44</td><td id="IOx&lt;" class="" style="width:456px">Receção de inventário com RSSI (envio)</td></tr><tr id="d566f4b4-b705-44e1-b60d-6b917779a578"><td id="DlXx" class="">16</td><td id="IOx&lt;" class="" style="width:456px">Tamanho da mensagem em <em>bytes</em></td></tr><tr id="8d3f557e-66b4-42b7-9177-28048a1eb9d5"><td id="DlXx" class="">01</td><td id="IOx&lt;" class="" style="width:456px">Apenas uma tag encontrada</td></tr><tr id="aa2ccfad-8ad9-448d-b0dd-9c5d8dcf959b"><td id="DlXx" class="">9E</td><td id="IOx&lt;" class="" style="width:456px">Nível de energia do sinal recebido</td></tr><tr id="57fd1123-f385-4df5-86af-90169496fa6e"><td id="DlXx" class="">AC 3C 0D</td><td id="IOx&lt;" class="" style="width:456px">Frequência da deteção, “AC 3C 0D” passa a “0D 3C AC” que se traduz em 866900 kHz</td></tr><tr id="153d851e-395d-4cc1-8b98-bd95d70434c0"><td id="DlXx" class="">0E</td><td id="IOx&lt;" class="" style="width:456px">Tamanho da mensagem EPC e fo PC </td></tr><tr id="89d927ca-88c9-46c1-9cb9-0e6986029772"><td id="DlXx" class="">30 00</td><td id="IOx&lt;" class="" style="width:456px">PC (serve de tampão)</td></tr><tr id="901b9d4b-727a-4ca2-a82d-c478f95a20d7"><td id="DlXx" class="">01 02 03 04 05 06 07 08 09 10 6A 0F</td><td id="IOx&lt;" class="" style="width:456px">ID (único) de cada tag</td></tr></tbody></table></li></ul><p id="4bab4c17-cc45-4212-b1ad-ab8234275fa7" class="">
+</p></li></ul></div></details></div></details><details open=""><summary style="font-weight:600;font-size:1.875em;line-height:1.3;margin:0">Protocolo de comunicação (<em>host </em>wise) detalhado</summary><div class="indented"><ul id="0295ceca-3274-4c18-a95e-de081dd954d8" class="bulleted-list"><li style="list-style-type:disc">Fluxograma detalhado do protocolo (a ser implementado) para a comunicação com o leitor AS3992, com as mensagens a ser enviadas em cada estado</li></ul><figure id="b3781684-6dab-45e1-a67e-0034b26ec8e0" class="image"><a href="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/fluxogramaRFID_detalhado.jpg"><img style="width:680px" src="Protocolo%20Comunicac%CC%A7a%CC%83o%20RFID%20-%20AS3992%20ff8b082b51de435e9af5c37366218d52/fluxogramaRFID_detalhado.jpg"/></a></figure><p id="6417c8fc-d908-4160-ae56-7e629196a759" class="">
+</p></div></details></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
