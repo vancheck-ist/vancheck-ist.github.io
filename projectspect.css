@@ -56,6 +56,13 @@
 }
 
 .system_description_text,
+.range_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
 .key_features_text
 {
     position: relative;
@@ -63,6 +70,7 @@
     margin-top: 2rem;
 }
 
+.range_text h1,
 .system_description_text h1,
 .key_features_text h1
 {
@@ -80,6 +88,11 @@
     margin-top: 10px;
 }
 
+.range_text p{
+    font-family: var(--texto-font-family);
+    font-size: clamp(0.3em, 0.6em + 0.8vw, 1.1em);
+    margin-top: -20px; 
+}
 
 .electrical_specs_text,
 .bill_of_material_text{
@@ -137,15 +150,11 @@ table, th, td{
 }
 
 
-
-
-@media(max-width: 510px){
-   .datasheets{
-
-    margin-top: 4rem;
-    }
-
+.project_test{
+    padding: 1rem; 
+    border-radius: 2rem;
 }
+
 
 .blogweekspec {
     margin-top:2rem;
@@ -164,8 +173,23 @@ table, th, td{
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
+ @media(max-width:900px){
+    .range_text{
+        width: 90%;
+    }
+
+    .range_text p{
+        width: 75%;
+    }
+ }
+@media(max-width: 510px){
+   .datasheets{
+
+    margin-top: 4rem;
+    }
+
+}
