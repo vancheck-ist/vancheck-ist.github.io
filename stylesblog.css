@@ -147,6 +147,11 @@ div.gallery {
 .app_design{
     background-image: url(img/Report/app_design.png);
 }
+
+.anim_contacts{
+    background-image: url(img/Report/Contacts.png);
+}
+
 .mid_program_presentation{
     background-image: url(img/Report/mid_program_presentation.jpg);
 }
